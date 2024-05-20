@@ -19,7 +19,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 import { Helmet } from 'react-helmet';
 
-const disciplines = ['Developer', 'Photographer', 'Helper'];
+const disciplines = ['Explorer', 'Researcher', 'Designer'];
 
 
 
@@ -75,9 +75,8 @@ export const Home = () => {
       <script defer data-domain="tomasps.com" src="https://plausible.tomasps.com/js/script.js"></script>
     </Helmet>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of TomasPS — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="Joker + Curator"
+        description="Personal website of Aimone — a curious explorer of real and virtual worlds."
       />
       <Intro
         id="intro"
