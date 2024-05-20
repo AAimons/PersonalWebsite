@@ -16,7 +16,7 @@ export const navLinks = [
   //   pathname: '/contact',
   // },
   {
-    label: 'Photography',
+    label: 'Inspiration',
     pathname: 'https://photography.tomasps.com',
   },
   {
