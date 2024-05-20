@@ -4,7 +4,7 @@ const helmet = require('helmet');
 
 const app = express();
 
-const ORIGINS = ['https://tomasps.com', 'https://www.tomasps.com'];
+const ORIGINS = ['https://aimone.xyz', 'https://www.aimone.xyz'];
 
 app.use(helmet());
 app.use(express.json());
