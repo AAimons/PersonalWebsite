@@ -18,18 +18,14 @@ import styles from './Profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="Ciao!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Tomas, currently I live in Spain currently working in{' '}
-      <Link href="https://spainrp.me">SpainRP</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      My Name is Aimo and I'm currently based in London where I'm working as R&D Engineer at {' '}
+      <Link href="https://www.target3d.co.uk/">Target3D</Link>. If you’re interested in the tools and software I put my hands on in the years, check out my <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to take photos to things I see and like{' '}
-      <Link href="https://photography.tomasps.com">Website</Link>.
+      In my spare time I like to hit some balls and teach tennis to newcomers.
     </Text>
   </Fragment>
 );
