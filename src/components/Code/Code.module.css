@@ -28,7 +28,7 @@
   }
 
   /* Based on the Poimandres theme */
-  &[data-theme='dark'] {
+  &[data-theme='light'] {
     --background: rgb(26 26 28);
     --className: #5de4c7;
     --comment: #a6accd;
