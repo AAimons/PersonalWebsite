@@ -21,7 +21,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Ciao!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      My Name is Aimo and I'm currently based in LDN where I'm working as R&D Engineer at {' '}
+      My Name is Aimone and I'm currently based in LDN where I'm working as R&D Engineer at {' '}
       <Link href="https://www.target3d.co.uk/">Target3D</Link>. If you’re interested in the tools and software I put my hands on in the years, check out my <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
