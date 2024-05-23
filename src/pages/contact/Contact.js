@@ -32,7 +32,7 @@ export const Contact = () => {
     try {
       setSending(true);
 
-      emailjs.sendForm('service_yejgxk6', 'template_alp6wla', form.current, 'V-OhXZW5pgoXJSRY2')
+      emailjs.sendForm('service_yejgxk6', 'template_5dtnbcp', form.current, 'V-OhXZW5pgoXJSRY2')
         .then(res => {
           console.log('Email successfully sent:', res);
           setComplete(true);
@@ -80,7 +80,7 @@ export const Contact = () => {
               required
               className={styles.input}
               data-status={status}
-              name="from_name"
+              name="user_name"
               style={getDelay(tokens.base.durationXS, initDelay)}
               autoComplete="name"
               label="Your Name"
