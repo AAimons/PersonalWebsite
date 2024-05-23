@@ -75,7 +75,7 @@ export const Home = () => {
       <script defer data-domain="tomasps.com" src="https://plausible.tomasps.com/js/script.js"></script>
     </Helmet>
       <Meta
-        title="Design"
+        title="Explorer"
         description="Personal website of Aimone — a curious explorer of real and virtual worlds."
       />
       <Intro
@@ -84,12 +84,18 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+
+<Profile
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
+        id="details"
+      />
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Tesla-Dashboard"
+        title="Immersive Media"
         description="Tesla dashboard for beamng drive"
         buttonText="View more"
         buttonLink="/projects/tesla-dashboard"
@@ -110,7 +116,7 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="SpainRP"
+        title="Research"
         description="SpainRP Minecraft Server"
         buttonText="View website"
         buttonLink="https://spainrp.me"
@@ -134,8 +140,8 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Vectorify"
-        description="A vector drawing app made with C# and WinUI3"
+        title="Traditional Media"
+        description="A mix of notable projects where I was sorroundeed by great people"
         buttonText="View website"
         buttonLink="https://github.com/tresillo2017/vectorify"
         model={{
@@ -149,11 +155,7 @@ export const Home = () => {
           ],
         }}
       />
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
-      />
+     
       <Footer />
     </div>
   );
