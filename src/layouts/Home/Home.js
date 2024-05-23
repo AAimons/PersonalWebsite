@@ -75,7 +75,7 @@ export const Home = () => {
       <script defer data-domain="tomasps.com" src="https://plausible.tomasps.com/js/script.js"></script>
     </Helmet>
       <Meta
-        title="Joker + Curator"
+        title="Design"
         description="Personal website of Aimone — a curious explorer of real and virtual worlds."
       />
       <Intro
