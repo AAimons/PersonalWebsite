@@ -17,18 +17,22 @@ export const navLinks = [
   //   label: 'Contact',
   //   pathname: '/contact',
   // },
-  {
-    label: 'LinkedIn',
-    pathname: 'https://www.linkedin.com/in/aimone-bodini-phd-7a05b5a6/',
-  },
-  
-  //{
-    //label: 'Drive',
-    //pathname: 'https://drive.tomasps.com',
-  //},
+  // {
+  //   label: 'LinkedIn',
+  //   pathname: 'https://www.linkedin.com/in/aimone-bodini-phd-7a05b5a6/',
+  // },
+  // {
+  //   label: 'Drive',
+  //   pathname: 'https://drive.tomasps.com',
+  // },
 ];
 
 export const socialLinks = [
+  {
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/aimone-bodini-phd-7a05b5a6/',
+    icon: 'linkedin',
+  },
   {
     label: 'Twitter',
     url: 'https://twitter.com/aimone_bodini',
