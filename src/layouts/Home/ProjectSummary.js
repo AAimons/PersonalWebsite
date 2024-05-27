@@ -95,7 +95,7 @@ export const ProjectSummary = ({
           <div className={styles.model} data-device="laptop">
             <Model
               alt={model.alt}
-              cameraPosition={{ x: 0, y: 0, z: 8 }}
+              cameraPosition={{ x: 0, y: 0, z: 2 }}
               showDelay={700}
               show={visible}
               models={[

@@ -38,39 +38,53 @@ varying float noise;
 #include <logdepthbuf_pars_fragment>
 #include <clipping_planes_pars_fragment>
 
+vec3 rainbow(float t) {
+    // Convert hue value in range [0, 1] to RGB
+    float hue = fract(t); // Wrap hue
+    float r = abs(hue * 6.0 - 3.0) - 1.0;
+    float g = 2.0 - abs(hue * 6.0 - 2.0);
+    float b = 2.0 - abs(hue * 6.0 - 4.0);
+    return clamp(vec3(r, g, b), 0.0, 1.0);
+}
+
 void main() {
-	#include <clipping_planes_fragment>
+    #include <clipping_planes_fragment>
 
-  vec3 color = vec3(vUv * (0.2 - 2.0 * noise), 1.0);
-  vec3 finalColors = vec3(color.b * 1.5, color.r, color.r);
-  vec4 diffuseColor = vec4(cos(finalColors * noise * 3.0), 1.0);
-  ReflectedLight reflectedLight = ReflectedLight(vec3(0.0), vec3(0.0), vec3(0.0), vec3(0.0));
-  vec3 totalEmissiveRadiance = emissive;
+    vec3 color = vec3(vUv * (0.2 - 2.0 * noise), 1.0);
+    vec3 finalColors = vec3(color.b * 1.5, color.r, color.r);
+    vec4 diffuseColor = vec4(cos(finalColors * noise * 3.0), 1.0);
 
-	#include <logdepthbuf_fragment>
-	#include <map_fragment>
-	#include <color_fragment>
-	#include <alphamap_fragment>
-	#include <alphatest_fragment>
-	#include <specularmap_fragment>
-	#include <normal_fragment_begin>
-	#include <normal_fragment_maps>
-	#include <emissivemap_fragment>
-	#include <lights_phong_fragment>
-	#include <lights_fragment_begin>
-	#include <lights_fragment_maps>
-	#include <lights_fragment_end>
-	#include <aomap_fragment>
+    // Calculate rainbow color based on time
+    vec3 rainbowColor = rainbow(time * 1.0); // Adjust speed with time scale factor
+    diffuseColor.rgb *= rainbowColor;
 
-	vec3 outgoingLight = reflectedLight.directDiffuse + reflectedLight.indirectDiffuse + reflectedLight.directSpecular + reflectedLight.indirectSpecular + totalEmissiveRadiance;
-  
-	#include <envmap_fragment>
-	#include <output_fragment>
-	#include <tonemapping_fragment>
-	#include <encodings_fragment>
-	#include <fog_fragment>
-	#include <premultiplied_alpha_fragment>
-	#include <dithering_fragment>
+    ReflectedLight reflectedLight = ReflectedLight(vec3(0.0), vec3(0.0), vec3(0.0), vec3(0.0));
+    vec3 totalEmissiveRadiance = emissive;
 
-  gl_FragColor = vec4(outgoingLight, diffuseColor.a);
+    #include <logdepthbuf_fragment>
+    #include <map_fragment>
+    #include <color_fragment>
+    #include <alphamap_fragment>
+    #include <alphatest_fragment>
+    #include <specularmap_fragment>
+    #include <normal_fragment_begin>
+    #include <normal_fragment_maps>
+    #include <emissivemap_fragment>
+    #include <lights_phong_fragment>
+    #include <lights_fragment_begin>
+    #include <lights_fragment_maps>
+    #include <lights_fragment_end>
+    #include <aomap_fragment>
+
+    vec3 outgoingLight = reflectedLight.directDiffuse + reflectedLight.indirectDiffuse + reflectedLight.directSpecular + reflectedLight.indirectSpecular + totalEmissiveRadiance;
+
+    #include <envmap_fragment>
+    #include <output_fragment>
+    #include <tonemapping_fragment>
+    #include <encodings_fragment>
+    #include <fog_fragment>
+    #include <premultiplied_alpha_fragment>
+    #include <dithering_fragment>
+
+    gl_FragColor = vec4(outgoingLight, diffuseColor.a);
 }

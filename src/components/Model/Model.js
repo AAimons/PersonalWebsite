@@ -129,7 +129,7 @@ export const Model = ({
     const planeWidth = 8;
     const planeHeight = 8;
     const cameraHeight = 1.5;
-    const shadowOpacity = 0.8;
+    const shadowOpacity = 0.0;
     const shadowDarkness = 3;
 
     // The render target that will show the shadows in the plane texture

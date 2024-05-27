@@ -36,3 +36,17 @@ FONTS | フォント
 
 Gotham
 Hiragino Kaku Gothic
+
+_______________________________________________________________________________
+
+ASSETS | アセット
+
+AppleVisionPro:
+This work is based on "Apple Vision Pro" (https://sketchfab.com/3d-models/apple-vision-pro-3341d1f3f75e41b59fcedd1f46f03d56) 
+by DextonOfficial (https://sketchfab.com/DextonOfficial) 
+licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+Traditional Media
+This work is based on "Camera" (https://sketchfab.com/3d-models/camera-81c25862d5de41199ba9ede105be26e1) 
+by Kyn (https://sketchfab.com/Kyn91) 
+licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
