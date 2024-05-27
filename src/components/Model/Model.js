@@ -290,8 +290,8 @@ export const Model = ({
         y: (event.clientY - innerHeight / 2) / innerHeight,
       };
 
-      rotationY.set(position.x / 2);
-      rotationX.set(position.y / 2);
+      rotationY.set(position.x * 4);
+      rotationX.set(position.y * 4);
     };
 
     if (isInViewport && !reduceMotion) {
@@ -369,18 +369,21 @@ const Device = ({
 
   useEffect(() => {
     const applyScreenTexture = async (texture, node) => {
-      texture.encoding = sRGBEncoding;
-      texture.flipY = false;
-      texture.anisotropy = renderer.current.capabilities.getMaxAnisotropy();
-      texture.generateMipmaps = false;
-
-      // Decode the texture to prevent jank on first render
-      await renderer.current.initTexture(texture);
-
-      node.material.color = new Color(0xffffff);
-      node.material.transparent = true;
-      node.material.map = texture;
+      if (texture) {
+        texture.encoding = sRGBEncoding;
+        texture.flipY = false;
+        texture.anisotropy = renderer.current.capabilities.getMaxAnisotropy();
+        texture.generateMipmaps = false;
+    
+        // Decode the texture to prevent jank on first render
+        await renderer.current.initTexture(texture);
+    
+        node.material.color = new Color(0xffffff);
+        node.material.transparent = true;
+        node.material.map = texture;
+      }
     };
+    
 
     // Generate promises to await when ready
     const load = async () => {
@@ -397,7 +400,7 @@ const Device = ({
 
       gltf.scene.traverse(async node => {
         if (node.material) {
-          node.material.color = new Color(0x1f2025);
+          node.material.color = new Color(0x08e4fc);
           node.material.color.convertSRGBToLinear();
         }
 
@@ -461,31 +464,37 @@ const Device = ({
       }
 
       // Swing the laptop lid open
-      if (model.animation === ModelAnimationType.LaptopOpen) {
-        playAnimation = () => {
-          const frameNode = gltf.scene.children.find(
-            node => node.name === MeshType.Frame
-          );
-          const startRotation = new Vector3(MathUtils.degToRad(90), 0, 0);
-          const endRotation = new Vector3(0, 0, 0);
+if (model.animation === ModelAnimationType.LaptopOpen) {
+  playAnimation = () => {
+    // Find the frame node in the loaded GLTF scene
+    const frameNode = gltf.scene.children.find(node => node.name === MeshType.Frame);
 
-          gltf.scene.position.set(...targetPosition.toArray());
-          frameNode.rotation.set(...startRotation.toArray());
+    // Check if the frame node exists
+    if (!frameNode) {
+      console.warn('Frame node not found in the GLTF scene. Skipping animation.');
+      return;
+    }
 
-          return animate(startRotation.x, endRotation.x, {
-            type: 'spring',
-            delay: (300 * index + showDelay + 300) / 1000,
-            stiffness: 80,
-            damping: 20,
-            restSpeed: 0.0001,
-            restDelta: 0.0001,
-            onUpdate: value => {
-              frameNode.rotation.x = value;
-              renderFrame();
-            },
-          });
-        };
-      }
+    const startRotation = new Vector3(MathUtils.degToRad(90), 0, 0);
+    const endRotation = new Vector3(0, 0, 0);
+
+    gltf.scene.position.set(...targetPosition.toArray());
+    frameNode.rotation.set(...startRotation.toArray());
+
+    return animate(startRotation.x, endRotation.x, {
+      type: 'spring',
+      delay: (300 * index + showDelay + 300) / 1000,
+      stiffness: 80,
+      damping: 20,
+      restSpeed: 0.0001,
+      restDelta: 0.0001,
+      onUpdate: value => {
+        frameNode.rotation.x = value;
+        renderFrame();
+      },
+    });
+  };
+}
 
       return { loadFullResTexture, playAnimation };
     };
@@ -501,19 +510,22 @@ const Device = ({
 
     const onLoad = async () => {
       const { loadFullResTexture, playAnimation } = await loadDevice.start();
-
+    
       setLoaded(true);
-
-      if (!reduceMotion) {
+    
+      if (!reduceMotion && playAnimation) {
         animation = playAnimation();
       }
-
-      await loadFullResTexture();
-
+    
+      if (loadFullResTexture) {
+        await loadFullResTexture();
+      }
+    
       if (reduceMotion) {
         renderFrame();
       }
     };
+    
 
     startTransition(() => {
       onLoad();

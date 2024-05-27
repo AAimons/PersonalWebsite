@@ -1,5 +1,6 @@
 import iphone11 from 'assets/iphone-11.glb';
 import macbookPro from 'assets/macbook-pro.glb';
+import TraditionalMedia from 'assets/TraditionalMedia.glb';
 
 export const ModelAnimationType = {
   SpringUp: 'spring-up',
@@ -19,6 +20,13 @@ export const deviceModels = {
     width: 1280,
     height: 800,
     position: { x: 0, y: 0, z: 0 },
-    animation: ModelAnimationType.LaptopOpen,
+    animation: ModelAnimationType.SpringUp,
+  },
+  Classics: {
+    url: TraditionalMedia,
+    width: 128,
+    height: 80,
+    position: { x: 0, y: 0, z: 0 },
+    animation: ModelAnimationType.SpringUp,
   },
 };

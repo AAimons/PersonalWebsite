@@ -142,6 +142,28 @@ export const ProjectSummary = ({
           </div>
         </>
       )}
+      {model.type === 'Classics' && (
+      <>
+        {renderKatakana('Classics', visible)}
+        <div className={styles.model} data-device="Classics">
+          <Model
+            alt={model.alt}
+            cameraPosition={{ x: 0, y: 0, z: 30 }}
+            showDelay={700}
+            show={visible}
+            models={[
+              {
+                ...deviceModels.Classics,
+                texture: {
+                  ...model.textures[0],
+                  sizes: laptopSizes,
+                },
+              },
+            ]}
+          />
+        </div>
+      </>
+    )}
     </div>
   );
 

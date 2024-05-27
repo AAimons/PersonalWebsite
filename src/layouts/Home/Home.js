@@ -141,11 +141,11 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Traditional Media"
-        description="A mix of notable projects where I was sorroundeed by great people"
+        description="A mix of notable projects where I was sorroundeed by greatt people"
         buttonText="View website"
         buttonLink="https://github.com/tresillo2017/vectorify"
         model={{
-          type: 'laptop',
+          type: 'Classics',
           alt: 'A screenshot of the current UI',
           textures: [
             {
