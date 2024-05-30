@@ -84,7 +84,7 @@ const ArticlesPost = ({
             </Text>
             <div className={styles.postFooter}>
               <Button secondary iconHoverShift icon="chevronRight" as="div">
-                Read Article
+                Leer Artículo
               </Button>
               <Text className={styles.timecode} size="s">
                 {timecode}
@@ -169,7 +169,7 @@ export const Articles = ({ posts, featured }) => {
     </div>
   );
 
-  const featuredPost = <ArticlesPost {...featured} />;
+  const featuredPost = featured ? <ArticlesPost {...featured} /> : null;
 
   return (
     <article className={styles.articles}>
@@ -180,8 +180,8 @@ export const Articles = ({ posts, featured }) => {
       <Section className={styles.content}>
         {!isSingleColumn && (
           <div className={styles.grid}>
-            {postList}
             {featuredPost}
+            {postList}
           </div>
         )}
         {isSingleColumn && (

@@ -19,7 +19,7 @@
           <img class="avatar" src="../../../public/static/avatar.jpg" alt="Hamish" />
           <span>Hamish Williams</span>
         </div>
-        <div class="timecode"></div>
+        <!-- <div class="timecode"></div> -->
       </footer>
     </main>
     <script>
@@ -35,7 +35,7 @@
 
       container.style.setProperty('--url', `url('../../../public${bannerImage}')`);
       title.textContent = params.get('title') || 'Untitled';
-      timecode.textContent = params.get('timecode') || '00:00:00:00';
+      //timecode.textContent = params.get('timecode') || '00:00:00:00';
       date.textContent = postDate.toLocaleDateString('default', {
         year: 'numeric',
         month: 'long',

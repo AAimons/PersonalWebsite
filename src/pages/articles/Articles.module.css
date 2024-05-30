@@ -358,14 +358,15 @@
 }
 
 .timecode {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  gap: var(--spaceM);
+  gap: var(--spaceM); */
 
-  &::before {
+  /* &::before {
     content: '';
     width: 42px;
     height: 2px;
     background-color: rgb(var(--rgbText) / 0.2);
-  }
+  } */
 }
+

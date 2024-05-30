@@ -24,14 +24,17 @@ export function getStaticProps() {
 
   const featured = allPosts.find(post => post.featured);
 
-  const posts = allPosts
-    .filter(post => post.slug !== featured.slug)
+  const posts = featured
+    ? allPosts.filter(post => post.slug !== featured.slug)
+    : allPosts;
+
+  const sortedPosts = posts
     .sort((a, b) => {
       return new Date(a.date).getTime() - new Date(b.date).getTime();
     })
     .reverse();
 
   return {
-    props: { posts, featured },
+    props: { posts: sortedPosts, featured: featured || null },
   };
 }

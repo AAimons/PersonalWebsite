@@ -122,16 +122,16 @@
 }
 
 .timecode {
-  font-size: calc(32 / 16 * 1rem);
+  /*font-size: calc(32 / 16 * 1rem);
   display: flex;
   gap: 24px;
-  align-items: center;
+  align-items: center;*/
 }
 
 .timecode::before {
-  content: '';
+  /*content: '';
   display: block;
   height: 4px;
   width: 100px;
-  background-color: rgb(var(--rgbText) / 0.4);
+  background-color: rgb(var(--rgbText) / 0.4);*/
 }
