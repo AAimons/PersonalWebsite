@@ -16,7 +16,7 @@
   align-items: center;
 
   @media (--mediaTablet) {
-    padding: 0 80px;
+    padding: 0 0px;
     margin-top: 60px;
   }
 

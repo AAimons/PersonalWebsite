@@ -72,14 +72,22 @@ import styles from './SmartSparrow.module.css';
 const Earth = dynamic(() => import('./Earth').then(mod => mod.Earth));
 const EarthSection = dynamic(() => import('./Earth').then(mod => mod.EarthSection));
 
-const title = 'Sub-project 1';
-const description =
-  'Description sub-project 1';
-const roles = [
+const title1 = 'Sub-project 1';
+const description1 = 'Description sub-project 1';
+const roles1 = [
   'Project Management',
   'Accounting',
   'Marketing',
   'Consultancy',
+];
+
+const title2 = 'Sub-project 2';
+const description2 = 'Description sub-project 2';
+const roles2 = [
+  'Development',
+  'Design',
+  'Testing',
+  'Deployment',
 ];
 
 export const SmartSparrow = () => {
@@ -96,7 +104,7 @@ export const SmartSparrow = () => {
   return (
     <Fragment>
       <ProjectContainer className="spr">
-        <Meta title={title} prefix="Projects" description={description} />
+        <Meta title={title1} prefix="Projects" description={description1} />
         <ProjectBackground
           opacity={isDark ? 0.5 : 0.8}
           src={backgroundSpr}
@@ -104,12 +112,12 @@ export const SmartSparrow = () => {
           placeholder={backgroundSprPlaceholder}
         />
         <ProjectHeader
-          title={title}
-          description={description}
+          title={title1}
+          description={description1}
           url="https://tesladashboard.tomasps.com"
-          roles={roles}
+          roles={roles1}
         />
-        <ProjectSection padding="top">
+        <ProjectSection>
           <ProjectSectionContent>
             <ProjectImage
               raised
@@ -128,9 +136,11 @@ export const SmartSparrow = () => {
               alt="A screenshot of the current ui of the app"
             />
           </ProjectSectionContent>
-        </ProjectSection>
+        
 
-        <ProjectSection>
+
+
+        
         <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
@@ -145,6 +155,14 @@ export const SmartSparrow = () => {
           </ProjectTextRow>
 
          
+   {/* Section2 */}
+   <ProjectHeader
+          title={title2}
+          description={description2}
+          url="https://example.com"
+          roles={roles2}
+        />
+
             <ProjectImage
               raised
               key={themeId}
@@ -161,8 +179,22 @@ export const SmartSparrow = () => {
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="A screenshot of the current ui of the app"
             />
-         
 
+            
+           
+           
+        <ProjectTextRow>
+            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionText>
+              In 2017, Smart Sparrow began a project to build an entirely new platform to
+              from the ground up to serve as the most powerful tool for educators to
+              create online learning experiences. The old platform was built in Flash, and
+              there were a number of user experience problems to solve in the process of
+              moving the platform to Javascript. The primary goals for the project were
+              reducing barriers to collaboration, and making the platform both easier for
+              new users, but with plenty of room to scale for advanced users.
+            </ProjectSectionText>
+          </ProjectTextRow>
     
 
 
