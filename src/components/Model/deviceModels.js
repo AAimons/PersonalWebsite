@@ -1,4 +1,4 @@
-import iphone11 from 'assets/iphone-11.glb';
+import iphone11 from 'assets/me.glb';
 import macbookPro from 'assets/apple-vision-pro.glb';
 import TraditionalMedia from 'assets/TraditionalMedia.glb';
 
