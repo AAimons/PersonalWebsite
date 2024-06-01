@@ -95,8 +95,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Immersive Media"
-        description="Tesla dashboard for beamng drive"
+        title="Immersive Media & Technology"
+        description="To tell stories and convey emotions. To benefit processes and stakeholders."
         buttonText="View more"
         buttonLink="/projects/tesla-dashboard"
         model={{
@@ -117,7 +117,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Research"
-        description="SpainRP Minecraft Server"
+        description="Discovery is a perpetual journey, whether pursued individually or with institutional support."
         buttonText="View website"
         buttonLink="https://spainrp.me"
         model={{
@@ -141,7 +141,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Traditional Media"
-        description="A mix of notable projects where I was sorroundeed by greatt people"
+        description="A mix of notable projects where I was sorroundeed by great people"
         buttonText="View website"
         buttonLink="https://github.com/tresillo2017/vectorify"
         model={{

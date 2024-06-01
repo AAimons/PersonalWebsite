@@ -96,7 +96,7 @@ export const ProjectSummary = ({
             <Model
               alt={model.alt}
               cameraPosition={{ x: 0, y: 0, z: 2 }}
-              showDelay={700}
+              showDelay={100}
               show={visible}
               models={[
                 {
