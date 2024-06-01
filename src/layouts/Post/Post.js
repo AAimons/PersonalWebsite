@@ -8,7 +8,7 @@ import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { tokens } from 'components/ThemeProvider/theme';
 import { Transition } from 'components/Transition';
-import { useParallax, useScrollToHash } from 'hooks';
+//import { useParallax, useScrollToHash } from 'hooks';
 import RouterLink from 'next/link';
 import { useRef, useState, useEffect } from 'react';
 import { clamp } from 'utils/clamp';
@@ -17,7 +17,7 @@ import { cssProps, msToNum, numToMs } from 'utils/style';
 import styles from './Post.module.css';
 
 export const Post = ({ children, title, date, abstract, banner, timecode, ogImage }) => {
-  const scrollToHash = useScrollToHash();
+ // const scrollToHash = useScrollToHash();
   const imageRef = useRef();
   const [dateTime, setDateTime] = useState(null);
   
@@ -25,14 +25,14 @@ export const Post = ({ children, title, date, abstract, banner, timecode, ogImag
     setDateTime(formatDate(date));
   }, [date, dateTime]);
 
-  useParallax(0.004, value => {
-    if (!imageRef.current) return;
-    imageRef.current.style.setProperty('--blurOpacity', clamp(value, 0, 1));
-  });
+  //useParallax(0.004, value => {
+    //if (!imageRef.current) return;
+    //imageRef.current.style.setProperty('--blurOpacity', clamp(value, 0, 1));
+  //});
 
   const handleScrollIndicatorClick = event => {
     event.preventDefault();
-    scrollToHash(event.currentTarget.href);
+  //  scrollToHash(event.currentTarget.href);
   };
 
   return (

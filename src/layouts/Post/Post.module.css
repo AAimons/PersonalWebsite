@@ -163,7 +163,7 @@
 }
 
 .bannerImageBlur {
-  opacity: var(--blurOpacity, 0);
+  opacity: 0.5;
   transform: translateZ(0);
   will-change: opacity;
 }

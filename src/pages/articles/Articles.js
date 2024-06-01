@@ -84,7 +84,7 @@ const ArticlesPost = ({
             </Text>
             <div className={styles.postFooter}>
               <Button secondary iconHoverShift icon="chevronRight" as="div">
-                Leer Artículo
+                Read Story
               </Button>
               <Text className={styles.timecode} size="s">
                 {timecode}
