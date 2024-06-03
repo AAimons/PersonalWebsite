@@ -118,8 +118,8 @@ export const Home = () => {
         index={2}
         title="Research"
         description="Discovery is a perpetual journey, whether pursued individually or with institutional support."
-        buttonText="View website"
-        buttonLink="https://spainrp.me"
+        buttonText="Explore"
+        buttonLink="/projects-2/research"
         model={{
           type: 'phone',
           alt: 'App login screen',

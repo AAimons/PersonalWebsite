@@ -20,11 +20,11 @@ import styles from './Uses.module.css';
 
 
 
-export const Uses = () => {
+export const biography = () => {
   return (
     <Fragment>
       <Meta
-        title="Uses"
+        title="biography"
         description="A list of hardware and software I use to do my thing"
       />
       <ProjectContainer className={styles.uses}>
@@ -34,8 +34,8 @@ export const Uses = () => {
           opacity={0.7}
         />
         <ProjectHeader
-          title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
+          title="Biography"
+          description="A somewhat comprehensive summary of my professional journey so far."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
@@ -44,9 +44,13 @@ export const Uses = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    Any video I made is edited with Sony Vegas Pro 19. So
-                    far I haven’t found a opensource product that’s as good. If anyone has
-                    suggestions please <Link href="/contact">message me</Link>.
+                  I work as a Research and Development Engineer at <Link href="https://www.blender.org/">Target3D</Link> in London. My role involves prototyping and developing custom tracking solutions using cutting-edge media technologies in areas like Motion and Volumetric capture, virtual production, VR & AR, robotics, biomechanics, animation, VFX, gaming, training, and simulation.
+
+                  I earned my PhD in Design from Brunel University London, thanks to funding from StoryFutures. During my doctoral studies, I co-designed, prototyped, and evaluated ways to integrate immersive technologies into filmmakers' workflows, sharing my findings through scientific publications.
+
+                  I've also spent several years in the industry as an XR Specialist, where I gained a mix of technical expertise and business insight. I love sharing this knowledge with students and broader audiences at conferences and events. Additionally, I'm the author of the book "Narrative Language of Virtual Reality" and had the pleasure of curating the Immersive section of the Milano Film Festival.
+
+                  If you're interested in my hard and soft skills, the tools I use, and what I'm currently learning, check out this page!.
                   </ListItem>
                   <ListItem>
                     For any 3D models I use{' '}
@@ -105,59 +109,18 @@ export const Uses = () => {
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
+
+
+
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow stretch width="m">
               <ProjectSectionHeading>Hardware</ProjectSectionHeading>
-              <Table>
-                <TableBody>
-                  <TableRow>
-                    <TableHeadCell>CPU</TableHeadCell>
-                    <TableCell>AMD Ryzen 5 3600x</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>GPU</TableHeadCell>
-                    <TableCell>Gigabyte RTX 2060 v2</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Memory</TableHeadCell>
-                    <TableCell>Corsair Vegance 4x8 32gb</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Motherboard</TableHeadCell>
-                    <TableCell>MSI B450 Gaming Plus Max</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Storage</TableHeadCell>
-                    <TableCell>WD_BLACK SN770 NVMe SSD 1TB (Main SO Windows)</TableCell>
-                    <TableCell>WD Blue SATA SSD M.2 2280 500GB (Secondary SO Fedora Workstation)</TableCell>
-                    <TableCell>SanDisk SSD Plus 480GB (Programs)</TableCell>
-                    <TableCell>KIOXIA-EXCERIA SATA SSD 1TB (Games)</TableCell>
-                    <TableCell>ST1000DM010-2EP102 1TB (Files)</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Monitors</TableHeadCell>
-                    <TableCell>AOC 1080p 165hz 21inches (Curved)</TableCell>
-                    <TableCell>Samsung 75hz 17inches (Vertical)</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Keyboard</TableHeadCell>
-                    <TableCell>Newskill Serike TKL</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Mouse</TableHeadCell>
-                    <TableCell>Logitech G502 Hero</TableCell>
-                  </TableRow>
-                  <TableRow>
-                      <TableHeadCell>Headphones</TableHeadCell>
-                      <TableCell>Razer Kraken Tournament</TableCell>
-                  </TableRow>
-                </TableBody>
-                    <TableRow>
-                      <TableHeadCell>Laptop</TableHeadCell>
-                      <TableCell>Lenovo Thinkpad E16 (AMD R7, 40gb RAM, 1TB SSD, Fedora 39)</TableCell>
-                    </TableRow>
-              </Table>
+              
+
+
+
+
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
