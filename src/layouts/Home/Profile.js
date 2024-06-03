@@ -21,11 +21,16 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Ciao!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      My Name is Aimone Bodini and I&apos;m currently based in LDN where I&apos;m working as R&D Engineer at {' '}
-      <Link href="https://www.target3d.co.uk/">Target3D</Link>. If you&apos;re interested in the tools and software I put my hands on in the years, check out my <Link href="/uses">uses page</Link>.
+        
+      My name is Aimone, and I am... 
+    
     </Text>
+    
+
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to hit some balls and teach tennis to newcomers.
+    Labels have always felt too restrictive and limiting to me, especially in our fast-paced world where we are constantly asked to change. 
+    Throughout my career, I've adapted to various situations, driven by curiosity and a desire to explore new things. Exploration always beated the fear of the uknown.
+    This unconventional path and attitude suggested me to create a personal website with a more flexible structure—a slice of the internet where I can share my stories in depth, free from the tiranny of a limited wordcount or impersonal spaces.
     </Text>
   </Fragment>
 );
