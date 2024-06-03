@@ -29,7 +29,7 @@ const ProfileText = ({ visible, titleId }) => (
 
     <Text className={styles.description} data-visible={visible} size="l" as="p">
     Labels have always felt too restrictive and limiting to me, especially in our fast-paced world where we are constantly asked to change. 
-    Throughout my career, I've adapted to various situations, driven by curiosity and a desire to explore new things. Exploration always beated the fear of the uknown.
+    Throughout my career, I&apos;ve adapted to various situations, driven by curiosity and a desire to explore new things. Exploration always beated the fear of the uknown.
     This unconventional path and attitude suggested me to create a personal website with a more flexible structure—a slice of the internet where I can share my stories in depth, free from the tiranny of a limited wordcount or impersonal spaces.
     </Text>
   </Fragment>
