@@ -46,11 +46,11 @@ export const biography = () => {
                   <ListItem>
                   I work as a Research and Development Engineer at <Link href="https://www.blender.org/">Target3D</Link> in London. My role involves prototyping and developing custom tracking solutions using cutting-edge media technologies in areas like Motion and Volumetric capture, virtual production, VR & AR, robotics, biomechanics, animation, VFX, gaming, training, and simulation.
 
-                  I earned my PhD in Design from Brunel University London, thanks to funding from StoryFutures. During my doctoral studies, I co-designed, prototyped, and evaluated ways to integrate immersive technologies into filmmakers' workflows, sharing my findings through scientific publications.
+                  I earned my PhD in Design from Brunel University London, thanks to funding from StoryFutures. During my doctoral studies, I co-designed, prototyped, and evaluated ways to integrate immersive technologies into filmmakers’ workflows, sharing my findings through scientific publications.
 
-                  I've also spent several years in the industry as an XR Specialist, where I gained a mix of technical expertise and business insight. I love sharing this knowledge with students and broader audiences at conferences and events. Additionally, I'm the author of the book "Narrative Language of Virtual Reality" and had the pleasure of curating the Immersive section of the Milano Film Festival.
+                  I’ve also spent several years in the industry as an XR Specialist, where I gained a mix of technical expertise and business insight. I love sharing this knowledge with students and broader audiences at conferences and events. Additionally, I’m the author of the book Narrative Language of Virtual Reality and had the pleasure of curating the Immersive section of the Milano Film Festival.
 
-                  If you're interested in my hard and soft skills, the tools I use, and what I'm currently learning, check out this page!.
+                  If you’re interested in my hard and soft skills, the tools I use, and what I’m currently learning, check out this page!.
                   </ListItem>
                   <ListItem>
                     For any 3D models I use{' '}
