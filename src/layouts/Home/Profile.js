@@ -31,7 +31,7 @@ const ProfileText = ({ visible, titleId }) => (
     Labels have always felt too restrictive and limiting to me, and they mean little in such a fast-paced world that is constantly changing... and so are we.
     Throughout my career, I&apos;ve adapted to various situations, driven by a desire to embark on new things. Exploration has always triumphed over the fear of the unknown.
     To better illustrate the story of my unconventional, zig-zag path, I realized that a personal website could offer me a more flexible, multimedia structure — a slice of the internet where I can share my stories in depth, free from the tyranny of a limited word count or impersonal canvas.
-    Have a look around and if you want to know more about me check the <Link href="/biography">full bio</Link>
+    <Link href="/projects.volkihar-knight">make mods</Link> Have a look around and if you want to know more about me check the <Link href="/biography">full bio</Link>
     </Text>
   </Fragment>
 );
