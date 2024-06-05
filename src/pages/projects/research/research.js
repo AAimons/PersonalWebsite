@@ -69,25 +69,23 @@ import { Fragment, useMemo } from 'react';
 import { media } from 'utils/style';
 import styles from './SmartSparrow.module.css';
 
-const Earth = dynamic(() => import('./Earth').then(mod => mod.Earth));
-const EarthSection = dynamic(() => import('./Earth').then(mod => mod.EarthSection));
 
-const title1 = 'Research A';
-const description1 = 'Description sub-project 1';
+const title1 = 'Doctor of Philosophy';
+const description1 = 'I co-designed, prototyped, and evaluated ways to integrate immersive technologies into filmmakers’ workflows';
 const roles1 = [
-  'Project Management',
-  'Accounting',
-  'Marketing',
-  'Consultancy',
+  'Mixed Methods',
+  'Design',
+  'Prototyping',
+  'Technical Writing',
 ];
 
-const title2 = 'Research B';
-const description2 = 'Description sub-project 2';
+const title2 = 'Narrative Language of Virtual Reality';
+const description2 = 'A small book venturing into the new frontier of VR storytelling, sparked by the Oculus wave in 2015.';
 const roles2 = [
-  'Development',
-  'Design',
-  'Testing',
-  'Deployment',
+  'Exploratory Research',
+  'Media Studies',
+  'Systematic Review',
+  
 ];
 
 export const SmartSparrow = () => {
@@ -114,7 +112,8 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title1}
           description={description1}
-          url="https://tesladashboard.tomasps.com"
+          linkLabel = 'Open Access'
+          url="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o949NnIAAAAJ&citation_for_view=o949NnIAAAAJ:Se3iqnhoufwC"
           roles={roles1}
         />
         <ProjectSection>
@@ -141,18 +140,30 @@ export const SmartSparrow = () => {
 
 
         
-        <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
-            <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
-            </ProjectSectionText>
-          </ProjectTextRow>
+          <ProjectTextRow>
+  <ProjectSectionHeading>The problem</ProjectSectionHeading>
+  <ProjectSectionText>
+    In 2017, Smart Sparrow began a project to build an entirely new platform to
+    from the ground up to serve as the most powerful tool for educators to
+    create online learning experiences. The old platform was built in Flash, and
+    there were a number of user experience problems to solve in the process of
+    moving the platform to Javascript. The primary goals for the project were
+    reducing barriers to collaboration, and making the platform both easier for
+    new users, but with plenty of room to scale for advanced users.
+  </ProjectSectionText>
+</ProjectTextRow>
+<ProjectTextRow>
+  <ProjectSectionText>
+    <br /> {/* Add a line break */}
+    <br /> {/* Add another line break */}
+    <Link href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o949NnIAAAAJ&citation_for_view=o949NnIAAAAJ:Se3iqnhoufwC" >Google Scholar</Link>
+  </ProjectSectionText>
+</ProjectTextRow>
+
+
+
+
+         
 
          
    {/* Section2 */}

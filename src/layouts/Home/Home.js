@@ -98,7 +98,7 @@ export const Home = () => {
         title="Immersive Media & Technology"
         description="To tell stories and convey emotions. To benefit processes and stakeholders."
         buttonText="View more"
-        buttonLink="/projects/tesla-dashboard"
+        buttonLink="/projects/immersive-media-and-tech"
         model={{
           type: 'laptop',
           alt: 'Screenshot of the current UI',
@@ -119,7 +119,7 @@ export const Home = () => {
         title="Research"
         description="Discovery is a perpetual journey, whether pursued individually or with institutional support."
         buttonText="Explore"
-        buttonLink="/projects-2/research"
+        buttonLink="/projects/research"
         model={{
           type: 'phone',
           alt: 'App login screen',
