@@ -1,9 +1,9 @@
-import backgroundSprLarge from 'assets/spr-background-large.jpg';
+import backgroundSprLarge from 'assets/spr-background-large-TM.jpg';
 import backgroundSprPlaceholder from 'assets/spr-background-placeholder.jpg';
 import imageSprBackgroundVolcanismLarge from 'assets/spr-background-volcanism-large.jpg';
 import imageSprBackgroundVolcanismPlaceholder from 'assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from 'assets/spr-background-volcanism.jpg';
-import backgroundSpr from 'assets/spr-background.jpg';
+import backgroundSpr from 'assets/spr-background-TM.jpg';
 import imageSprComponentsDarkLarge from 'assets/spr-components-dark-large.png';
 import imageSprComponentsDarkPlaceholder from 'assets/spr-components-dark-placeholder.png';
 import imageSprComponentsDark from 'assets/spr-components-dark.png';
@@ -69,25 +69,21 @@ import { Fragment, useMemo } from 'react';
 import { media } from 'utils/style';
 import styles from './SmartSparrow.module.css';
 
-
-const title1 = 'Superfoodies (Advertising)';
-const description1 = 'description';
+const title1 = 'Superfoodies';
+const description1 = 'Advertising | VFX | Origial IP';
 const roles1 = [
   'New Business',
   'Sales',
   'Key Accounting',
   'Project Management',
-  
 ];
 
-const title2 = 'Pane dal Cielo "Feature Film)';
-const description2 = 'description';
+const title2 = 'Pane dal Cielo';
+const description2 = 'Feature Film | dir. Giovanni Bedeschi';
 const roles2 = [
   'Problem Solving',
   'Operations',
   'Scheduling',
-  
-  
 ];
 
 export const SmartSparrow = () => {
@@ -114,68 +110,47 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title1}
           description={description1}
-          linkLabel = 'Open Access'
+          linkLabel="Open Access"
           url="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o949NnIAAAAJ&citation_for_view=o949NnIAAAAJ:Se3iqnhoufwC"
           roles={roles1}
         />
         <ProjectSection>
-          <ProjectSectionContent>
+          <ProjectSectionContent className="section-content">
             <ProjectImage
               raised
               key={themeId}
-              srcSet={
-                isDark
-                  ? [imageCartoon, imageCartoon]
-                  : [imageSprLessonBuilderLight, imageSprLessonBuilderLightLarge]
-              }
-              placeholder={
-                isDark
-                  ? imageSprLessonBuilderDarkPlaceholder
-                  : imageSprLessonBuilderLightPlaceholder
-              }
+              srcSet={[imageCartoon, imageCartoon]}
+              placeholder={imageSprLessonBuilderLightPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="A screenshot of the current ui of the app"
+              alt="A screenshot of the current UI of the app"
+              className={styles.sidebarImage}
             />
+            <ProjectSectionHeading className="section-heading">The problem</ProjectSectionHeading>
+            <ProjectSectionText>
+              In 2017, Smart Sparrow began a project to build an entirely new platform from the ground up to serve as the most powerful tool for educators to create online learning experiences. The old platform was built in Flash, and there were a number of user experience problems to solve in the process of moving the platform to JavaScript. The primary goals for the project were reducing barriers to collaboration, and making the platform both easier for new users, but with plenty of room to scale for advanced users.
+            </ProjectSectionText>
           </ProjectSectionContent>
-        
-
-
-
-        
           <ProjectTextRow>
-  <ProjectSectionHeading>The problem</ProjectSectionHeading>
-  <ProjectSectionText>
-    In 2017, Smart Sparrow began a project to build an entirely new platform to
-    from the ground up to serve as the most powerful tool for educators to
-    create online learning experiences. The old platform was built in Flash, and
-    there were a number of user experience problems to solve in the process of
-    moving the platform to Javascript. The primary goals for the project were
-    reducing barriers to collaboration, and making the platform both easier for
-    new users, but with plenty of room to scale for advanced users.
-  </ProjectSectionText>
-</ProjectTextRow>
-<ProjectTextRow>
-  <ProjectSectionText>
-    <br /> {/* Add a line break */}
-    <br /> {/* Add another line break */}
-    <Link href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o949NnIAAAAJ&citation_for_view=o949NnIAAAAJ:Se3iqnhoufwC" >Google Scholar</Link>
-  </ProjectSectionText>
-</ProjectTextRow>
+            <ProjectSectionText>
+              <br />
+              <br />
+              <Link href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o949NnIAAAAJ&citation_for_view=o949NnIAAAAJ:Se3iqnhoufwC">Google Scholar</Link>
+            </ProjectSectionText>
+          </ProjectTextRow>
 
 
 
 
-         
 
-         
-   {/* Section2 */}
-   <ProjectHeader
-          title={title2}
-          description={description2}
-          url="https://example.com"
-          roles={roles2}
-        />
 
+          <ProjectHeader
+            title={title2}
+            description={description2}
+            url="https://example.com"
+            roles={roles2}
+          />
+
+          <ProjectSectionContent className="section-content">
             <ProjectImage
               raised
               key={themeId}
@@ -190,37 +165,22 @@ export const SmartSparrow = () => {
                   : imageSprLessonBuilderLightPlaceholder
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="A screenshot of the current ui of the app"
+              alt="A screenshot of the current UI of the app"
+              className={styles.sidebarImage}
             />
-
-            
-           
-           
-        <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading className="section-heading">The problem</ProjectSectionHeading>
             <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
+              In 2017, Smart Sparrow began a project to build an entirely new platform from the ground up to serve as the most powerful tool for educators to create online learning experiences. The old platform was built in Flash, and there were a number of user experience problems to solve in the process of moving the platform to JavaScript. The primary goals for the project were reducing barriers to collaboration, and making the platform both easier for new users, but with plenty of room to scale for advanced users.
             </ProjectSectionText>
-          </ProjectTextRow>
-    
-
-
-
-
-
-
-
+          </ProjectSectionContent>
 
 
 
 
         </ProjectSection>
+
+
+
       </ProjectContainer>
       <Footer />
     </Fragment>
