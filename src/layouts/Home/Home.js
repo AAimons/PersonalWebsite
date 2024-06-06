@@ -101,7 +101,7 @@ export const Home = () => {
         buttonLink="/projects/immersive-media-and-tech"
         model={{
           type: 'laptop',
-          alt: 'Screenshot of the current UI',
+          alt: 'With great power comes great responsibility',
           textures: [
             {
               srcSet: [sprTexture, sprTextureLarge],
@@ -122,7 +122,7 @@ export const Home = () => {
         buttonLink="/projects/research"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'Athena’s Owl',
           textures: [
             {
               srcSet: [gamestackTexture, gamestackTextureLarge],
@@ -143,7 +143,7 @@ export const Home = () => {
         title="Traditional Media"
         description="A mix of notable projects where I was sorroundeed by great people"
         buttonText="View website"
-        buttonLink="https://github.com/tresillo2017/vectorify"
+        buttonLink="/projects/traditional-media"
         model={{
           type: 'Classics',
           alt: 'A screenshot of the current UI',
