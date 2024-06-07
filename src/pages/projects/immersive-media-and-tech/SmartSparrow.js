@@ -90,6 +90,12 @@ const roles2 = [
   'Deployment',
 ];
 
+
+
+{/* Start of the code*/}
+
+
+
 export const SmartSparrow = () => {
   const { themeId } = useTheme();
   const { dispatch } = useAppContext();
@@ -111,6 +117,9 @@ export const SmartSparrow = () => {
           srcSet={`${backgroundSpr.src} 1080w, ${backgroundSprLarge.src} 2160w`}
           placeholder={backgroundSprPlaceholder}
         />
+
+{/* Project 1 --- Header + image + description */}
+
         <ProjectHeader
           title={title1}
           description={description1}
@@ -141,9 +150,6 @@ export const SmartSparrow = () => {
 
 
         <ProjectSection>
-    
-    {/* Header project 1 and description project 1*/}
-
         <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
@@ -156,6 +162,10 @@ export const SmartSparrow = () => {
               new users, but with plenty of room to scale for advanced users.
             </ProjectSectionText>
           </ProjectTextRow>
+
+
+{/* Project 2 --- Header + image + description */}
+
 
           <ProjectHeader
           title={title2}
@@ -170,10 +180,10 @@ export const SmartSparrow = () => {
               
               srcSet={
                 isDark
-                  ? `${imageSprLessonBuilderDark} 1024w, ${imageSprLessonBuilderDarkLarge} 2048w`
-                  : `${imageSprLessonBuilderLight} 1024w, ${imageSprLessonBuilderLightLarge} 2048w`
+                  ? `${imageSprLessonBuilderDark} 1280w, ${imageSprLessonBuilderDarkLarge} 2560w`
+                  : `${imageSprLessonBuilderLight} 1280w, ${imageSprLessonBuilderLightLarge} 2560w`
               }
-              width={1024}
+              width={1280}
               hright={800}
               placeholder={
                 isDark
@@ -185,6 +195,58 @@ export const SmartSparrow = () => {
             />
           </ProjectSectionContent>
         </ProjectSection>
+
+
+
+        <ProjectTextRow>
+            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionText>
+              In 2017, Smart Sparrow began a project to build an entirely new platform to
+              from the ground up to serve as the most powerful tool for educators to
+              create online learning experiences. The old platform was built in Flash, and
+              there were a number of user experience problems to solve in the process of
+              moving the platform to Javascript. The primary goals for the project were
+              reducing barriers to collaboration, and making the platform both easier for
+              new users, but with plenty of room to scale for advanced users.
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+
+
+{/* Project 3 --- Header + image + description */}
+
+
+
+          <ProjectHeader
+          title={title2}
+          description={description2}
+          url="https://tesladashboard.tomasps.com"
+          roles={roles2}
+        />
+
+        <ProjectSection padding="top">
+          <ProjectSectionContent>
+          <Image
+              
+              srcSet={
+                isDark
+                  ? `${imageSprLessonBuilderDark} 1280w, ${imageSprLessonBuilderDarkLarge} 2560w`
+                  : `${imageSprLessonBuilderLight} 1280w, ${imageSprLessonBuilderLightLarge} 2560w`
+              }
+              width={1280}
+              hright={800}
+              placeholder={
+                isDark
+                  ? imageSprLessonBuilderDark
+                  : imageSprLessonBuilderLight
+              }
+              alt={`A set of themed components for the aero design system`}
+              sizes="100vw"
+            />
+          </ProjectSectionContent>
+        </ProjectSection>
+
+
 
         <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
@@ -210,3 +272,6 @@ export const SmartSparrow = () => {
     </Fragment>
   );
 };
+
+
+
