@@ -117,52 +117,8 @@ export const SmartSparrow = () => {
           url="https://tesladashboard.tomasps.com"
           roles={roles1}
         />
-        <ProjectSection>
+        <ProjectSection padding="top">
           <ProjectSectionContent>
-            <ProjectImage
-              raised
-              key={themeId}
-              srcSet={
-                isDark
-                  ? [imageCartoon, imageCartoon]
-                  : [imageSprLessonBuilderLight, imageSprLessonBuilderLightLarge]
-              }
-              placeholder={
-                isDark
-                  ? imageSprLessonBuilderDarkPlaceholder
-                  : imageSprLessonBuilderLightPlaceholder
-              }
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="A screenshot of the current ui of the app"
-            />
-          </ProjectSectionContent>
-        
-
-
-
-        
-        <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
-            <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
-            </ProjectSectionText>
-          </ProjectTextRow>
-
-         
-   {/* Section2 */}
-   <ProjectHeader
-          title={title2}
-          description={description2}
-          url="https://example.com"
-          roles={roles2}
-        />
-
             <ProjectImage
               raised
               key={themeId}
@@ -179,10 +135,15 @@ export const SmartSparrow = () => {
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="A screenshot of the current ui of the app"
             />
+          </ProjectSectionContent>
+        </ProjectSection>
 
-            
-           
-           
+
+
+        <ProjectSection>
+    
+    {/* Header project 1 and description project 1*/}
+
         <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
@@ -195,19 +156,55 @@ export const SmartSparrow = () => {
               new users, but with plenty of room to scale for advanced users.
             </ProjectSectionText>
           </ProjectTextRow>
-    
 
+          <ProjectHeader
+          title={title2}
+          description={description2}
+          url="https://tesladashboard.tomasps.com"
+          roles={roles2}
+        />
 
-
-
-
-
-
-
-
-
-
+<ProjectSection padding="top">
+          <ProjectSectionContent>
+          <Image
+              
+              srcSet={
+                isDark
+                  ? `${imageSprLessonBuilderDark} 1024w, ${imageSprLessonBuilderDarkLarge} 2048w`
+                  : `${imageSprLessonBuilderLight} 1024w, ${imageSprLessonBuilderLightLarge} 2048w`
+              }
+              width={1024}
+              hright={800}
+              placeholder={
+                isDark
+                  ? imageSprLessonBuilderDark
+                  : imageSprLessonBuilderLight
+              }
+              alt={`A set of themed components for the aero design system`}
+              sizes="100vw"
+            />
+          </ProjectSectionContent>
         </ProjectSection>
+
+        <ProjectTextRow>
+            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionText>
+              In 2017, Smart Sparrow began a project to build an entirely new platform to
+              from the ground up to serve as the most powerful tool for educators to
+              create online learning experiences. The old platform was built in Flash, and
+              there were a number of user experience problems to solve in the process of
+              moving the platform to Javascript. The primary goals for the project were
+              reducing barriers to collaboration, and making the platform both easier for
+              new users, but with plenty of room to scale for advanced users.
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+
+
+
+
+
+          </ProjectSection>
       </ProjectContainer>
       <Footer />
     </Fragment>
