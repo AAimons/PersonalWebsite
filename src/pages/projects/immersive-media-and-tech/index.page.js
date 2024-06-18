@@ -1,1 +1,1 @@
-export { SmartSparrow as default } from './SmartSparrow';
+export { SmartSparrow as default } from './immersive-media-and-tech';

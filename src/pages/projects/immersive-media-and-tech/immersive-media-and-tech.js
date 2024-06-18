@@ -69,8 +69,6 @@ import { Fragment, useMemo } from 'react';
 import { media } from 'utils/style';
 import styles from './SmartSparrow.module.css';
 
-const Earth = dynamic(() => import('./Earth').then(mod => mod.Earth));
-const EarthSection = dynamic(() => import('./Earth').then(mod => mod.EarthSection));
 
 const title1 = 'Sub-project 1';
 const description1 = 'Description sub-project 1';
