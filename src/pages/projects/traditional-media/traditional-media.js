@@ -158,8 +158,28 @@ export const SmartSparrow = () => {
               moving the platform to Javascript. The primary goals for the project were
               reducing barriers to collaboration, and making the platform both easier for
               new users, but with plenty of room to scale for advanced users.
+              <br />
+              <br />
             </ProjectSectionText>
           </ProjectTextRow>
+
+
+{/* code for video in autoplay and looped, no audio */}
+
+          <video className={styles.video} autoPlay loop muted>
+  <source src="/static/notfound.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+{/* code for video in with UI and play button */}
+
+{/* 
+<video className={styles.video} controls>
+            <source src="/static/notfound.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+*/}
+
 
 
 {/* Project 2 --- Header + image + description */}
@@ -258,7 +278,6 @@ export const SmartSparrow = () => {
               new users, but with plenty of room to scale for advanced users.
             </ProjectSectionText>
           </ProjectTextRow>
-
 
 
 

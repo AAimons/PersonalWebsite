@@ -1,6 +1,23 @@
-/* Ensure video elements are full width */
+/* Ensure video elements are full width by default (for mobile) */
 .video {
   width: 100%;
+  height: auto;
+}
+
+/* Adjust video size for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .video {
+    width: 100%; /* Adjust this value as needed for tablets */
+    margin: 0 auto; /* Center the video */
+  }
+}
+
+/* Adjust video size for desktops */
+@media (min-width: 1024px) {
+  .video {
+    width: 60%; /* Adjust this value as needed for desktops */
+    margin: 0 auto; /* Center the video */
+  }
 }
 
 /* Grid for sidebar images */
@@ -24,6 +41,3 @@
   top: 0;
   opacity: 1;
 }
-
-
-
