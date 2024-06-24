@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://aimone.xyz",
   "description": "Portfolio site for Aimone Bodini",
-  "repository": "https://github.com/Tresillo2017/portfolio-1",
+  "repository": "https://github.com/AAimons/PersonalWebsite",
   "author": "Aimone <contact@.com>",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
