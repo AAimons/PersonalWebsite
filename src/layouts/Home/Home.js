@@ -98,7 +98,12 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Immersive Media & Technology"
-        description="To tell stories and convey emotions. To benefit processes and stakeholders."
+        description={
+          <>
+            To tell stories and convey emotions.<br />
+            To benefit processes and stakeholders.
+          </>
+        }        
         buttonText="View more"
         buttonLink="/projects/immersive-media-and-tech"
         model={{

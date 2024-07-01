@@ -53,7 +53,7 @@ export const Contact = () => {
     <Section className={styles.contact}>
       <Meta
         title="Contact"
-        description="You aren't supposed to see this page, it's in wip, :)"
+        description="aimone.bodini(a_t)gmail.com"
       />
       <Transition unmount in={!complete} timeout={1600}>
         {(visible, status) => (
@@ -66,7 +66,7 @@ export const Contact = () => {
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
               <DecoderText
-                text="You aren't supposed to see this page, it's in wip, :)"
+                text="aimone.bodini(a_t)gmail.com"
                 start={status !== 'exited'}
                 delay={300}
               />
@@ -76,6 +76,8 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay, 0.4)}
             />
+            {
+  /* 
             <Input
               required
               className={styles.input}
@@ -128,6 +130,9 @@ export const Contact = () => {
             >
               Send Message
             </Button>
+              */
+}
+
           </form>
         )}
       </Transition>
