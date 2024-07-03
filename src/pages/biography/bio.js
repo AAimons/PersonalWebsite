@@ -228,7 +228,7 @@ Since immersive media and technologies are inherently experiential, words alone 
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Currently Improving</TableHeadCell>
-                    <TableCell>Unity, Unreal Engine, Python, HTML, GitHub Development</TableCell>
+                    <TableCell> <Link href="https://github.com/AAimons/VR_Puzzle_Game_POC">Unity</Link> , Unreal Engine, Python, HTML, GitHub Development</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
