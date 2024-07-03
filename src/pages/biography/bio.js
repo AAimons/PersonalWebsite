@@ -39,34 +39,107 @@ export const biography = () => {
           
         />
 
-<ProjectSection padding="none" className={styles.section}>
-                
-         ...If you are in a hurry, here’s my <Link href="/onepage_cv.pdf">onepage cv.</Link>
-          
-        </ProjectSection>
+
 
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
-              <ProjectSectionHeading>Design</ProjectSectionHeading>
+              <ProjectSectionHeading>Summary</ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                  I work as a Research and Development Engineer at <Link href="https://www.blender.org/">Target3D</Link> in London. My role involves prototyping and developing custom tracking solutions using cutting-edge media technologies in areas like Motion and Volumetric capture, virtual production, VR & AR, robotics, biomechanics, animation, VFX, gaming, training, and simulation.
+                  I work as a Research and Development Engineer at <Link href="https://www.target3d.co.uk/">Target3D</Link> in London. My role involves prototyping and developing custom tracking solutions using cutting-edge media technologies in areas like Motion and Volumetric capture, virtual production, VR & AR, robotics, biomechanics, animation, VFX, gaming, training, and simulation.
+            
+       
 
-                  I earned my PhD in Design from Brunel University London, thanks to funding from StoryFutures. During my doctoral studies, I co-designed, prototyped, and evaluated ways to integrate immersive technologies into filmmakers’ workflows, sharing my findings through scientific publications.
+                  </ListItem> 
+                  <ListItem>
+                  I earned my PhD in Design from Brunel University London, thanks to funding from <Link href="https://www.target3d.co.uk/">StoryFutures</Link>. During my doctoral studies, I co-designed, prototyped, and evaluated ways to integrate immersive technologies into filmmakers’ workflows, sharing my findings through <Link href="https://scholar.google.com/citations?hl=en&user=o949NnIAAAAJ">scientific pubblications</Link>.
+                  </ListItem>
 
-                  I’ve also spent several years in the industry as an XR Specialist, where I gained a mix of technical expertise and business insight. I love sharing this knowledge with students and broader audiences at conferences and events. Additionally, I’m the author of the book Narrative Language of Virtual Reality and had the pleasure of curating the Immersive section of the Milano Film Festival.
+                  <ListItem>
+                  I’ve accumulated years of experience in the industry as Creative Producer and XR Specialist, acquiring a blend of technical proficiency and business acumen. During my tenure at <Link href="https://proximamilano.com/">Proxima Milano</Link>  I was responsible for initiating new projects and proactively building business relationships with new clients, proposing innovative advertising approaches through immersive media.
+                  </ListItem>
 
-                  If you’re interested in my hard and soft skills, the tools I use, and what I’m currently learning, check out this page!.
+                  <ListItem>
+                  I love sharing the knowledge I’ve acquired over the years in the immersive domain. My passion for public speaking was ignited by my BA thesis, which eventually became a book. This trailblazing work attracted interest from academics and industry professionals, leading to opportunities for me to travel and present my research around the world for a couple of years. <br />
+                  
+                            
+Since immersive media and technologies are inherently experiential, words alone cannot fully convey their essence. This is why, so far, I believe the pinnacle of my dissemination efforts over the years was my role as Curator of the <Link href="/articles/MFF">Milano Film Festival</Link>. I have always felt a deep connection to this movement and a strong urgency to ensure the success of this medium. <br /> This commitment drives my dedication to properly introducing it to people and contributing to its development.
+
                   </ListItem>
                  
+
+
                 </List>
+                <br />
+                <br />
+
+                <div style={{ textAlign: 'center' }}>
+                <Link href="/onepage_cv.pdf">Onepage CV</Link>
+
+                </div>
+
+
+
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
 
+
+
+
+
+        <ProjectSection padding="none" className={styles.section}>
+          <ProjectSectionContent>
+            <ProjectTextRow width="m">
+              <ProjectSectionHeading>Skills</ProjectSectionHeading>
+              <ProjectSectionText as="div">
+              
+              I am committed to continuous learning. 
+              <br />
+              Every profession and role evolves due to technological advancements, socio-economic changes, and personal growth. 
+              <br /> Change is inevitable, and with change comes transformation, necessitating ongoing learning. 
+              <br /> Since completing high school and embarking on an unconventional path, I have been driven to acquire new knowledge and skills, 
+              <List>
+              
+
+              <ListItem>
+              I had zero clues about filmmaking
+              </ListItem>
+              
+              <ListItem>
+              I had zero clues about VR, AR and real-time game engines
+              </ListItem>
+
+              <ListItem>
+              I had zero clues about Sales, Accouting and Business Development
+              </ListItem>
+
+              <ListItem>
+              I had zero clues about academia or what a PhD entailed
+              </ListItem>
+
+              <ListItem>
+              I had zero clues about Motion Capture
+              </ListItem>
+
+              <ListItem>
+              I had zero clues on how to build a website
+              </ListItem>
+            
+
+              </List>
+              
+
+              
+              My constant curiosity and passion for new experiences have fueled this process, regardless of the outcome. As I explore new subjects, methods, and technologies, my career journey has demanded rapid adaptation and the acquisition of new competencies within short periods that have been measured and evaluated. 
+                
+              </ProjectSectionText>
+            </ProjectTextRow>
+          </ProjectSectionContent>
+        </ProjectSection>
 
      
 
@@ -103,6 +176,7 @@ export const biography = () => {
 
             </ProjectTextRow>
           </ProjectSectionContent>
+
 
 
 
@@ -154,7 +228,7 @@ export const biography = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Currently Improving</TableHeadCell>
-                    <TableCell>Unity, Unreal Engine, HTML, GitHub Development</TableCell>
+                    <TableCell>Unity, Unreal Engine, Python, HTML, GitHub Development</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -172,13 +246,11 @@ export const biography = () => {
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
-              <ProjectSectionHeading>Development</ProjectSectionHeading>
+              <ProjectSectionHeading>Extra</ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    Lorem ipsum dolor
-                    <Link href="https://code.visualstudio.com/">Lorem ipsum dolor</Link>{' '}
-                    Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor
+                  After playing competitively throughout my teenage years, I became a certified tennis coach (F.I.T) and taught while I was enrolled in my BA.              
                   </ListItem>
                   
                 </List>
