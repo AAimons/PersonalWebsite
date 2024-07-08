@@ -23,7 +23,6 @@ import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-lar
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
 import imageCartoon from 'assets/pippo.jpeg';
-import imageSuperfoodiesHero from 'assets/Superfoodies_hero.png'; 
 
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
@@ -126,7 +125,24 @@ export const SmartSparrow = () => {
           roles={roles1}
         />
         <ProjectSection padding="top">
-          
+          <ProjectSectionContent>
+            <ProjectImage
+              raised
+              key={themeId}
+              srcSet={
+                isDark
+                  ? [imageSprLessonBuilderDark, imageSprLessonBuilderDarkLarge]
+                  : [imageSprLessonBuilderLight, imageSprLessonBuilderLightLarge]
+              }
+              placeholder={
+                isDark
+                  ? imageSprLessonBuilderDarkPlaceholder
+                  : imageSprLessonBuilderLightPlaceholder
+              }
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
+              alt="A screenshot of the current ui of the app"
+            />
+          </ProjectSectionContent>
         </ProjectSection>
 
 
@@ -221,7 +237,13 @@ export const SmartSparrow = () => {
         <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              In 2017, Smart Sparrow began a project to build an entirely new platform to
+              from the ground up to serve as the most powerful tool for educators to
+              create online learning experiences. The old platform was built in Flash, and
+              there were a number of user experience problems to solve in the process of
+              moving the platform to Javascript. The primary goals for the project were
+              reducing barriers to collaboration, and making the platform both easier for
+              new users, but with plenty of room to scale for advanced users.
             </ProjectSectionText>
           </ProjectTextRow>
 
