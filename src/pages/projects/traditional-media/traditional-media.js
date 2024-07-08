@@ -155,7 +155,7 @@ export const SmartSparrow = () => {
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
     
-            It was an ambitious project that spanned all of Italy, marking the first of its kind for a retail giant. Esselunga's SuperFoodies campaign aimed to highlight the importance of a healthy diet rich in fruits and vegetables to its customers. How? By introducing the SuperFoodies, fictional anthropomorphic characters with superhero-like powers. This multiplatform campaign featured collectibles and was brought to life through a cinematic 60-second TV commercial and various other contents.
+            It was an ambitious project that spanned all of Italy, marking the first of its kind for a retail giant. Esselunga’s SuperFoodies campaign aimed to highlight the importance of a healthy diet rich in fruits and vegetables to its customers. How? By introducing the SuperFoodies, fictional anthropomorphic characters with superhero-like powers. This multiplatform campaign featured collectibles and was brought to life through a cinematic 60-second TV commercial and various other contents.
 <br /><br />
 <ProjectSectionContent>
             <ProjectImage
@@ -192,7 +192,7 @@ Initially, Esselunga was not a client of Proxima Milano. I played a pivotal role
 
 <br />
 
-As part of this project, we developed a 60-second TV commercial and adapted it for social media and other platforms, created short character showcases, designed and developed the Super Foodies website, and planned numerous future initiatives (including a 2.5D comic book and real-life school programs). It was a lengthy endeavor during which I navigated the complex process of securing approvals from one of Italy's largest companies. Working closely with the client taught me valuable skills in client interaction and underscored the importance of deeply understanding a brand. Over these 18 months, which involved presentations, speculative proposals, and detailed estimates, I felt integrated into Esselunga's ethos. I gained a profound understanding of their values, characteristics, and operational dynamics. Clients evolved into colleagues, and together, we pursued a shared objective.              <br />
+As part of this project, we developed a 60-second TV commercial and adapted it for social media and other platforms, created short character showcases, designed and developed the Super Foodies website, and planned numerous future initiatives, including a 2.5D comic book and real-life school programs. It was a lengthy endeavor during which I navigated the complex process of securing approvals from one of Italy’s largest companies. Working closely with the client taught me valuable skills in client interaction and underscored the importance of deeply understanding a brand. Over these 18 months, which involved presentations, speculative proposals, and detailed estimates, I felt integrated into Esselunga’s ethos. I gained a profound understanding of their values, characteristics, and operational dynamics. Clients evolved into colleagues, and together, we pursued a shared objective.              <br />
               <br />
 
               <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
