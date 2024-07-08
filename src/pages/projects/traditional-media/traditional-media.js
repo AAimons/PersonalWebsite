@@ -23,6 +23,9 @@ import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-lar
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
 import imageCartoon from 'assets/pippo.jpeg';
+import imageSuperfoodiesHero from 'assets/Superfoodies_hero.jpg';
+import imageSuperfoodiesCollectibles from 'assets/Superfoodies_collectibles.jpg';
+
 
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
@@ -70,13 +73,13 @@ import { media } from 'utils/style';
 import styles from './SmartSparrow.module.css';
 
 
-const title1 = 'Sub-project 1';
-const description1 = 'Researchect 1';
+const title1 = 'Super Foodies';
+const description1 = 'Ideating a new IP for the retail giant Esselunga';
 const roles1 = [
-  'Project Management',
-  'Accounting',
-  'Marketing',
-  'Consultancy',
+  'New Business',
+  'Key Account',
+  'Strategist',
+  'Producer',
 ];
 
 const title2 = 'Sub-project 2';
@@ -121,23 +124,23 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title1}
           description={description1}
-          url="https://"
+          
           roles={roles1}
         />
-        <ProjectSection padding="top">
+        <ProjectSection padding="">
           <ProjectSectionContent>
             <ProjectImage
               raised
               key={themeId}
               srcSet={
                 isDark
-                  ? [imageSprLessonBuilderDark, imageSprLessonBuilderDarkLarge]
-                  : [imageSprLessonBuilderLight, imageSprLessonBuilderLightLarge]
+                  ? [imageSuperfoodiesHero]
+                  : [imageSuperfoodiesHero]
               }
               placeholder={
                 isDark
-                  ? imageSprLessonBuilderDarkPlaceholder
-                  : imageSprLessonBuilderLightPlaceholder
+                  ? imageSuperfoodiesHero
+                  : imageSuperfoodiesHero
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="A screenshot of the current ui of the app"
@@ -151,19 +154,67 @@ export const SmartSparrow = () => {
         <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+            It was an ambitious project that spanned all of Italy, marking the first of its kind for a retail giant. Esselunga's SuperFoodies campaign aimed to highlight the importance of a healthy diet rich in fruits and vegetables to its customers. How? By introducing the SuperFoodies, fictional anthropomorphic characters with superhero-like powers. This multiplatform campaign featured collectibles and was brought to life through a cinematic 60-second TV commercial and various other contents.
+<br /><br />
+<ProjectSectionContent>
+            <ProjectImage
+              raised
+              key={themeId}
+              srcSet={
+                isDark
+                  ? [imageSuperfoodiesCollectibles]
+                  : [imageSuperfoodiesCollectibles]
+              }
+              placeholder={
+                isDark
+                  ? imageSuperfoodiesCollectibles
+                  : imageSuperfoodiesCollectibles
+              }
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
+              alt="A screenshot of the current ui of the app"
+            />
+          </ProjectSectionContent>
+<br />
+
+
+Initially, Esselunga was not a client of Proxima Milano. I played a pivotal role as a new business developer, initiating and cultivating opportunities to establish this partnership. My strategic support was instrumental in building trust and laying the groundwork for successful project delivery. As the relationship evolved, I transitioned into a key account management role, focused on maintaining client satisfaction and ensuring ongoing project success.
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
+  <iframe
+    src="https://drive.google.com/file/d/1fJoOTpqksAsFA_4-D906oJ_g5eucmq2o/preview"
+    title="Super_Foodies_60s_ComingSoon"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+  />
+</div>
+
+<br />
+
+As part of this project, we developed a 60-second TV commercial and adapted it for social media and other platforms, created short character showcases, designed and developed the Super Foodies website, and planned numerous future initiatives (including a 2.5D comic book and real-life school programs). It was a lengthy endeavor during which I navigated the complex process of securing approvals from one of Italy's largest companies. Working closely with the client taught me valuable skills in client interaction and underscored the importance of deeply understanding a brand. Over these 18 months, which involved presentations, speculative proposals, and detailed estimates, I felt integrated into Esselunga's ethos. I gained a profound understanding of their values, characteristics, and operational dynamics. Clients evolved into colleagues, and together, we pursued a shared objective.              <br />
               <br />
-              <br />
+
+              <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
+      <video
+        src="/static/SuperFoodies_Characters.mp4"
+        className={styles.video}
+        autoPlay
+        loop
+        muted
+        style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+      >
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <br />
+
+    I reinvested the big commission I earned upon completing the project into my personal and professional development, fulfilling a small dream of mine and flying to <Link href="/articles/CaliDreaming">California</Link> for a new adventure.
+            
             </ProjectSectionText>
           </ProjectTextRow>
 
 
-{/* code for video in autoplay and looped, no audio */}
-
-          <video className={styles.video} autoPlay loop muted>
-  <source src="/static/notfound.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
 
 {/* code for video in with UI and play button */}
 

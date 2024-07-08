@@ -23,6 +23,7 @@ import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-lar
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
 import imageCartoon from 'assets/pippo.jpeg';
+import imageSuperfoodiesHero from 'assets/Superfoodies_hero.png'; 
 
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
@@ -125,24 +126,7 @@ export const SmartSparrow = () => {
           roles={roles1}
         />
         <ProjectSection padding="top">
-          <ProjectSectionContent>
-            <ProjectImage
-              raised
-              key={themeId}
-              srcSet={
-                isDark
-                  ? [imageSprLessonBuilderDark, imageSprLessonBuilderDarkLarge]
-                  : [imageSprLessonBuilderLight, imageSprLessonBuilderLightLarge]
-              }
-              placeholder={
-                isDark
-                  ? imageSprLessonBuilderDarkPlaceholder
-                  : imageSprLessonBuilderLightPlaceholder
-              }
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="A screenshot of the current ui of the app"
-            />
-          </ProjectSectionContent>
+          
         </ProjectSection>
 
 

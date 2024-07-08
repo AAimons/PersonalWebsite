@@ -63,10 +63,10 @@ export const biography = () => {
 
                   <ListItem>
                   I love sharing the knowledge I’ve acquired over the years in the immersive domain. My passion for public speaking was ignited by my BA thesis, which eventually became a book. This trailblazing work attracted interest from academics and industry professionals, leading to opportunities for me to travel and present my research around the world for a couple of years. <br />
-                  
-                            
-Since immersive media and technologies are inherently experiential, words alone cannot fully convey their essence. This is why, so far, I believe the pinnacle of my dissemination efforts over the years was my role as Curator of the <Link href="/articles/MFF">Milano Film Festival</Link>. I have always felt a deep connection to this movement and a strong urgency to ensure the success of this medium. <br /> This commitment drives my dedication to properly introducing it to people and contributing to its development.
+                  </ListItem>
 
+                  <ListItem>
+                  Since immersive media and technologies are inherently experiential, words alone cannot fully convey their essence. This is why, so far, I believe the pinnacle of my dissemination efforts over the years was my role as Curator of the <Link href="/articles/MFF">Milano Film Festival</Link>. I have always felt a deep connection to this movement and a strong urgency to ensure the success of this medium. <br /> This commitment drives my dedication to properly introducing it to people and contributing to its development.
                   </ListItem>
                  
 
@@ -101,7 +101,9 @@ Since immersive media and technologies are inherently experiential, words alone 
               <br />
               Every profession and role evolves due to technological advancements, socio-economic changes, and personal growth. 
               <br /> Change is inevitable, and with change comes transformation, necessitating ongoing learning. 
-              <br /> Since completing high school and embarking on an unconventional path, I have been driven to acquire new knowledge and skills, 
+              <br /> Since completing high school and embarking on an unconventional path, I have been driven to acquire new knowledge and skills.
+              <br />
+              <br />
               <List>
               
 
@@ -132,7 +134,7 @@ Since immersive media and technologies are inherently experiential, words alone 
 
               </List>
               
-
+              <br />
               
               My constant curiosity and passion for new experiences have fueled this process, regardless of the outcome. As I explore new subjects, methods, and technologies, my career journey has demanded rapid adaptation and the acquisition of new competencies within short periods that have been measured and evaluated. 
                 
@@ -228,7 +230,7 @@ Since immersive media and technologies are inherently experiential, words alone 
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Currently Improving</TableHeadCell>
-                    <TableCell> <Link href="https://github.com/AAimons/VR_Puzzle_Game_POC">Unity</Link> , Unreal Engine, Python, HTML, GitHub Development</TableCell>
+                    <TableCell> <Link href="https://github.com/AAimons/VR_Puzzle_Game_POC">Unity</Link> , Unreal Engine, Python, <Link href="https://github.com/AAimons/Vertical-Video-Slider-Comparison-HTML">HTML</Link>, GitHub Development</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -250,7 +252,7 @@ Since immersive media and technologies are inherently experiential, words alone 
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                  After playing competitively throughout my teenage years, I became a certified tennis coach (F.I.T) and taught while I was enrolled in my BA.              
+                  After playing competitively throughout my teenage years, I became a certified 🎾 tennis coach (F.I.T) and taught to kids while I was enrolled in my BA.              
                   </ListItem>
                   
                 </List>
