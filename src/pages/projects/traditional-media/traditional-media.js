@@ -26,9 +26,7 @@ import imageCartoon from 'assets/pippo.jpeg';
 import imageSuperfoodiesHero from 'assets/Superfoodies_hero.jpg';
 import imageSuperfoodiesCollectibles from 'assets/Superfoodies_collectibles.jpg';
 import imagePDCPoster from 'assets/PDC_poster.jpg';
-import imagePDCShootingList from 'assets/PDC_ShootingList.jpg'
-
-
+import imagePDCShootingList from 'assets/PDC_ShootingList.jpg';
 
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
