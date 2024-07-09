@@ -232,7 +232,7 @@ After many years, the book is no longer available for purchase, but I want it to
 
                 </div>
                 <br /><br />
-                Today, I'm uncertain whether I would write another book on these subjects. There's an experiential gap that can't be filled solely through written storytelling or using words. The most effective way to present my critical and educational viewpoint on these matters would involve a multimedia approach, including text, images, videos, and importantly, direct experience with the projects analyzed and the UX XR Design interactions under review.
+                Today, I'm uncertain whether I would write another book on these subjects. There’s an experiential gap that can’t be filled solely through written storytelling or using words. The most effective way to present my critical and educational viewpoint on these matters would involve a multimedia approach, including text, images, videos, and importantly, direct experience with the projects analyzed and the UX XR Design interactions under review.
 
 An evolution in how I convey my research and critical thoughts on the topic began when I started speaking at public events and conferences. This platform allowed me to enhance my narrative by incorporating images, diagrams, and animated gifs, which better illustrated my analyses.
 <br /><br />
@@ -248,7 +248,7 @@ An evolution in how I convey my research and critical thoughts on the topic bega
 </div>
 <br /><br />
 
-In 2016, I delivered a speech at Voxxed Days Belgrade to an audience of 200 people. There were two specific moments when I felt like leaving the stage because the anxiety was overwhelming, especially given my very basic English skills at the time. I made it to the end, though. It was a leap into the unknown.
+In 2016, I delivered the first of many talks at Voxxed Days Belgrade to an audience of 200 people. There were two specific moments when I felt like leaving the stage because the anxiety was overwhelming, especially given my very basic English skills at the time. I made it to the end, though. It was a leap into the unknown.
             </ProjectSectionText>
           </ProjectTextRow>
 
