@@ -228,11 +228,11 @@ This work was notably recognized by the World VR Forum, which helped turn it int
 After many years, the book is no longer available for purchase, but I want it to remain accessible for those who wish to take a trip into the past. Today, I view it with fondness—a work that, in many ways, is raw, but which I believe holds historiographical value, capturing the state of affairs in 2015-16-17 that may bring some down memory lane.
 <br /><br />
 <div style={{ textAlign: 'center' }}>
-                <Link href="/static/VR_Book_BodiniAimone.pdf">Download Book "Narrative Language of Virtual Reality"</Link>  
+                <Link href="/static/VR_Book_BodiniAimone.pdf">Download Book ’Narrative Language of Virtual Reality’</Link>  
 
                 </div>
                 <br /><br />
-                Today, I'm uncertain whether I would write another book on these subjects. There’s an experiential gap that can’t be filled solely through written storytelling or using words. The most effective way to present my critical and educational viewpoint on these matters would involve a multimedia approach, including text, images, videos, and importantly, direct experience with the projects analyzed and the UX XR Design interactions under review.
+                Today, I’m uncertain whether I would write another book on these subjects. There’s an experiential gap that can’t be filled solely through written storytelling or using words. The most effective way to present my critical and educational viewpoint on these matters would involve a multimedia approach, including text, images, videos, and importantly, direct experience with the projects analyzed and the UX XR Design interactions under review.
 
 An evolution in how I convey my research and critical thoughts on the topic began when I started speaking at public events and conferences. This platform allowed me to enhance my narrative by incorporating images, diagrams, and animated gifs, which better illustrated my analyses.
 <br /><br />
