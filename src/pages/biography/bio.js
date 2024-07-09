@@ -97,9 +97,8 @@ export const biography = () => {
               <ProjectSectionHeading>Skills</ProjectSectionHeading>
               <ProjectSectionText as="div">
               
-              I am committed to continuous learning. 
               <br />
-              Every profession and role evolves due to technological advancements, socio-economic changes, and personal growth. 
+              Every profession and role evolves due to technological advancements, socio-economic changes, and personal circumstances. 
               <br /> Change is inevitable, and with change comes transformation, necessitating ongoing learning. 
               <br /> Since completing high school and embarking on an unconventional path, I have been driven to acquire new knowledge and skills.
               <br />

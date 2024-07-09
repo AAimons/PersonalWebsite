@@ -25,6 +25,8 @@ import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
 import imageCartoon from 'assets/pippo.jpeg';
 import imageSuperfoodiesHero from 'assets/Superfoodies_hero.jpg';
 import imageSuperfoodiesCollectibles from 'assets/Superfoodies_collectibles.jpg';
+import imagePDCPoster from 'assets/PDC_poster.jpg';
+
 
 
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
@@ -82,13 +84,11 @@ const roles1 = [
   'Producer',
 ];
 
-const title2 = 'Sub-project 2';
-const description2 = 'Description sub-project 2';
+const title2 = 'Pane dal cielo';
+const description2 = 'Working on the set of a feature film';
 const roles2 = [
-  'Development',
-  'Design',
-  'Testing',
-  'Deployment',
+  '1st Assistant Director',
+  
 ];
 
 
@@ -152,10 +152,10 @@ export const SmartSparrow = () => {
 
         <ProjectSection>
         <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading>Summary</ProjectSectionHeading>
             <ProjectSectionText>
     
-            It was an ambitious project that spanned all of Italy, marking the first of its kind for a retail giant. Esselunga’s SuperFoodies campaign aimed to highlight the importance of a healthy diet rich in fruits and vegetables to its customers. How? By introducing the SuperFoodies, fictional anthropomorphic characters with superhero-like powers. This multiplatform campaign featured collectibles and was brought to life through a cinematic 60-second TV commercial and various other contents.
+            It was an ambitious project that spanned all of Italy, marking the first of its kind for a retail giant. Esselunga’s SuperFoodies campaign aimed to highlight the importance of a healthy diet rich in fruits and vegetables to its customers. How? By introducing the SuperFoodies, fictional anthropomorphic characters with superhero-like powers. This multiplatform campaign featured collectibles in store and was brought to life through a cinematic 60-second TV commercial and various other contents for their promotion.
 <br /><br />
 <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
   <iframe
@@ -178,7 +178,7 @@ Initially, Esselunga was not a client of Proxima Milano. I played a pivotal role
 <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
   <iframe
     src="https://drive.google.com/file/d/1Q2oLx8KumtMyVT2EDbCS6a3WH65nU0fX/preview"
-    title="Super_Foodies_MakingOf"
+    title="Super Foodies - Making Of"
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
@@ -206,7 +206,7 @@ As part of this project, we developed a 60-second TV commercial and adapted it f
     </div>
     <br />
 
-    I reinvested the big commission I earned upon completing the project into my personal and professional development, fulfilling a small dream of mine and flying to <Link href="/articles/CaliDreaming">California</Link> for a new adventure.
+    Once the prjects was complete, I earned a large commission I promptly reinvested into my personal and professional development, fulfilling a small dream of mine and flying to <Link href="/articles/CaliDreaming">California</Link> for a new adventure.
             
             </ProjectSectionText>
           </ProjectTextRow>
@@ -230,7 +230,8 @@ As part of this project, we developed a 60-second TV commercial and adapted it f
           <ProjectHeader
           title={title2}
           description={description2}
-          url="https://"
+          url="https://www.imdb.com/title/tt8650344/?ref_=fn_al_tt_1"
+          linkLabel="IMDb"
           roles={roles2}
         />
 
@@ -240,15 +241,15 @@ As part of this project, we developed a 60-second TV commercial and adapted it f
               
               srcSet={
                 isDark
-                  ? `${imageSprLessonBuilderDark} 1280w, ${imageSprLessonBuilderDarkLarge} 2560w`
-                  : `${imageSprLessonBuilderLight} 1280w, ${imageSprLessonBuilderLightLarge} 2560w`
+                  ? `${imagePDCPoster} 1280w`
+                  : `${imagePDCPoster} 1280w`
               }
               width={1280}
               hright={800}
               placeholder={
                 isDark
-                  ? imageSprLessonBuilderDark
-                  : imageSprLessonBuilderLight
+                  ? imagePDCPoster
+                  : imagePDCPoster
               }
               alt={`A set of themed components for the aero design system`}
               sizes="100vw"
@@ -259,9 +260,19 @@ As part of this project, we developed a 60-second TV commercial and adapted it f
 
 
         <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+
+          
+            <ProjectSectionHeading>Summary</ProjectSectionHeading>
             <ProjectSectionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            “Truth is stranger than fiction” Mark Twain said once.
+            <br /><br />
+     
+            Working on the making of a movie is a movie of its own. François Truffaut knew it well when portraing the life of people working behind the camera in <Link href="https://www.imdb.com/title/tt0070460/?ref_=nm_knf_t_1">’Day for Night’</Link>. <br /><br />
+            ’Pane dal Cielo’ was a memorable work and life experience where I had to deal with long hours, little comfort and a rigid hyerarchy. Time is money, and this is even more true when you are shooting something and involving dozens or hundreds of people. A little delay can compounds pretty quickly affecting the budget of the projct and incresing the stress among people on set. That’s why the need of rigid roles and quick problem solving, working on set really pushes you to make decisions...fast. Luckly everything has been managed professionaly and succesfully by each member od the Directig and Production dpt. We didn’t end up like in <Link href="https://www.imdb.com/title/tt0308514/">’Lost in La Mancha’</Link>.
+            <br /><br />
+             Based on the shooting list provided, together with the Assistant Director, I organized daily schedules for the entire crew. This involved handling delicate matters such as estimating the time required for actors’ makeup and for shots involving cumbersome equipment like dollies and cranes. This required considerable experience and attention to detail.            
+            <br /><br />
+            I was also responsible for coordinating and managing background actors on the movie set as well as recruiting them. The peculiar thing about this projct was that we asked homeless people to figure in the movie and therefore I interacted a lot with them, most of the time listening to their stories they really wanted to tell to someone. They still stick to my mind. Truth is stranger than fiction. Is it?
             </ProjectSectionText>
           </ProjectTextRow>
 
@@ -274,7 +285,7 @@ As part of this project, we developed a 60-second TV commercial and adapted it f
           <ProjectHeader
           title={title2}
           description={description2}
-          url="https://"
+          url="https://www.imdb.com/title/tt8650344/?ref_=tt_mv_close"
           roles={roles2}
         />
 
@@ -303,7 +314,7 @@ As part of this project, we developed a 60-second TV commercial and adapted it f
 
 
         <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading>Summary</ProjectSectionHeading>
             <ProjectSectionText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </ProjectSectionText>
