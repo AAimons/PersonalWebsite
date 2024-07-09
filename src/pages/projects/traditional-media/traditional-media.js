@@ -26,6 +26,7 @@ import imageCartoon from 'assets/pippo.jpeg';
 import imageSuperfoodiesHero from 'assets/Superfoodies_hero.jpg';
 import imageSuperfoodiesCollectibles from 'assets/Superfoodies_collectibles.jpg';
 import imagePDCPoster from 'assets/PDC_poster.jpg';
+import imagePDCShootingList from 'assets/PDC_ShootingList.jpg'
 
 
 
@@ -264,16 +265,39 @@ As part of this project, we developed a 60-second TV commercial and adapted it f
           
             <ProjectSectionHeading>Summary</ProjectSectionHeading>
             <ProjectSectionText>
-            “Truth is stranger than fiction” Mark Twain said once.
+            “Truth is stranger than fiction”, a famous quote attributed to Mark Twain.
             <br /><br />
-     
-            Working on the making of a movie is a movie of its own. François Truffaut knew it well when portraing the life of people working behind the camera in <Link href="https://www.imdb.com/title/tt0070460/?ref_=nm_knf_t_1">’Day for Night’</Link>. <br /><br />
-            ’Pane dal Cielo’ was a memorable work and life experience where I had to deal with long hours, little comfort and a rigid hyerarchy. Time is money, and this is even more true when you are shooting something and involving dozens or hundreds of people. A little delay can compounds pretty quickly affecting the budget of the projct and incresing the stress among people on set. That’s why the need of rigid roles and quick problem solving, working on set really pushes you to make decisions...fast. Luckly everything has been managed professionaly and succesfully by each member od the Directig and Production dpt. We didn’t end up like in <Link href="https://www.imdb.com/title/tt0308514/">’Lost in La Mancha’</Link>.
+            
+            Working on the making of a movie is a movie of its own. François Truffaut knew it well when portraing the life of people working behind the camera in <Link href="https://www.imdb.com/title/tt0070460/?ref_=nm_knf_t_1">“Day for Night”</Link>. <br /><br />
+            “Pane dal Cielo” was a memorable work and life experience where I had to deal with long hours, little comfort, and a rigid hierarchy. Time is money, and this is even more true when you are shooting something and involving dozens or hundreds of people. A little delay can compound quickly, affecting the budget of the project and increasing the stress among people on set. That’s why the need for rigid roles and quick problem solving is essential; working on set really pushes you to make decisions...fast. Luckily, everything was managed professionally and successfully by each member of the Directing and Production departments. We didn’t end up like in <Link href="https://www.imdb.com/title/tt0308514/">“Lost in La Mancha”</Link>.          
             <br /><br />
-             Based on the shooting list provided, together with the Assistant Director, I organized daily schedules for the entire crew. This involved handling delicate matters such as estimating the time required for actors’ makeup and for shots involving cumbersome equipment like dollies and cranes. This required considerable experience and attention to detail.            
+            Based on the shooting list provided, together with the Assistant Director, I organized daily schedules for the entire crew using industry standard software <Link href="https://www.ep.com/movie-magic-scheduling/">Movie Magic</Link>. This involved handling delicate matters such as estimating the time required for actors’ makeup and for shots involving cumbersome equipment like dollies and cranes (and yes there was a chase scene and I was on cmera car talking via radio with the rest of the crew). This required considerable experience and attention to detail.            
             <br /><br />
-            I was also responsible for coordinating and managing background actors on the movie set as well as recruiting them. The peculiar thing about this projct was that we asked homeless people to figure in the movie and therefore I interacted a lot with them, most of the time listening to their stories they really wanted to tell to someone. They still stick to my mind. Truth is stranger than fiction. Is it?
-            </ProjectSectionText>
+            <ProjectSectionContent>
+          <Image
+              
+              srcSet={
+                isDark
+                  ? `${imagePDCShootingList} 1280w`
+                  : `${imagePDCShootingList} 1280w`
+              }
+              width={1280}
+              hright={800}
+              placeholder={
+                isDark
+                  ? imagePDCShootingList
+                  : imagePDCShootingList
+              }
+              alt={`A set of themed components for the aero design system`}
+              sizes="100vw"
+            />
+          </ProjectSectionContent>
+
+          <br /><br />
+
+            I was also in charge of coordinating and managing background actors on the movie set, as well as recruiting them. Interestingly, for this project, we invited homeless individuals to participate in the film. This gave me the opportunity to interact with them frequently, listening to the stories they were eager to share. Their stories remain vivid in my mind. Truth truly is stranger than fiction, isn't it?           
+            
+             </ProjectSectionText>
           </ProjectTextRow>
 
 
