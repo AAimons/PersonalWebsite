@@ -251,7 +251,7 @@ export const biography = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                  After playing competitively throughout my teenage years, I became a certified 🎾 tennis coach (F.I.T) and taught to kids while I was enrolled in my BA.              
+                  After playing competitively throughout my teenage years (Junior Europe Best Ranking #187), I became a certified 🎾 tennis coach (F.I.T) and taught to kids while I was enrolled in my BA.              
                   </ListItem>
                   
                 </List>

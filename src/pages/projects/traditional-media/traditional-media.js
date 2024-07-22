@@ -90,6 +90,18 @@ const roles2 = [
   
 ];
 
+const title3 = '50+ Filmmaking projects';
+const description3 = 'A starting point for honing my skills in audiovisual productions';
+const roles3 = [
+  'Director',
+  'Cinematographer',
+  'Editor',
+  'Producer',
+  'Screenwriter',
+  
+  
+];
+
 
 
 {/* Start of the code*/}
@@ -118,7 +130,11 @@ export const SmartSparrow = () => {
           placeholder={backgroundSprPlaceholder}
         />
 
+
+
 {/* Project 1 --- Header + image + description */}
+
+
 
         <ProjectHeader
           title={title1}
@@ -188,7 +204,7 @@ Initially, Esselunga was not a client of Proxima Milano. I played a pivotal role
 
 <br />
 
-As part of this project, we developed a 60-second TV commercial and adapted it for social media and other platforms, created short character showcases, designed and developed the Super Foodies website, and planned numerous future initiatives, including a 2.5D comic book and real-life school programs. It was a lengthy endeavor during which I navigated the complex process of securing approvals from one of Italy’s largest companies. Working closely with the client taught me valuable skills in client interaction and underscored the importance of deeply understanding a brand. Over these 18 months, which involved presentations, speculative proposals, and detailed estimates, I felt integrated into Esselunga’s ethos. I gained a profound understanding of their values, characteristics, and operational dynamics. Clients evolved into colleagues, and together, we pursued a shared objective.              <br />
+It was a lengthy endeavor during which I navigated the complex process of securing approvals from one of Italy’s largest companies. Working closely with the client taught me valuable skills in client interaction and underscored the importance of deeply understanding a brand. Over these 18 months, which involved presentations, speculative proposals, and detailed estimates, I felt deeply aligned to Esselunga’s ethos. I gained a profound understanding of their values, characteristics, and operational dynamics. Clients evolved into colleagues, and together, we pursued a shared objective.              <br />
               <br />
 
               <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
@@ -305,34 +321,27 @@ As part of this project, we developed a 60-second TV commercial and adapted it f
 
 
           <ProjectHeader
-          title={title2}
-          description={description2}
-          url="https://www.imdb.com/title/tt8650344/?ref_=tt_mv_close"
-          roles={roles2}
+          title={title3}
+          description={description3}
+          roles={roles3}
         />
 
-        <ProjectSection padding="top">
-          <ProjectSectionContent>
-          <Image
-              
-              srcSet={
-                isDark
-                  ? `${imageSprLessonBuilderDark} 1280w, ${imageSprLessonBuilderDarkLarge} 2560w`
-                  : `${imageSprLessonBuilderLight} 1280w, ${imageSprLessonBuilderLightLarge} 2560w`
-              }
-              width={1280}
-              hright={800}
-              placeholder={
-                isDark
-                  ? imageSprLessonBuilderDark
-                  : imageSprLessonBuilderLight
-              }
-              alt={`A set of themed components for the aero design system`}
-              sizes="100vw"
-            />
-          </ProjectSectionContent>
-        </ProjectSection>
-
+<ProjectSection padding="top">
+  <ProjectSectionContent>
+    <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
+      <video
+        src="/static/PortoflioTraditionalMedia.mp4"
+        className={styles.video}
+        autoPlay
+        loop
+        muted
+        style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+      >
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </ProjectSectionContent>
+</ProjectSection>
 
 
         <ProjectTextRow>
