@@ -232,7 +232,22 @@ After many years, the book is no longer available for purchase, but I want it to
 
                 </div>
                 <br /><br />
-                Today, I’m uncertain whether I would write another book on these subjects. There’s an experiential gap that can’t be filled solely through written storytelling or using words. The most effective way to present my critical and educational viewpoint on these matters would involve a multimedia approach, including text, images, videos, and importantly, direct experience with the projects analyzed and the UX XR Design interactions under review.
+                Today, I’m uncertain whether I would write another book on these subjects. There’s an experiential gap that can’t be filled solely through written storytelling or using words. The most effective way to present my critical and educational viewpoint on these matters would involve a multimedia approach, including text, images, videos, and importantly, direct experience with the projects analyzed and the UX XR Design interactions under review. 
+                Unexpectedly, I recently retrieved an archaeological find: an old video essay dating back to 2015/2016. I wanted to link it to the text of the book. The essay is a collage of notable projects from that era, mostly available on the DK2 and Google Cardboard. It showcases innovative and clever approaches that demonstrate the creators’ intentions to convey meaning and experiment with this new medium.                
+
+                <br /><br />
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
+  <iframe
+    src="https://drive.google.com/file/d/1mL_utA0ml2HGyWyvVMSSqkLlPNNRgcM8/preview"
+    title="Basic Vocabulary VR - by Aimone Bodini"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+  />
+</div>
+<br /><br />
+
 
 An evolution in how I convey my research and critical thoughts on the topic began when I started speaking at public events and conferences. This platform allowed me to enhance my narrative by incorporating images, diagrams, and animated gifs, which better illustrated my analyses.
 <br /><br />

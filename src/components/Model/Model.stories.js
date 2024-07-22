@@ -21,12 +21,12 @@ export const Phone = () => (
   <StoryContainer padding={0}>
     <Model
       style={modelStyle}
-      cameraPosition={{ x: 0, y: 0, z: 11.5 }}
+      cameraPosition={{ x: 0, y: 0, z: 9.5 }}
       alt="Phone models"
       models={[
         {
           ...deviceModels.phone,
-          position: { x: -0.6, y: 10.8, z: 0.1 },
+          position: { x: -0.6, y: 0.8, z: 0.1 },
           texture: {
             srcSet: [phoneTexture, phoneTextureLarge],
             placeholder: phoneTexturePlaceholder,

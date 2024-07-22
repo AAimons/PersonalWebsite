@@ -400,7 +400,7 @@ const Device = ({
 
       gltf.scene.traverse(async node => {
         if (node.material) {
-          node.material.color = new Color(0x08e4fc);
+         // node.material.color = new Color(0x08e4fc);
           node.material.color.convertSRGBToLinear();
         }
 
