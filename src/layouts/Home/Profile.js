@@ -28,10 +28,12 @@ const ProfileText = ({ visible, titleId }) => (
     
 
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    I&apos;ve always felt too restrictive and limiting, and they mean little in such a fast-paced world that is constantly changing... and so are we.
-    Throughout my career, I&apos;ve adapted to various situations, driven by a desire to embark on new things. Exploration has always triumphed over the fear of the unknown.
-    To better illustrate the story of my unconventional, zig-zag path, I realized that a personal website could offer me a more flexible, multimedia structure — a slice of the internet where I can share my stories in depth, free from the tyranny of a limited word count or impersonal canvas.
-    Have a look around and if you want to know more about me check the <Link href="/biography">full bio</Link>.
+    
+  
+    The world we live in is incredibly fast, constantly changing... and so are we. Should we always be defined by the same label?
+    <br /><br />Throughout my professional career, I&apos;ve adapted to various situations, driven by a desire to embark on new things. Exploration has always triumphed over the fear of the unknown.
+    <br /><br />To better illustrate the story of my unconventional, zig-zag path, I realized that a personal website could offer me a more flexible, multimedia structure — a slice of the internet where I can share my stories in depth, free from the tyranny of a limited word count or impersonal canvas.
+    <br /><br />Have a look around and if you want to know more about me check the <Link href="/biography">full bio</Link>.
     </Text>
   </Fragment>
 );

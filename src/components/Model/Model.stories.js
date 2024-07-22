@@ -21,7 +21,7 @@ export const Phone = () => (
   <StoryContainer padding={0}>
     <Model
       style={modelStyle}
-      cameraPosition={{ x: 0, y: 0, z: 9.5 }}
+      cameraPosition={{ x: 0, y: 0, z: 11.5 }}
       alt="Phone models"
       models={[
         {

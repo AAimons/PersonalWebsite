@@ -309,7 +309,7 @@ It was a lengthy endeavor during which I navigated the complex process of securi
 
           <br /><br />
 
-            I was also in charge of coordinating and managing background actors on the movie set, as well as recruiting them. Interestingly, for this project, we invited homeless individuals to participate in the film. This gave me the opportunity to interact with them frequently, listening to the stories they were eager to share. Their stories remain vivid in my mind. Truth truly is stranger than fiction, isn’t it?           
+            I was also in charge of coordinating and managing background actors on the movie set, as well as recruiting them. Interestingly, for this project, we involved homeless individuals to participate in the movie thanks to the help of the charity <Link href="https://www.progettoarca.org/">Progetto Arca</Link>. This gave me the opportunity to recruit volunteers and interact with them frequently, listening to the stories they were eager to share. Their stories remain vivid in my mind. I keep wondering if truth truly is stranger than fiction.        
             
              </ProjectSectionText>
           </ProjectTextRow>

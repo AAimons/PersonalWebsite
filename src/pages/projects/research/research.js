@@ -23,7 +23,7 @@ import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-lar
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
 import imageCartoon from 'assets/pippo.jpeg';
-import imageBookCover from 'assets/Cover_book_light.jpg';
+import imageBookCover from 'assets/CoverandArt.jpg';
 import imageBookLaunch01 from 'assets/BookLaunch_01_light.jpg';
 import imageBookLaunch02 from 'assets/BookLaunch_02_light.jpg';
 
@@ -133,13 +133,13 @@ export const SmartSparrow = () => {
               key={themeId}
               srcSet={
                 isDark
-                  ? [imageSprLessonBuilderDark, imageSprLessonBuilderDarkLarge]
-                  : [imageSprLessonBuilderLight, imageSprLessonBuilderLightLarge]
+                  ? [imageBookCover, imageBookCover]
+                  : [imageBookCover, imageBookCover]
               }
               placeholder={
                 isDark
-                  ? imageSprLessonBuilderDarkPlaceholder
-                  : imageSprLessonBuilderLightPlaceholder
+                  ? imageBookCover
+                  : imageBookCover
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="A screenshot of the current ui of the app"
@@ -175,21 +175,31 @@ export const SmartSparrow = () => {
 
         <ProjectTextRow>
 
-        <ProjectSection padding="top">
-  <ProjectSectionContent>
-    <Image
-      src={imageBookCover}
-      width={640} // Adjusted width
-      height={400} // Adjusted height (fixed the typo)
-      placeholder={imageBookCover}
-      alt="A set of themed components for the aero design system"
-      sizes="50vw"
-      style={{ display: 'block', maxWidth: '100%', height: 'auto' }} // Ensures image responsiveness
-    />
-  </ProjectSectionContent>
-</ProjectSection>
+       
+          
+  
+          <Image padding="top"
+              
+              srcSet={
+                isDark
+                  ? `${imageBookCover} 1280w`
+                  : `${imageBookCover} 1280w`
+              }
+              width={1280}
+              hright={800}
+              placeholder={
+                isDark
+                  ? imageBookCover
+                  : imageBookCover
+              }
+              alt={`A set of themed components for the aero design system`}
+              sizes="100vw"
+            />
+    
+          
+       
 
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading style={{ paddingTop: '20px' }}>The problem</ProjectSectionHeading>
             <ProjectSectionText>
 
 
@@ -233,7 +243,7 @@ After many years, the book is no longer available for purchase, but I want it to
                 </div>
                 <br /><br />
                 Today, I’m uncertain whether I would write another book on these subjects. There’s an experiential gap that can’t be filled solely through written storytelling or using words. The most effective way to present my critical and educational viewpoint on these matters would involve a multimedia approach, including text, images, videos, and importantly, direct experience with the projects analyzed and the UX XR Design interactions under review. 
-                Unexpectedly, I recently retrieved an archaeological find: an old video essay dating back to 2015/2016. I wanted to link it to the text of the book. The essay is a collage of notable projects from that era, mostly available on the DK2 and Google Cardboard. It showcases innovative and clever approaches that demonstrate the creators’ intentions to convey meaning and experiment with this new medium.                
+                Unexpectedly, I recently retrieved an archaeological find: an old video essay dating back to 2015/2016. I wanted to link it to the text of the book. The essay is a collage of notable projects from that era, mostly available on the DK2 and Google Cardboard. It showcases innovative and clever approaches that demonstrate the creators’ intentions to convey meaning and play with this new medium.                
 
                 <br /><br />
 <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
