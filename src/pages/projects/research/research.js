@@ -26,6 +26,8 @@ import imageCartoon from 'assets/pippo.jpeg';
 import imageBookCover from 'assets/CoverandArt.jpg';
 import imageBookLaunch01 from 'assets/BookLaunch_01_light.jpg';
 import imageBookLaunch02 from 'assets/BookLaunch_02_light.jpg';
+import imageCoverPhD from 'assets/CoverPhD.jpg';
+import imageLongTail from 'assets/LongTail.jpg';
 
 
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
@@ -74,19 +76,22 @@ import { media } from 'utils/style';
 import styles from './SmartSparrow.module.css';
 
 
-const title1 = 'Sub-project 1';
-const description1 = 'Researchect 1';
+const title1 = 'Co-Desiging the Filmmaking process of the future';
+const description1 = 'During my PhD research, I investigated the impact of emerging technologies in the audiovisual sector. I collaborated with industry professionals to design solutions and developed prototypes based on these ingishts. The output generated have been evaluated as beneficial by the stakeholders and ready to be further developed into a commercial product.';
 const roles1 = [
-  'Project Management',
-  'Accounting',
-  'Marketing',
-  'Consultancy',
+  'Co-design',
+  'Prototyping',
+  'Mixed Methods',
+  'User Research',
+  'Self-discipline',
 ];
 
 const title2 = 'Narrative Language of Virtual Reality';
 const description2 = 'A book investigating XR Design principles for Storytelling';
 const roles2 = [
   'Author',
+  'UX Design',
+  'Public Speaking',
   
 ];
 
@@ -123,7 +128,8 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title1}
           description={description1}
-          url="https://"
+          url="https://scholar.google.com/citations?hl=en&user=o949NnIAAAAJ"
+          linkLabel="Scientific Publications"
           roles={roles1}
         />
         <ProjectSection padding="top">
@@ -133,13 +139,13 @@ export const SmartSparrow = () => {
               key={themeId}
               srcSet={
                 isDark
-                  ? [imageBookCover, imageBookCover]
-                  : [imageBookCover, imageBookCover]
+                  ? [imageCoverPhD, imageCoverPhD]
+                  : [imageCoverPhD, imageCoverPhD]
               }
               placeholder={
                 isDark
-                  ? imageBookCover
-                  : imageBookCover
+                  ? imageCoverPhD
+                  : imageCoverPhD
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="A screenshot of the current ui of the app"
@@ -151,9 +157,35 @@ export const SmartSparrow = () => {
 
         <ProjectSection>
         <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading>Knowledge Gap & Market Opportunity</ProjectSectionHeading>
             <ProjectSectionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Since its inception, cinema has been deeply entangled with the technical mastery and technological advancements of its time.
+            <br /> Among the latest innovation in the AV field is Virtual Production (VP), which is an alternative to the established process, whose proponents claim that it fosters creativity while saving time and money. 
+            <br />While the VP process is used for advancing high-end productions, little consideration has been bestowed upon small and medium productions (SMPs), which, by definition, have limited economic and human resources. 
+            <br />However, according to the <Link href="https://www.wired.com/2004/10/tail/">’Long Tail’</Link>     concept they are much greater in number, and their market is still very substantial, making it a potential worth to investigate from both an academic and commercial perspective.
+            <br /><br />
+
+            <Image
+      src={imageLongTail}
+      width={640} // Adjusted width
+      height={400} // Adjusted height (fixed the typo)
+      placeholder={imageBookLaunch02}
+      alt="A set of themed components for the aero design system"
+      sizes="50vw"
+      style={{ display: 'block', maxWidth: '100%', height: 'auto' }} // Ensures image responsiveness
+    />
+    <br /><br />
+            ▶️ <Link href="https://link.springer.com/article/10.1007/s11042-022-13680-8">First Study</Link>: Semi-structured interviews with SMP professionals explored working habits, challenges, and perceptions towards VP, identifying basic user requirements.
+            <br /><br />
+            ▶️ <Link href="https://link.springer.com/article/10.1007/s11042-023-16308-7">Second Study</Link>: Remote co-design workshops and design fiction methods validated previous findings and generated 14 initial VP process scenarios.
+            <br /><br />
+            ▶️ Third Study: An online questionnaire evaluated three detailed design fiction scenarios, identifying the most valuable for practical development.
+            <br /><br />
+            ▶️ Fourth Study: A prototype based on the third study's preferred scenario was developed and successfully evaluated by professionals in a simulated VP-enabled process.
+            <br /><br />
+            ▶️ Fifth Study: Self-reflection on the prototype and process led to recommendations for future VP process design for SMPs, based on insights from all previous studies.
+            <br /><br />
+            This PhD was funded by <Link href="https://bura.brunel.ac.uk/handle/2438/27288">StoryFutures</Link> and therefore the output is <Link href="https://bura.brunel.ac.uk/handle/2438/27288">Open Access</Link>
 
             </ProjectSectionText>
           </ProjectTextRow>
@@ -165,7 +197,8 @@ export const SmartSparrow = () => {
           <ProjectHeader
           title={title2}
           description={description2}
-          url="https://"
+          url="/static/VR_Book_BodiniAimone.pdf"
+          linkLabel="Download Book"
           roles={roles2}
         />
 
