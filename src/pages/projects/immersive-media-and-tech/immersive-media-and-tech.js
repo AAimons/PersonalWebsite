@@ -33,6 +33,12 @@ import PaneraiStoryFive from 'assets/StoryPanerai-5.jpg';
 import PaneraiStorySix from 'assets/StoryPanerai-6.jpg';
 import PaneraiStorySeven from 'assets/StoryPanerai-7.jpg';
 
+import InnovationRoomOne from 'assets/InnovationRoom-1.jpg';
+import InnovationRoomTwo from 'assets/InnovationRoom-2.jpg';
+import InnovationRoomThree from 'assets/InnovationRoom-3.jpg';
+
+
+
 
 import React from 'react';
 
@@ -263,12 +269,70 @@ export const SmartSparrow = () => {
     <ProjectTextRow>
             <ProjectSectionHeading>My Role</ProjectSectionHeading>
             <ProjectSectionText>
-            Our innovative proposal involved creating an immersive virtual reality experience that would transport users into the iconography of two standout pieces featured at the exhibition: L’Astronomo and Lo Scienziato. We aimed to evoke imagery related to space, the solar system, and Galileo Galilei, drawing connections between historical scientific achievements and modern technological innovation. 
+            As a new client, it was essential to foster clear, effective, and constructive communication. Building a relationship of trust and credibility was crucial, as was delivering a project that could exceed the exhibition's standards and stand out among the booths at Watches and Wonders. I took on this responsibility as the key account manager and Producer, overseeing every phase from conception to the dismantling of the booth in Geneva, through various review stages with Panerai’s C-level executives, where we had to justify and motivate our choices.
+
+
             <br /><br />
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
+      <video
+        className={styles.video}
+        controls
+        style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+      >
+        <source src="/static/PaneraiVR.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+<br /><br />
+
+
+
+I also contributed to the design of the experience. Proposing a video game-like experience to the attendees at the Panerai booth could have been very risky, so from an experiential standpoint, we opted for something that did not require controllers or specific interactions but rather focused on the musical and visual aspects. We wanted it to be 6DoF (Six Degrees of Freedom) to increase the level of immersion and the  ‘wow’ effect. That's why we opted for a tethered solution using the HTC Vive and developed it using UE4.
+
+
+
+<br /><br />
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
+      <video
+        className={styles.video}
+        controls
+        style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+      >
+        <source src="/static/PaneraiBalls.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+<br /><br />
+
+
+Similarly, a concept that resonates deeply with both me and Proxima Milano was the attention to form, both pre- and post-experience. To enhance the VR experience, it was necessary to also work on the set design and how people would enter Panerai's Innovation Room.
+
+<br /><br />
+In the months leading up to the event, I collaborated closely with the production coordinators and artisans who were creating the physical room. The final virtual scene was designed to be an exact 1:1 match of the real room, bringing people "Back to Reality".            
+<br /><br />
             </ProjectSectionText>
           </ProjectTextRow>
 
-
+          <ProjectSection> {/* Wrapper component */}
+      <ProjectSectionContent> {/* Content wrapper */}
+        <Carousel
+          images={[ // Images array
+            {
+              src: InnovationRoomThree, // Source of the image
+            },
+            {
+              src: InnovationRoomTwo,
+            },
+            {
+              src: InnovationRoomOne,
+            },
+            
+          ]}
+          width={1920} // Width of the carousel
+          height={1080} // Height of the carousel
+        />
+      </ProjectSectionContent>
+    </ProjectSection>
 
 
 

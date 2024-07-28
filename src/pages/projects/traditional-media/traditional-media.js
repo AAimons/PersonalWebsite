@@ -329,7 +329,7 @@ It was a lengthy endeavor during which I navigated the complex process of securi
           <br /><br />
 
             I was also in charge of coordinating and managing background actors on the movie set, as well as recruiting them. Interestingly, for this project, we involved homeless individuals to participate in the movie thanks to the help of the charity <Link href="https://www.progettoarca.org/">Progetto Arca</Link>. This gave me the opportunity to recruit volunteers and interact with them frequently, listening to the stories they were eager to share. Their stories remain vivid in my mind. I keep wondering if truth truly is stranger than fiction.        
-            
+            Finally, I had an epiphany: I realized with crystal clarity that being a cinephile and being a professional in the movie industry, are two very different things. I was convinced that once inside the filmmaking machine, during a cigarette or coffee break, I could have animated discussions about Dumont or Béla Tarr with everyone, from the camera operator to the set designer. But I was wrong. Many of them did not share this interest for the Art of cinema; they simply enjoyed the lifestyle of such a...job. 
              </ProjectSectionText>
           </ProjectTextRow>
 
