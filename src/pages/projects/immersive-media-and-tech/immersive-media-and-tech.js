@@ -213,9 +213,8 @@ export const SmartSparrow = () => {
         <ProjectTextRow>
             <ProjectSectionHeading>Client Brief</ProjectSectionHeading>
             <ProjectSectionText>
-            As every year, Panerai, a luxury watch brand, prepares for the most important event of the year. To surprise and engage their high-profile clients, they were looking for a way to convey a sense of innovation while staying true to their rich heritage. The goal was to position the brand as both rooted in tradition and boldly looking towards the future. 
-            <br /><br />
-            </ProjectSectionText>
+            Each year, Panerai gears up for the most significant event in the luxry watchmaking sector, Watches and Wonders, aiming to surprise and engage their high-profile clients. They were seeking a way to showcase their innovative style alongside their rich heritage, striving to position the brand as both deeply rooted in tradition and boldly looking towards the future.           
+             </ProjectSectionText>
           </ProjectTextRow>
 
           <ProjectTextRow>
@@ -269,7 +268,7 @@ export const SmartSparrow = () => {
     <ProjectTextRow>
             <ProjectSectionHeading>My Role</ProjectSectionHeading>
             <ProjectSectionText>
-            As a new client, it was essential to foster clear, effective, and constructive communication. Building a relationship of trust and credibility was crucial, as was delivering a project that could exceed the exhibition’s standards and stand out among the booths at Watches and Wonders. I took on this responsibility as the key account manager and Producer, overseeing every phase from conception to the dismantling of the booth in Geneva, through various review stages with Panerai’s C-level executives, where we had to justify and motivate our choices.
+            As a new client, it was essential to foster clear, effective, and constructive communication. Building a relationship of trust and credibility was crucial, as was delivering a project that could exceed the exhibition’s standards and stand out among the booths at Watches and Wonders. I took on this responsibility as the key account manager and Producer, overseeing every phase from conception to the dismantling of the booth in Geneva, through various review stages with Panerai’s C-level executives, where we had to justify and motivate our choices. It was necessary to find someone with expertise in this new medium who could effectively introduce and explain it to those unfamiliar with it. I filled this gap by leveraging my knowledge to bridge the gap between the medium and the client.
 
 
             <br /><br />
