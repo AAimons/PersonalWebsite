@@ -30,6 +30,11 @@ import imageSuperfoodiesHero from 'assets/Superfoodies_hero.jpg';
 import imageSuperfoodiesCollectibles from 'assets/Superfoodies_collectibles.jpg';
 import imagePDCPoster from 'assets/PDC_poster.jpg';
 import imagePDCShootingList from 'assets/PDC_ShootingList.jpg';
+import PaneraiBalls from 'assets/Panerai-balls.jpg';
+import PaneraiEnd from 'assets/Panerai-end.jpg';
+import PaneraiSpace from 'assets/Panerai-space.jpg';
+
+import React from 'react';
 
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
@@ -74,7 +79,10 @@ import {
 import dynamic from 'next/dynamic';
 import { Fragment, useMemo } from 'react';
 import { media } from 'utils/style';
+import { Carousel } from 'components/Carousel';
 import styles from './SmartSparrow.module.css';
+
+
 
 
 const title1 = 'Super Foodies';
@@ -168,6 +176,9 @@ export const SmartSparrow = () => {
 
 
 
+
+
+
         <ProjectSection>
         <ProjectTextRow>
             <ProjectSectionHeading>Summary</ProjectSectionHeading>
@@ -193,7 +204,7 @@ export const SmartSparrow = () => {
 <ProjectSectionHeading>My Role</ProjectSectionHeading>
 
 
-Initially, Esselunga was not a client of Proxima Milano. I played a pivotal role as a new business developer, initiating and cultivating opportunities to establish this partnership. My strategic support was instrumental in building trust and laying the groundwork for successful project delivery. As the relationship evolved, I transitioned into a key account management role, focused on maintaining client satisfaction and ensuring ongoing project success.
+I played a pivotal role as a new business developer, initiating and cultivating opportunities to establish this partnership. Thanks to my existing network and track record of previous minor projects with the client, I introduced Proxima Milano to Esselunga. My strategic support was instrumental in building trust and laying the groundwork for successful project delivery. As the relationship evolved, I transitioned into a key account management role, focused on maintaining client satisfaction and ensuring ongoing project success.
 
 <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
   <iframe

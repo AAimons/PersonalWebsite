@@ -23,6 +23,19 @@ import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-lar
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
 import imageCartoon from 'assets/pippo.jpeg';
+import PaneraiIntro from 'assets/Panerai-intro.png';
+
+import PaneraiStoryOne from 'assets/StoryPanerai-1.jpg';
+import PaneraiStoryTwo from 'assets/StoryPanerai-2.jpg';
+import PaneraiStoryThree from 'assets/StoryPanerai-3.jpg';
+import PaneraiStoryFour from 'assets/StoryPanerai-4.jpg';
+import PaneraiStoryFive from 'assets/StoryPanerai-5.jpg';
+import PaneraiStorySix from 'assets/StoryPanerai-6.jpg';
+import PaneraiStorySeven from 'assets/StoryPanerai-7.jpg';
+
+
+import React from 'react';
+
 
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
@@ -67,6 +80,7 @@ import {
 import dynamic from 'next/dynamic';
 import { Fragment, useMemo } from 'react';
 import { media } from 'utils/style';
+import { Carousel } from 'components/Carousel';
 import styles from './SmartSparrow.module.css';
 
 
@@ -79,13 +93,13 @@ const roles1 = [
   'Consultancy',
 ];
 
-const title2 = 'Sub-project 2';
-const description2 = 'Description sub-project 2';
+const title2 = 'Panerai';
+const description2 = 'Immersive branded experience presented at Watches and Wonders, the most important luxury watchmaking event of the world';
 const roles2 = [
-  'Development',
-  'Design',
-  'Testing',
-  'Deployment',
+  'New Business',
+  'Key Account',
+  'Strategist',
+  'Producer',
 ];
 
 
@@ -172,17 +186,17 @@ export const SmartSparrow = () => {
               
               srcSet={
                 isDark
-                  ? `${imageSprLessonBuilderDark} 1280w, ${imageSprLessonBuilderDarkLarge} 2560w`
-                  : `${imageSprLessonBuilderLight} 1280w, ${imageSprLessonBuilderLightLarge} 2560w`
+                  ? `${PaneraiIntro} 1280w, ${PaneraiIntro} 2560w`
+                  : `${PaneraiIntro} 1280w, ${PaneraiIntro} 2560w`
               }
               width={1280}
               hright={800}
               placeholder={
                 isDark
-                  ? imageSprLessonBuilderDark
-                  : imageSprLessonBuilderLight
+                  ? PaneraiIntro
+                  : PaneraiIntro
               }
-              alt={`A set of themed components for the aero design system`}
+              alt={`Beginning of the VR experience`}
               sizes="100vw"
             />
           </ProjectSectionContent>
@@ -191,11 +205,71 @@ export const SmartSparrow = () => {
 
 
         <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading>Client Brief</ProjectSectionHeading>
             <ProjectSectionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            As every year, Panerai, a luxury watch brand, prepares for the most important event of the year. To surprise and engage their high-profile clients, they were looking for a way to convey a sense of innovation while staying true to their rich heritage. The goal was to position the brand as both rooted in tradition and boldly looking towards the future. 
+            <br /><br />
             </ProjectSectionText>
           </ProjectTextRow>
+
+          <ProjectTextRow>
+            <ProjectSectionHeading>Our Solution</ProjectSectionHeading>
+            <ProjectSectionText>
+            Our innovative proposal involved creating an immersive virtual reality experience that would transport users into the iconography of two standout pieces featured at the exhibition: L'Astronomo and Lo Scienziato. We aimed to evoke imagery related to space, the solar system, and Galileo Galilei, drawing connections between historical scientific achievements and modern technological innovation. 
+            <br /><br />
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+
+
+
+
+          <ProjectSection> {/* Wrapper component */}
+      <ProjectSectionContent> {/* Content wrapper */}
+        <Carousel
+          images={[ // Images array
+            {
+              src: PaneraiStoryOne, // Source of the image
+            },
+            {
+              src: PaneraiStoryTwo,
+            },
+            {
+              src: PaneraiStoryThree,
+            },
+            {
+              src: PaneraiStoryFour,
+            },
+            {
+              src: PaneraiStoryFive,
+            },
+            {
+              src: PaneraiStorySix,
+            
+            },
+            {
+              src: PaneraiStorySeven,
+              
+            },
+          ]}
+          width={1920} // Width of the carousel
+          height={1278} // Height of the carousel
+        />
+      </ProjectSectionContent>
+    </ProjectSection>
+  
+
+
+    <ProjectTextRow>
+            <ProjectSectionHeading>My Role</ProjectSectionHeading>
+            <ProjectSectionText>
+            Our innovative proposal involved creating an immersive virtual reality experience that would transport users into the iconography of two standout pieces featured at the exhibition: L'Astronomo and Lo Scienziato. We aimed to evoke imagery related to space, the solar system, and Galileo Galilei, drawing connections between historical scientific achievements and modern technological innovation. 
+            <br /><br />
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+
+
 
 
 
@@ -233,6 +307,8 @@ export const SmartSparrow = () => {
         </ProjectSection>
 
 
+        
+
 
         <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
@@ -246,7 +322,6 @@ export const SmartSparrow = () => {
               new users, but with plenty of room to scale for advanced users.
             </ProjectSectionText>
           </ProjectTextRow>
-
 
 
 
