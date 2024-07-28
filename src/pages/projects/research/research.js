@@ -4,6 +4,10 @@ import imageSprBackgroundVolcanismLarge from 'assets/spr-background-volcanism-la
 import imageSprBackgroundVolcanismPlaceholder from 'assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from 'assets/spr-background-volcanism.jpg';
 import backgroundSpr from 'assets/spr-background-IMT.jpg';
+import Rbackground from 'assets/R-background.jpg';
+import RbackgroundLarge from 'assets/R-background-large.jpg';
+
+
 import imageSprComponentsDarkLarge from 'assets/spr-components-dark-large.png';
 import imageSprComponentsDarkPlaceholder from 'assets/spr-components-dark-placeholder.png';
 import imageSprComponentsDark from 'assets/spr-components-dark.png';
@@ -119,9 +123,9 @@ export const SmartSparrow = () => {
         <Meta title={title1} prefix="Projects" description={description1} />
         <ProjectBackground
           opacity={isDark ? 0.5 : 0.8}
-          src={backgroundSpr}
-          srcSet={`${backgroundSpr.src} 1080w, ${backgroundSprLarge.src} 2160w`}
-          placeholder={backgroundSprPlaceholder}
+          src={Rbackground}
+          srcSet={`${Rbackground.src} 1080w, ${RbackgroundLarge.src} 2160w`}
+          placeholder={Rbackground}
         />
 
 {/* Project 1 --- Header + image + description */}

@@ -4,6 +4,9 @@ import imageSprBackgroundVolcanismLarge from 'assets/spr-background-volcanism-la
 import imageSprBackgroundVolcanismPlaceholder from 'assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from 'assets/spr-background-volcanism.jpg';
 import backgroundSpr from 'assets/spr-background-IMT.jpg';
+import backgroundTMLarge from 'assets/TM-background-large.jpg'; 
+import backgroundTM from 'assets/TM-background.jpg'; 
+
 import imageSprComponentsDarkLarge from 'assets/spr-components-dark-large.png';
 import imageSprComponentsDarkPlaceholder from 'assets/spr-components-dark-placeholder.png';
 import imageSprComponentsDark from 'assets/spr-components-dark.png';
@@ -125,9 +128,9 @@ export const SmartSparrow = () => {
         <Meta title={title1} prefix="Projects" description={description1} />
         <ProjectBackground
           opacity={isDark ? 0.5 : 0.8}
-          src={backgroundSpr}
-          srcSet={`${backgroundSpr.src} 1080w, ${backgroundSprLarge.src} 2160w`}
-          placeholder={backgroundSprPlaceholder}
+          src={backgroundTM}
+          srcSet={`${backgroundTM.src} 1080w, ${backgroundTMLarge.src} 2160w`}
+          placeholder={backgroundTM}
         />
 
 
@@ -186,6 +189,8 @@ export const SmartSparrow = () => {
           
 
 <br />
+
+<ProjectSectionHeading>My Role</ProjectSectionHeading>
 
 
 Initially, Esselunga was not a client of Proxima Milano. I played a pivotal role as a new business developer, initiating and cultivating opportunities to establish this partnership. My strategic support was instrumental in building trust and laying the groundwork for successful project delivery. As the relationship evolved, I transitioned into a key account management role, focused on maintaining client satisfaction and ensuring ongoing project success.
@@ -285,6 +290,9 @@ It was a lengthy endeavor during which I navigated the complex process of securi
             Working on the making of a movie is a movie of its own. François Truffaut knew it well when portraing the life of people working behind the camera in <Link href="https://www.imdb.com/title/tt0070460/?ref_=nm_knf_t_1">“Day for Night”</Link>. <br /><br />
             “Pane dal Cielo” was a memorable work and life experience where I had to deal with long hours, little comfort, and a rigid hierarchy. Time is money, and this is even more true when you are shooting something and involving dozens or hundreds of people. A little delay can compound quickly, affecting the budget of the project and increasing the stress among people on set. That’s why the need for rigid roles and quick problem solving is essential; working on set really pushes you to make decisions...fast. Luckily, everything was managed professionally and successfully by each member of the Directing and Production departments. We didn’t end up like in <Link href="https://www.imdb.com/title/tt0308514/">“Lost in La Mancha”</Link>, instead, we formed strong bonds and went on to collaborate on some more projects together.      
             <br /><br />
+            
+            <ProjectSectionHeading>My Role</ProjectSectionHeading>
+
             Based on the shooting list provided, together with the Assistant Director, I organized daily schedules for the entire crew using industry standard software <Link href="https://www.ep.com/movie-magic-scheduling/">Movie Magic</Link>. This involved handling delicate matters such as estimating the time required for actors’ makeup and for shots involving cumbersome equipment like dollies and cranes (Yes, there was a chase scene, and I was in the camera car, communicating with the rest of the crew over the radio.). This required considerable experience and attention to detail.            
             <br /><br />
             <ProjectSectionContent>
@@ -353,7 +361,7 @@ It was a lengthy endeavor during which I navigated the complex process of securi
             <br /><br /> Sometimes LOW budget, some other time NO budget, in some cases OUR budget. 
             <br /><br /> What mattered was completing the projects we cared about. 
             <br /><br /> All-nighters and constant obstacles paid back by creating memorable experiences, built trust and credibility within the team, and fueled a relentless pursuit of growth to keep making better an better AV products.
-            <br /><br /> What I liked most about filmmaking was the constantly evolving environment it offered. The frequent changes in scenery, locations, and project objectives led to a range of thrilling and diverse experiences. Each project placed you in a completely new context.
+            <br /><br /> What I liked most about my filmmaking era was the constantly evolving environment it offered. The frequent changes in scenery, locations, and project objectives led to a range of thrilling and diverse experiences. Each project placed you in a completely new context.
             </ProjectSectionText>
           </ProjectTextRow>
 
