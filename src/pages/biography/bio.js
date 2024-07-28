@@ -167,7 +167,7 @@ export const biography = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Ganbaru <Link href="https://en.wikipedia.org/wiki/Ganbaru">頑張る</Link>    </TableHeadCell>
-                    <TableCell>Stress Management, Adaptability, Patience, Persistency, Discipline</TableCell>
+                    <TableCell>Adaptability, Patience, Persistency, Discipline, Growth Mentality</TableCell>
                   </TableRow>
                  
                 </TableBody>
@@ -193,11 +193,11 @@ export const biography = () => {
                 <TableBody>
                   <TableRow>
                     <TableHeadCell>VR AR XR</TableHeadCell>
-                    <TableCell>Conception, UX Development, Deployment, Business Model</TableCell>
+                    <TableCell>Consultancy, Strategy, UX Development, Deployment, Business Dev</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Motion Capture</TableHeadCell>
-                    <TableCell>Optitrack System, Motive, Captury, Theia Markerless</TableCell>
+                    <TableCell>Optitrack System, Motive, Captury, Theia Markerless, Noitom, Tekscan</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Volumetric Capture</TableHeadCell>
@@ -217,11 +217,10 @@ export const biography = () => {
                       Production Design, (<i>Planning, Budgeting, Shooting List, Logistics, Paperworks</i>) <br /> <br />
                       2D Cameras (<i>RED, ARRI, BlackMagic, Sony</i>) <br /> <br />
                       Spatial Video Cameras (<i>Insta360 Pro 2, GoPro Rig, Canon RF 180°</i>) and software (<i>Autopano, Mistika VR</i>) <br /> <br />
-                      Lighting (<i>Studio, Indoor, Outdoor</i>) <br /> <br />
                       Editing (<i>Data Management & Conversion, Adobe Premiere, AVID</i>) <br /> <br />
                       VFX (<i>After Effects, Nuke</i>) <br /> <br />
                       CG (<i>Blender, Maya</i>) <br /> <br />
-                      Financing (<i>Open Calls, Pitching, Production Markets</i>) </TableCell>
+                      Financing (<i>Open Calls, Pitching, Production Markets, Budgeting</i>) </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>-------</TableHeadCell>
@@ -229,7 +228,7 @@ export const biography = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Currently Improving</TableHeadCell>
-                    <TableCell> <Link href="https://github.com/AAimons/VR_Puzzle_Game_POC">Unity</Link> , Unreal Engine, Python, <Link href="https://github.com/AAimons/Vertical-Video-Slider-Comparison-HTML">HTML</Link>, GitHub Development</TableCell>
+                    <TableCell> <Link href="https://github.com/AAimons/VR_Puzzle_Game_POC">Unity</Link> , Unreal Engine, 8th Wall, Python, <Link href="https://github.com/AAimons/Vertical-Video-Slider-Comparison-HTML">HTML</Link>, GitHub Development</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

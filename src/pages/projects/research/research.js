@@ -28,6 +28,7 @@ import imageBookLaunch01 from 'assets/BookLaunch_01_light.jpg';
 import imageBookLaunch02 from 'assets/BookLaunch_02_light.jpg';
 import imageCoverPhD from 'assets/CoverPhD.jpg';
 import imageLongTail from 'assets/LongTail.jpg';
+import imageLongTailDark from 'assets/LongTail_dark.jpg';
 
 
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
@@ -134,6 +135,7 @@ export const SmartSparrow = () => {
         />
         <ProjectSection padding="top">
           <ProjectSectionContent>
+            
             <ProjectImage
               raised
               key={themeId}
@@ -153,39 +155,51 @@ export const SmartSparrow = () => {
           </ProjectSectionContent>
         </ProjectSection>
 
-
+        
 
         <ProjectSection>
         <ProjectTextRow>
             <ProjectSectionHeading>Knowledge Gap & Market Opportunity</ProjectSectionHeading>
             <ProjectSectionText>
+            
+            
             Since its inception, cinema has been deeply entangled with the technical mastery and technological advancements of its time.
-            <br /> Among the latest innovation in the AV field is Virtual Production (VP), which is an alternative to the established process, whose proponents claim that it fosters creativity while saving time and money. 
+            <br /> Among the latest innovation in the Audiovisual (AV) field is Virtual Production (VP), which is an alternative to the established process, whose proponents claim that it fosters creativity while saving time and money. 
             <br />While the VP process is used for advancing high-end productions, little consideration has been bestowed upon small and medium productions (SMPs), which, by definition, have limited economic and human resources. 
-            <br />However, according to the <Link href="https://www.wired.com/2004/10/tail/">’Long Tail’</Link>     concept they are much greater in number, and their market is still very substantial, making it a potential worth to investigate from both an academic and commercial perspective.
-            <br /><br />
+            <br />However, according to the <Link href="https://www.wired.com/2004/10/tail/">’Long Tail’</Link> concept they are much greater in number, and their market is still very substantial, making it a potential worth to investigate from both an academic and commercial perspective.
+            <br /> 
+            <br />
 
-            <Image
-      src={imageLongTail}
-      width={640} // Adjusted width
-      height={400} // Adjusted height (fixed the typo)
-      placeholder={imageBookLaunch02}
-      alt="A set of themed components for the aero design system"
-      sizes="50vw"
-      style={{ display: 'block', maxWidth: '100%', height: 'auto' }} // Ensures image responsiveness
-    />
-    <br /><br />
-            ▶️ <Link href="https://link.springer.com/article/10.1007/s11042-022-13680-8">First Study</Link>: Semi-structured interviews with SMP professionals explored working habits, challenges, and perceptions towards VP, identifying basic user requirements.
-            <br /><br />
-            ▶️ <Link href="https://link.springer.com/article/10.1007/s11042-023-16308-7">Second Study</Link>: Remote co-design workshops and design fiction methods validated previous findings and generated 14 initial VP process scenarios.
-            <br /><br />
-            ▶️ Third Study: An online questionnaire evaluated three detailed design fiction scenarios, identifying the most valuable for practical development.
-            <br /><br />
-            ▶️ Fourth Study: A prototype based on the third study's preferred scenario was developed and successfully evaluated by professionals in a simulated VP-enabled process.
-            <br /><br />
-            ▶️ Fifth Study: Self-reflection on the prototype and process led to recommendations for future VP process design for SMPs, based on insights from all previous studies.
-            <br /><br />
-            This PhD was funded by <Link href="https://bura.brunel.ac.uk/handle/2438/27288">StoryFutures</Link> and therefore the output is <Link href="https://bura.brunel.ac.uk/handle/2438/27288">Open Access</Link>
+
+            <Image padding="top"
+              
+              srcSet={
+                isDark
+                  ? `${imageLongTail} 1280w`
+                  : `${imageLongTail} 1280w`
+              }
+              width={1280}
+              height={800}
+              placeholder={
+                isDark
+                  ? imageLongTailDark
+                  : imageLongTail
+              }
+              alt={`A set of themed components for the aero design system`}
+              sizes="100vw"
+            />
+
+<ProjectSectionHeading>Realistic Intersection</ProjectSectionHeading>
+I want to spend more words on the PhD journey rather then the research by copyng and pasting what is already available online.
+ <br /><br />This PhD was funded by <Link href="https://bura.brunel.ac.uk/handle/2438/27288">StoryFutures</Link> and therefore the output is <Link href="https://bura.brunel.ac.uk/handle/2438/27288">Open Access</Link>. If you are curious, go for it. 
+ <br /><br />
+Embarking on a PhD can be very tricky. Sooner or later you are going to encounter a number of obstacles and limitations that cannot be overcame (resources, time, politics, limited skills, personal circumstances).
+I started during the outbreak of the COVID-19 pandemic and this historic event profundly changed my research, my approach to it and, moreover, the overall life experience.
+<br /><br /> I think that what you develop as a PhD is the art of adapting to ever changing scenarios. If you want to reach the end of the journey and deliver, you have to define a goal based on many forces that are stretching you around. The goal cannot be clear at first and if it doesn't appear obvious at a certain point, it's your responsability to make sense out of it. What do I want to research? What my sponsor wants me to research? What my supervisor wants me to research? How can I enrich the scinetific literature?  What can I actually research?
+I could mention even more forces but you got the idea. 
+<br /><br /> It's easy to be at the mercy of these powers, like being stranded in the ocean. Therefore I came up with a Realistic Intersaction plan that could satisfy these different, sometimes divergent, interests. It’s a matter of acting to pull off something that may add value to the table. Something that could be doable with the time, resources and skills at my disposal.
+A PhD, in most cases, is an individual experience and if you need a hand you will find it at the end of your arm. 
+          
 
             </ProjectSectionText>
           </ProjectTextRow>
@@ -232,11 +246,13 @@ export const SmartSparrow = () => {
           
        
 
-            <ProjectSectionHeading style={{ paddingTop: '20px' }}>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading style={{ paddingTop: '20px' }}>Groundwork</ProjectSectionHeading>
             <ProjectSectionText>
 
 
-            This small book was written with great passion for exploration during a pioneering moment when I believed there could be significant democratization in discovering this new medium. There was much practical experimentation, but few were asking critical questions about why and how to use VR as a means of communication.
+            
+            
+        This small book was written with great passion for exploration during a pioneering moment when I believed there could be significant democratization in discovering this new medium. There was much practical experimentation, but few were asking critical questions about why and how to use VR as a means of communication.
             <br /><br />
 I initially had five questions when I began this research. By the time I finished writing the book, I had a hundred more in mind. I believe that to find answers, one must first ask the right questions. This book aimed to move in that direction.
 <br /><br />
@@ -306,7 +322,8 @@ An evolution in how I convey my research and critical thoughts on the topic bega
 </div>
 <br /><br />
 
-In 2016, I delivered the first of many talks at Voxxed Days Belgrade to an audience of 200 people. There were two specific moments when I felt like leaving the stage because the anxiety was overwhelming, especially given my very basic English skills at the time. I made it to the end, though. It was a leap into the unknown.
+In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the following couple of years) to an audience of 200 people. It was like being thrown into the deep end. I vividly remember considering leaving the stage a few times due to anxiety, especially given my very basic English skills at the time. I made it to the end, though, and handled the most difficult part of every talk: the Q&A
+
             </ProjectSectionText>
           </ProjectTextRow>
 

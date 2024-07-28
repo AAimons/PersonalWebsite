@@ -19,7 +19,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 import { Helmet } from 'react-helmet';
 
-const disciplines = ['Explorer', 'Researcher', 'Strategist', 'Doer', 'Human 🌍'];
+const disciplines = ['Explorer', 'Researcher', 'Doer', 'Human 🌍'];
 
 
 
