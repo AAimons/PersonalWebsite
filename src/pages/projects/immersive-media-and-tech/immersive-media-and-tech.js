@@ -269,7 +269,7 @@ export const SmartSparrow = () => {
     <ProjectTextRow>
             <ProjectSectionHeading>My Role</ProjectSectionHeading>
             <ProjectSectionText>
-            As a new client, it was essential to foster clear, effective, and constructive communication. Building a relationship of trust and credibility was crucial, as was delivering a project that could exceed the exhibition's standards and stand out among the booths at Watches and Wonders. I took on this responsibility as the key account manager and Producer, overseeing every phase from conception to the dismantling of the booth in Geneva, through various review stages with Panerai’s C-level executives, where we had to justify and motivate our choices.
+            As a new client, it was essential to foster clear, effective, and constructive communication. Building a relationship of trust and credibility was crucial, as was delivering a project that could exceed the exhibition’s standards and stand out among the booths at Watches and Wonders. I took on this responsibility as the key account manager and Producer, overseeing every phase from conception to the dismantling of the booth in Geneva, through various review stages with Panerai’s C-level executives, where we had to justify and motivate our choices.
 
 
             <br /><br />
@@ -287,7 +287,7 @@ export const SmartSparrow = () => {
 
 
 
-I also contributed to the design of the experience. Proposing a video game-like experience to the attendees at the Panerai booth could have been very risky, so from an experiential standpoint, we opted for something that did not require controllers or specific interactions but rather focused on the musical and visual aspects. We wanted it to be 6DoF (Six Degrees of Freedom) to increase the level of immersion and the  ‘wow’ effect. That's why we opted for a tethered solution using the HTC Vive and developed it using UE4.
+I also contributed to the design of the experience. Proposing a video game-like experience to the attendees at the Panerai booth could have been very risky, so from an experiential standpoint, we opted for something that did not require controllers or specific interactions but rather focused on the musical and visual aspects. We wanted it to be 6DoF (Six Degrees of Freedom) to increase the level of immersion and the  ‘wow’ effect. That’s why we opted for a tethered solution using the HTC Vive and developed it using UE4.
 
 
 
@@ -305,10 +305,10 @@ I also contributed to the design of the experience. Proposing a video game-like 
 <br /><br />
 
 
-Similarly, a concept that resonates deeply with both me and Proxima Milano was the attention to form, both pre- and post-experience. To enhance the VR experience, it was necessary to also work on the set design and how people would enter Panerai's Innovation Room.
+Similarly, a concept that resonates deeply with both me and Proxima Milano was the attention to form, both pre- and post-experience. To enhance the VR experience, it was necessary to also work on the set design and how people would enter Panerai’s Innovation Room.
 
 <br /><br />
-In the months leading up to the event, I collaborated closely with the production coordinators and artisans who were creating the physical room. The final virtual scene was designed to be an exact 1:1 match of the real room, bringing people "Back to Reality".            
+In the months leading up to the event, I collaborated closely with the production coordinators and artisans who were creating the physical room. The final virtual scene was designed to be an exact 1:1 match of the real room, bringing people  “Back to Reality”.           
 <br /><br />
             </ProjectSectionText>
           </ProjectTextRow>
