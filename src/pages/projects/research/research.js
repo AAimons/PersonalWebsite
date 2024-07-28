@@ -31,6 +31,7 @@ import imageBookCover from 'assets/CoverandArt.jpg';
 import imageBookLaunch01 from 'assets/BookLaunch_01_light.jpg';
 import imageBookLaunch02 from 'assets/BookLaunch_02_light.jpg';
 import imageCoverPhD from 'assets/CoverPhD.jpg';
+
 import imageLongTail from 'assets/LongTail.jpg';
 import imageLongTailDark from 'assets/LongTail_dark.jpg';
 
