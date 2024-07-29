@@ -23,6 +23,13 @@ import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-lar
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
 import imageCartoon from 'assets/pippo.jpeg';
+
+import UrquiolaIntro from 'assets/Urquiola-intro.jpg';
+
+
+
+
+
 import PaneraiIntro from 'assets/Panerai-intro.png';
 
 import PaneraiStoryOne from 'assets/StoryPanerai-1.jpg';
@@ -37,6 +44,9 @@ import InnovationRoomOne from 'assets/InnovationRoom-1.jpg';
 import InnovationRoomTwo from 'assets/InnovationRoom-2.jpg';
 import InnovationRoomThree from 'assets/InnovationRoom-3.jpg';
 
+
+import ARFiltersDark from 'assets/ARFilters-intro-dark.jpg';
+import ARFiltersWhite from 'assets/ARFilters-intro-white.jpg';
 
 
 
@@ -90,13 +100,13 @@ import { Carousel } from 'components/Carousel';
 import styles from './SmartSparrow.module.css';
 
 
-const title1 = 'Sub-project 1';
-const description1 = 'Description sub-project 1';
+const title1 = 'Don’t Treat Me Like An Object';
+const description1 = 'Enabling world famous designer Patricia Urquiola in exploring a new dimension';
 const roles1 = [
-  'Project Management',
-  'Accounting',
-  'Marketing',
-  'Consultancy',
+  'New Business',
+  'Key Account',
+  'Strategist',
+  'Producer',
 ];
 
 const title2 = 'Panerai';
@@ -105,6 +115,15 @@ const roles2 = [
   'New Business',
   'Key Account',
   'Strategist',
+  'Producer',
+];
+
+const title3 = 'Spark AR Filters';
+const description3 = 'Proxima Milano chosen as partner by Meta to produce captivating AR filters for brands';
+const roles3 = [
+ 
+  'Key Account',
+  'UX Design',
   'Producer',
 ];
 
@@ -136,34 +155,35 @@ export const SmartSparrow = () => {
           placeholder={backgroundIMT}
         />
 
+
+
+
+
 {/* Project 1 --- Header + image + description */}
 
         <ProjectHeader
           title={title1}
           description={description1}
-          url="https://"
           roles={roles1}
         />
-        <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
               raised
               key={themeId}
               srcSet={
                 isDark
-                  ? [imageSprLessonBuilderDark, imageSprLessonBuilderDarkLarge]
-                  : [imageSprLessonBuilderLight, imageSprLessonBuilderLightLarge]
+                  ? [UrquiolaIntro, UrquiolaIntro]
+                  : [UrquiolaIntro, UrquiolaIntro]
               }
               placeholder={
                 isDark
-                  ? imageSprLessonBuilderDarkPlaceholder
-                  : imageSprLessonBuilderLightPlaceholder
+                  ? UrquiolaIntro
+                  : UrquiolaIntro
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="A screenshot of the current ui of the app"
             />
           </ProjectSectionContent>
-        </ProjectSection>
 
 
 
@@ -182,11 +202,9 @@ export const SmartSparrow = () => {
           <ProjectHeader
           title={title2}
           description={description2}
-          url="https://"
           roles={roles2}
         />
 
-<ProjectSection padding="top">
           <ProjectSectionContent>
           <Image
               
@@ -206,8 +224,8 @@ export const SmartSparrow = () => {
               sizes="100vw"
             />
           </ProjectSectionContent>
-        </ProjectSection>
 
+          <br /><br />
 
 
         <ProjectTextRow>
@@ -217,11 +235,13 @@ export const SmartSparrow = () => {
              </ProjectSectionText>
           </ProjectTextRow>
 
+          <br /><br />
+
+
           <ProjectTextRow>
             <ProjectSectionHeading>Our Solution</ProjectSectionHeading>
             <ProjectSectionText>
             Our innovative proposal involved creating an immersive virtual reality experience that would transport users into the iconography of two standout pieces featured at the exhibition: L’Astronomo and Lo Scienziato. We aimed to evoke imagery related to space, the solar system, and Galileo Galilei, drawing connections between historical scientific achievements and modern technological innovation. 
-            <br /><br />
             </ProjectSectionText>
           </ProjectTextRow>
 
@@ -341,48 +361,41 @@ In the months leading up to the event, I collaborated closely with the productio
 
 
           <ProjectHeader
-          title={title2}
-          description={description2}
+          title={title3}
+          description={description3}
           url="https://"
-          roles={roles2}
+          roles={roles3}
         />
 
-        <ProjectSection padding="top">
           <ProjectSectionContent>
           <Image
               
               srcSet={
                 isDark
-                  ? `${imageSprLessonBuilderDark} 1280w, ${imageSprLessonBuilderDarkLarge} 2560w`
-                  : `${imageSprLessonBuilderLight} 1280w, ${imageSprLessonBuilderLightLarge} 2560w`
+                  ? `${ARFiltersDark} 1280w, ${ARFiltersDark} 2560w`
+                  : `${ARFiltersDark} 1280w, ${ARFiltersDark} 2560w`
               }
               width={1280}
               hright={800}
               placeholder={
                 isDark
-                  ? imageSprLessonBuilderDark
-                  : imageSprLessonBuilderLight
+                  ? ARFiltersDark
+                  : ARFiltersWhite
               }
               alt={`A set of themed components for the aero design system`}
               sizes="100vw"
             />
           </ProjectSectionContent>
-        </ProjectSection>
 
 
-        
+          <br /><br />
+
 
 
         <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
+              I had to deal with the approval process on Meta platforms such as Instragram and dealed with compliancy.
             </ProjectSectionText>
           </ProjectTextRow>
 

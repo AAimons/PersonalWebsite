@@ -153,7 +153,6 @@ export const SmartSparrow = () => {
           
           roles={roles1}
         />
-        <ProjectSection padding="">
           <ProjectSectionContent>
             <ProjectImage
               raised
@@ -172,7 +171,6 @@ export const SmartSparrow = () => {
               alt="A screenshot of the current ui of the app"
             />
           </ProjectSectionContent>
-        </ProjectSection>
 
 
 
@@ -266,7 +264,6 @@ It was a lengthy endeavor during which I navigated the complex process of securi
           roles={roles2}
         />
 
-<ProjectSection padding="top">
           <ProjectSectionContent>
           <Image
               
@@ -286,8 +283,10 @@ It was a lengthy endeavor during which I navigated the complex process of securi
               sizes="100vw"
             />
           </ProjectSectionContent>
-        </ProjectSection>
 
+
+
+          <br /><br />
 
 
         <ProjectTextRow>
@@ -345,7 +344,6 @@ It was a lengthy endeavor during which I navigated the complex process of securi
           roles={roles3}
         />
 
-<ProjectSection padding="top">
   <ProjectSectionContent>
     <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
       <video
@@ -362,8 +360,8 @@ It was a lengthy endeavor during which I navigated the complex process of securi
 
     
   </ProjectSectionContent>
-</ProjectSection>
 
+  <br /><br />
 
         <ProjectTextRow>
             <ProjectSectionHeading>Summary</ProjectSectionHeading>
