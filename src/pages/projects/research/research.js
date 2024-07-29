@@ -7,6 +7,15 @@ import backgroundSpr from 'assets/spr-background-IMT.jpg';
 import Rbackground from 'assets/R-background.jpg';
 import RbackgroundLarge from 'assets/R-background-large.jpg';
 
+import React from 'react';
+
+import SpeakerOne from 'assets/Speaking-1.jpg';
+import SpeakerTwo from 'assets/Speaking-2.jpg';
+import SpeakerThree from 'assets/Speaking-3.jpg';
+import SpeakerFour from 'assets/Speaking-4.jpg';
+import SpeakerFive from 'assets/Speaking-5.jpg';
+import SpeakerSix from 'assets/Speaking-6.jpg';
+
 
 import imageSprComponentsDarkLarge from 'assets/spr-components-dark-large.png';
 import imageSprComponentsDarkPlaceholder from 'assets/spr-components-dark-placeholder.png';
@@ -78,6 +87,7 @@ import {
 } from 'layouts/Project';
 import dynamic from 'next/dynamic';
 import { Fragment, useMemo } from 'react';
+import { Carousel } from 'components/Carousel';
 import { media } from 'utils/style';
 import styles from './SmartSparrow.module.css';
 
@@ -329,6 +339,42 @@ An evolution in how I convey my research and critical thoughts on the topic bega
 
 In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the following couple of years) to an audience of 200 people. It was like being thrown into the deep end. I vividly remember considering leaving the stage a few times due to anxiety, especially given my very basic English skills at the time. I made it to the end, though, and handled the most difficult part of every talk: the Q&A
 
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+          <ProjectSection> {/* Wrapper component */}
+      <ProjectSectionContent> {/* Content wrapper */}
+        <Carousel
+          images={[ // Images array
+            {
+              src: SpeakerOne, // Source of the image
+            },
+            {
+              src: SpeakerTwo,
+            },
+            {
+              src: SpeakerThree,
+            },
+            {
+              src: SpeakerFour,
+            },
+            {
+              src: SpeakerFive,
+            },
+            {
+              src: SpeakerSix,
+            },
+           
+          ]}
+          width={1920} // Width of the carousel
+          height={1080} // Height of the carousel
+        />
+      </ProjectSectionContent>
+    </ProjectSection>
+
+    <ProjectTextRow>
+            <ProjectSectionText>
+            I discovered that sharing my insights and interesting content could grant me access to often pricey or exclusive events. Getting a free pass and sometimes even having my travel and accommodation expenses covered was the perfect plan. However, it wasn’t just about promoting myself. The most important aspect was interacting with others, meeting people, and gaining insights into what they were doing and what was coming next. It became a virtuous circle that further accelerated my professional growth and understanding of the field. It was a fertile ground for a curious individual like me.            
             </ProjectSectionText>
           </ProjectTextRow>
 
