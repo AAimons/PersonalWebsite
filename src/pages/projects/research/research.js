@@ -15,6 +15,10 @@ import SpeakerThree from 'assets/Speaking-3.jpg';
 import SpeakerFour from 'assets/Speaking-4.jpg';
 import SpeakerFive from 'assets/Speaking-5.jpg';
 import SpeakerSix from 'assets/Speaking-6.jpg';
+import SpeakerSeven from 'assets/Speaking-7.jpg';
+import SpeakerEight from 'assets/Speaking-8.jpg';
+import SpeakerNine from 'assets/Speaking-9.jpg';
+
 
 
 import imageSprComponentsDarkLarge from 'assets/spr-components-dark-large.png';
@@ -111,6 +115,15 @@ const roles2 = [
   
 ];
 
+const title3 = 'Practice-Led & Practice-Based Research // Miscellaneous';
+const description3 = 'A book investigating XR Design principles for Storytelling';
+const roles3 = [
+  'Strange Contraptions',
+  '? ¿',
+  'Explosions 💥',
+  
+];
+
 
 
 {/* Start of the code*/}
@@ -148,7 +161,6 @@ export const SmartSparrow = () => {
           linkLabel="Scientific Publications"
           roles={roles1}
         />
-        <ProjectSection padding="top">
           <ProjectSectionContent>
             
             <ProjectImage
@@ -168,7 +180,6 @@ export const SmartSparrow = () => {
               alt="A screenshot of the current ui of the app"
             />
           </ProjectSectionContent>
-        </ProjectSection>
 
         
 
@@ -203,6 +214,7 @@ export const SmartSparrow = () => {
               alt={`A set of themed components for the aero design system`}
               sizes="100vw"
             />
+ <br /><br />
 
 <ProjectSectionHeading>Realistic Intersection</ProjectSectionHeading>
 I want to spend more words on the PhD journey rather then the research by copyng and pasting what is already available online.
@@ -299,10 +311,10 @@ This work was notably recognized by the World VR Forum, which helped turn it int
 
 
 <br /><br />
-After many years, the book is no longer available for purchase, but I want it to remain accessible for those who wish to take a trip into the past. Today, I view it with fondness—a work that, in many ways, is raw, but which I believe holds historiographical value, capturing the state of affairs in 2015-16-17 that may bring some down memory lane.
+After many years, the book is no longer available for purchase, but I want it to remain accessible for those who wish to dive into the past. Today, I view it with fondness—a work that, in many ways, is raw, but which I believe holds historiographical value, capturing the state of affairs in 2015-16-17 that may bring some down memory lane.
 <br /><br />
 <div style={{ textAlign: 'center' }}>
-                <Link href="/static/VR_Book_BodiniAimone.pdf">Download Book ’Narrative Language of Virtual Reality’</Link>  
+                <Link href="/static/VR_Book_BodiniAimone.pdf">Download Book ‘Narrative Language of Virtual Reality’</Link>  
 
                 </div>
                 <br /><br />
@@ -364,6 +376,15 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
             {
               src: SpeakerSix,
             },
+            {
+              src: SpeakerSeven,
+            },
+            {
+              src: SpeakerEight,
+            },
+            {
+              src: SpeakerNine,
+            },
            
           ]}
           width={1920} // Width of the carousel
@@ -385,13 +406,11 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
 
 
           <ProjectHeader
-          title={title2}
-          description={description2}
-          url="https://"
-          roles={roles2}
+          title={title3}
+          description={description3}
+          roles={roles3}
         />
 
-        <ProjectSection padding="top">
           <ProjectSectionContent>
           <Image
               
@@ -411,18 +430,35 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
               sizes="100vw"
             />
           </ProjectSectionContent>
-        </ProjectSection>
 
 
 
         <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading>Intro</ProjectSectionHeading>
+            <ProjectSectionText>
+            Sometimes projects are halted before they come to fruition, either because the client loses interest, the budget is insufficient, or there are feasibility issues. However, all these inquiries or experimental ideas are very valuable for learning new things and discovering unknown aspects. Even if they remain incomplete and don't reach the stage of an MVP (Minimum Viable Product) or POC (Proof of Concept), they are part of the journey and it would be a shame to overlook them.            </ProjectSectionText>
+          </ProjectTextRow>
+
+          <ProjectTextRow>
+            <ProjectSectionHeading>Padella Rig</ProjectSectionHeading>
             <ProjectSectionText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </ProjectSectionText>
           </ProjectTextRow>
 
+          <ProjectTextRow>
+            <ProjectSectionHeading>Tilt Brush</ProjectSectionHeading>
+            <ProjectSectionText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </ProjectSectionText>
+          </ProjectTextRow>
 
+          <ProjectTextRow>
+            <ProjectSectionHeading>Mocap VR Integration</ProjectSectionHeading>
+            <ProjectSectionText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </ProjectSectionText>
+          </ProjectTextRow>
 
 
 
