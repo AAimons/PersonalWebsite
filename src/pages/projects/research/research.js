@@ -436,7 +436,8 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
         <ProjectTextRow>
             <ProjectSectionHeading>Intro</ProjectSectionHeading>
             <ProjectSectionText>
-            Sometimes projects are halted before they come to fruition, either because the client loses interest, the budget is insufficient, or there are feasibility issues. However, all these inquiries or experimental ideas are very valuable for learning new things and discovering unknown aspects. Even if they remain incomplete and don't reach the stage of an MVP (Minimum Viable Product) or POC (Proof of Concept), they are part of the journey and it would be a shame to overlook them.            </ProjectSectionText>
+            Sometimes projects are halted before they come to fruition, either because the client loses interest, the budget is insufficient, or there are feasibility issues. However, all these inquiries or experimental ideas are very valuable for learning new things and discovering unknown aspects. Even if they remain incomplete and don’t reach the stage of an MVP (Minimum Viable Product) or POC (Proof of Concept), they are part of the journey and it would be a shame to overlook them.            
+            </ProjectSectionText>
           </ProjectTextRow>
 
           <ProjectTextRow>
