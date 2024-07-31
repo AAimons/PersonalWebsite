@@ -112,7 +112,7 @@
 }
 
 .navButton {
-  --navButtonSize: 10px;
+  --navButtonSize: 5px;
   --buttonColor: rgb(var(--rgbText) / 0.2);
 
   background: none;

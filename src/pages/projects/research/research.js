@@ -161,6 +161,7 @@ export const SmartSparrow = () => {
           linkLabel="Scientific Publications"
           roles={roles1}
         />
+
           <ProjectSectionContent>
             
             <ProjectImage
@@ -180,6 +181,7 @@ export const SmartSparrow = () => {
               alt="A screenshot of the current ui of the app"
             />
           </ProjectSectionContent>
+
 
         
 
@@ -380,11 +382,9 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
               src: SpeakerSeven,
             },
             {
-              src: SpeakerEight,
+              src: SpeakerSeven,
             },
-            {
-              src: SpeakerNine,
-            },
+            
            
           ]}
           width={1920} // Width of the carousel
@@ -409,7 +409,9 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
           title={title3}
           description={description3}
           roles={roles3}
+
         />
+
 
           <ProjectSectionContent>
           <Image
@@ -433,11 +435,11 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
 
 
 
+
         <ProjectTextRow>
             <ProjectSectionHeading>Intro</ProjectSectionHeading>
             <ProjectSectionText>
-            Sometimes projects are halted before they come to fruition, either because the client loses interest, the budget is insufficient, or there are feasibility issues. However, all these inquiries or experimental ideas are very valuable for learning new things and discovering unknown aspects. Even if they remain incomplete and don’t reach the stage of an MVP (Minimum Viable Product) or POC (Proof of Concept), they are part of the journey and it would be a shame to overlook them.            
-            </ProjectSectionText>
+            Sometimes projects are halted before they come to fruition, either because the client loses interest, the budget is insufficient, or there are feasibility issues. However, all these inquiries or experimental ideas are very valuable for learning new things and discovering unknown aspects. Even if they remain incomplete and don’t reach the stage of an MVP (Minimum Viable Product) or POC (Proof of Concept), they are part of the journey and it would be a shame to overlook them.              </ProjectSectionText>
           </ProjectTextRow>
 
           <ProjectTextRow>
@@ -470,6 +472,3 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
     </Fragment>
   );
 };
-
-
-

@@ -1,15 +1,24 @@
-/* Ensure video elements are full width */
 .video {
-  width: 100%;
+  width: 120%;
+
+  @media (--mediaLaptop) {
+    width: 150%;
+  }
+
+  @media (--mediaTablet) {
+    width: 100%;
+  }
 }
 
-/* Grid for sidebar images */
 .sidebarImages {
   display: grid;
-  grid-template-columns: 1fr; /* Ensure full width for images */
+  grid-template-columns: repeat(6, [col] 1fr);
   align-items: center;
-  padding: 0; /* Consistent padding */
-  margin-top: 60px; /* Consistent margin-top for tablets and mobiles */
+
+  @media (--mediaTablet) {
+    padding: 0 80px;
+    margin-top: 60px;
+  }
 
   @media (--mediaMobile) {
     padding: 0 20px;
@@ -17,13 +26,19 @@
   }
 }
 
-/* Individual sidebar image */
 .sidebarImage {
-  grid-column: span 1; /* Span all columns to ensure full width */
-  position: relative;
-  top: 0;
-  opacity: 1;
+  &:first-child {
+    grid-column: col 1 / span 4;
+    grid-row: 1;
+    position: relative;
+    top: 5%;
+    opacity: 0.4;
+  }
+
+  &:last-child {
+    grid-column: col 3 / span 4;
+    grid-row: 1;
+    position: relative;
+    top: -5%;
+  }
 }
-
-
-
