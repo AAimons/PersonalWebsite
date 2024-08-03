@@ -41,7 +41,6 @@ export const biography = () => {
 
 
 
-        <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
               <ProjectSectionHeading>Summary</ProjectSectionHeading>
@@ -85,7 +84,6 @@ export const biography = () => {
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
-        </ProjectSection>
 
 
 
@@ -119,11 +117,11 @@ export const biography = () => {
               </ListItem>
 
               <ListItem>
-              I had zero clues about academia or what a PhD entailed
+              I had zero clues about academia and what a PhD entailed
               </ListItem>
 
               <ListItem>
-              I had zero clues about Motion Capture
+              I had zero clues about Tracking Technologies and Volumetric Capture
               </ListItem>
 
               <ListItem>
@@ -135,7 +133,10 @@ export const biography = () => {
               
               <br />
               
-              My constant curiosity and passion for new experiences have fueled this process, regardless of the outcome. As I explore new subjects, methods, and technologies, my career journey has demanded rapid adaptation and the acquisition of new competencies within short periods that have been measured and evaluated. 
+             As I explore new subjects, methods, and technologies, my career journey has demanded rapid adaptation and the acquisition of new competencies within short periods that have been measured and evaluated. 
+             <br />
+             <br />
+             In every new scenario I succesfully delivered academic and industry standards. 
                 
               </ProjectSectionText>
             </ProjectTextRow>
@@ -155,7 +156,7 @@ export const biography = () => {
                 <TableBody>
                   <TableRow>
                     <TableHeadCell>Problem Solving</TableHeadCell>
-                    <TableCell>Critical Thinking, Creativity, Troubleshooting, Resourcefulness</TableCell>
+                    <TableCell>Critical Thinking, Creativity, Thoughtfulness, Troubleshooting, Resourcefulness</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Interpersonal</TableHeadCell>
@@ -228,7 +229,7 @@ export const biography = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Currently Improving</TableHeadCell>
-                    <TableCell> <Link href="https://github.com/AAimons/VR_Puzzle_Game_POC">Unity</Link> , Unreal Engine, 8th Wall, Python, <Link href="https://github.com/AAimons/Vertical-Video-Slider-Comparison-HTML">HTML</Link>, GitHub Development</TableCell>
+                    <TableCell> <Link href="https://github.com/AAimons/VR_Puzzle_Game_POC">Unity</Link> , Unreal Engine, <Link href="https://www.8thwall.com/studiot3d/4dviewst3d">8th Wall</Link>, Python, <Link href="https://github.com/AAimons/Vertical-Video-Slider-Comparison-HTML">HTML</Link>, <Link href="https://github.com/AAimons">GitHub Development</Link></TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

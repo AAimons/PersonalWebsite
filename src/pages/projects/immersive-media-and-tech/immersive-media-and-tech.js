@@ -193,7 +193,37 @@ export const SmartSparrow = () => {
             <ProjectSectionText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </ProjectSectionText>
+            
           </ProjectTextRow>
+
+
+          <ProjectSectionContent>
+
+
+          <br /><br />
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
+      <video
+        className={styles.video}
+        controls
+        style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+      >
+        <source src="/static/Urquiola-Gameplay.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+<br /><br />
+
+</ProjectSectionContent>
+
+
+          <ProjectTextRow>
+            <ProjectSectionHeading>My Role</ProjectSectionHeading>
+            <ProjectSectionText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+          
 
 
 {/* Project 2 --- Header + image + description */}

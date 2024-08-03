@@ -19,6 +19,12 @@ import SpeakerSeven from 'assets/Speaking-7.jpg';
 import SpeakerEight from 'assets/Speaking-8.jpg';
 import SpeakerNine from 'assets/Speaking-9.jpg';
 
+import THECover from 'assets/THE-cover.jpg';
+import PadellaRig from 'assets/PadellaRig.jpg';
+
+
+
+
 
 
 import imageSprComponentsDarkLarge from 'assets/spr-components-dark-large.png';
@@ -116,7 +122,7 @@ const roles2 = [
 ];
 
 const title3 = 'Practice-Led & Practice-Based Research // Miscellaneous';
-const description3 = 'A book investigating XR Design principles for Storytelling';
+const description3 = 'Various genuine experiments';
 const roles3 = [
   'Strange Contraptions',
   '? ¿',
@@ -418,21 +424,22 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
               
               srcSet={
                 isDark
-                  ? `${imageSprLessonBuilderDark} 1280w, ${imageSprLessonBuilderDarkLarge} 2560w`
-                  : `${imageSprLessonBuilderLight} 1280w, ${imageSprLessonBuilderLightLarge} 2560w`
+                  ? `${THECover} 1280w, ${THECover} 2560w`
+                  : `${THECover} 1280w, ${THECover} 2560w`
               }
               width={1280}
               hright={800}
               placeholder={
                 isDark
-                  ? imageSprLessonBuilderDark
-                  : imageSprLessonBuilderLight
+                  ? THECover
+                  : THECover
               }
               alt={`A set of themed components for the aero design system`}
               sizes="100vw"
             />
           </ProjectSectionContent>
 
+          <br /><br />
 
 
 
@@ -442,6 +449,9 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
             Sometimes projects are halted before they come to fruition, either because the client loses interest, the budget is insufficient, or there are feasibility issues. However, all these inquiries or experimental ideas are very valuable for learning new things and discovering unknown aspects. Even if they remain incomplete and don’t reach the stage of an MVP (Minimum Viable Product) or POC (Proof of Concept), they are part of the journey and it would be a shame to overlook them.              </ProjectSectionText>
           </ProjectTextRow>
 
+          <br /><br />
+
+
           <ProjectTextRow>
             <ProjectSectionHeading>Padella Rig</ProjectSectionHeading>
             <ProjectSectionText>
@@ -449,12 +459,30 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
             </ProjectSectionText>
           </ProjectTextRow>
 
+          <br /><br />
+
+          <Image
+      src={PadellaRig}
+      width={640} // Adjusted width
+      height={400} // Adjusted height (fixed the typo)
+      placeholder={PadellaRig}
+      alt="Padella Rig"
+      sizes="50vw"
+      style={{ display: 'block', maxWidth: '40%', height: 'auto' }} // Ensures image responsiveness
+    />
+
+<br /><br />
+
+
           <ProjectTextRow>
             <ProjectSectionHeading>Tilt Brush</ProjectSectionHeading>
             <ProjectSectionText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </ProjectSectionText>
           </ProjectTextRow>
+
+          <br /><br />
+
 
           <ProjectTextRow>
             <ProjectSectionHeading>Mocap VR Integration</ProjectSectionHeading>
