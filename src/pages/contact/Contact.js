@@ -53,7 +53,7 @@ export const Contact = () => {
     <Section className={styles.contact}>
       <Meta
         title="Contact"
-        description="aimone.bodini(a_t)gmail.com"
+        description="aimone(dot)bodini(a_t)gmail.com"
       />
       <Transition unmount in={!complete} timeout={1600}>
         {(visible, status) => (
@@ -66,7 +66,7 @@ export const Contact = () => {
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
               <DecoderText
-                text="aimone.bodini(a_t)gmail.com"
+                text="aimone(dot)bodini(a_t)gmail.com"
                 start={status !== 'exited'}
                 delay={300}
               />

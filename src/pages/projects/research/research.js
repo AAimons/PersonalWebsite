@@ -453,13 +453,15 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
 
 
           <ProjectTextRow>
-            <ProjectSectionHeading>Padella Rig</ProjectSectionHeading>
+            <ProjectSectionHeading>Pot GoPro Rig</ProjectSectionHeading>
             <ProjectSectionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            What do you do when you are waiting for a proper alluminium GoPro Rig you purchased is being delivered? You don’t waste time and get the best out of what you got. How? Grab a pot, a bunch of GoPros some sticky gum and see if you can create a 360° video with such rudimental setup.
+            The result? It worked! Sort of, the concept was there but with some issues of course. Still, success. 
             </ProjectSectionText>
           </ProjectTextRow>
 
           <br /><br />
+          <ProjectTextRow>
 
           <Image
       src={PadellaRig}
@@ -468,8 +470,9 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
       placeholder={PadellaRig}
       alt="Padella Rig"
       sizes="50vw"
-      style={{ display: 'block', maxWidth: '40%', height: 'auto' }} // Ensures image responsiveness
+      style={{ display: 'block', maxWidth: '100%', height: 'auto' }} // Ensures image responsiveness
     />
+          </ProjectTextRow>
 
 <br /><br />
 
@@ -477,11 +480,26 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
           <ProjectTextRow>
             <ProjectSectionHeading>Tilt Brush</ProjectSectionHeading>
             <ProjectSectionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            We were in touch with a well known painter intrigued about VR painting that started playing around with Tilt Brush (one of the best and most revolutionary immersive experiences if you ask me)
             </ProjectSectionText>
           </ProjectTextRow>
 
           <br /><br />
+          <ProjectSectionContent>
+
+          <br /><br />
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
+      <video
+        className={styles.video}
+        controls
+        style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+      >
+        <source src="/static/TiltBrush.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+<br /><br />
+</ProjectSectionContent>
 
 
           <ProjectTextRow>
