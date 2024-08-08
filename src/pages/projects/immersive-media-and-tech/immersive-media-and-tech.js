@@ -222,7 +222,7 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>My Role</ProjectSectionHeading>
             <ProjectSectionText>
-            Collaborating closely with a genius like Patricia Urquiola was no simple feat. From the initial meeting to the final stages of production, she continuously generated a vast number of ideas, truly a "volcano" of creativity. The challenge lay in filtering and prioritizing these inputs. After that, it was my responsibility to work with our software engineers to assess the feasibility of each feature Patricia requested and ultimately serve as a mediator, returning to Patricia to explain why certain features could not be implemented due to constraints related to timing and resources.
+            Collaborating closely with a genius like Patricia Urquiola was no simple feat. From the initial meeting to the final stages of production, she continuously generated a vast number of ideas, truly a &ldquo volcano &ldquo of creativity. The challenge lay in filtering and prioritizing these inputs. After that, it was my responsibility to work with our software engineers to assess the feasibility of each feature Patricia requested and ultimately serve as a mediator, returning to Patricia to explain why certain features could not be implemented due to constraints related to timing and resources.
             </ProjectSectionText>
           </ProjectTextRow>
 
@@ -247,7 +247,7 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>Reception</ProjectSectionHeading>
             <ProjectSectionText>
-            During Milano Design Week, the multitude of events makes capturing attention and directing visitors to your exhibit a significant challenge. However, thanks to the immense effort from all project partners, our experience was fully booked from early morning until midnight each day. We received an overwhelmingly positive response from the general public, as well as from prominent artists, designers, creatives, and musicians who experienced "Don't Treat Me Like an Object."
+            During Milano Design Week, the multitude of events makes capturing attention and directing visitors to your exhibit a significant challenge. However, thanks to the immense effort from all project partners, our experience was fully booked from early morning until midnight each day. We received an overwhelmingly positive response from the general public, as well as from prominent artists, designers, creatives, and musicians who experienced “Don't Treat Me Like an Object”.
             </ProjectSectionText>
           </ProjectTextRow>
 
