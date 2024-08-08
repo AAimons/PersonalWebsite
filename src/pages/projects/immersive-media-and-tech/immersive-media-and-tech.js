@@ -247,7 +247,7 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>Reception</ProjectSectionHeading>
             <ProjectSectionText>
-            During Milano Design Week, the multitude of events makes capturing attention and directing visitors to your exhibit a significant challenge. However, thanks to the immense effort from all project partners, our experience was fully booked from early morning until midnight each day. We received an overwhelmingly positive response from the general public, as well as from prominent artists, designers, creatives, and musicians who experienced &aposDon't Treat Me Like an Object&apos.
+            During Milano Design Week, the multitude of events makes capturing attention and directing visitors to your exhibit a significant challenge. However, thanks to the immense effort from all project partners, our experience was fully booked from early morning until midnight each day. We received an overwhelmingly positive response from the general public, as well as from prominent artists, designers, creatives, and musicians who experienced &aposDon’t Treat Me Like an Object&apos.
             </ProjectSectionText>
           </ProjectTextRow>
 
