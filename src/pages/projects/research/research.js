@@ -50,6 +50,9 @@ import imageBookCover from 'assets/CoverandArt.jpg';
 import imageBookLaunch01 from 'assets/BookLaunch_01_light.jpg';
 import imageBookLaunch02 from 'assets/BookLaunch_02_light.jpg';
 import imageCoverPhD from 'assets/CoverPhD.jpg';
+import CoverPhDWhite from 'assets/CoverPhD_White.jpg';
+import CoverPhDDark from 'assets/CoverPhD_Dark.jpg';
+
 
 import imageLongTail from 'assets/LongTail.jpg';
 import imageLongTailDark from 'assets/LongTail_dark.jpg';
@@ -175,16 +178,16 @@ export const SmartSparrow = () => {
               key={themeId}
               srcSet={
                 isDark
-                  ? [imageCoverPhD, imageCoverPhD]
-                  : [imageCoverPhD, imageCoverPhD]
+                  ? [CoverPhDDark, CoverPhDWhite]
+                  : [CoverPhDWhite, CoverPhDWhite]
               }
               placeholder={
                 isDark
-                  ? imageCoverPhD
-                  : imageCoverPhD
+                  ? CoverPhDDark
+                  : CoverPhDDark
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="A screenshot of the current ui of the app"
+              alt="A collage of the usability testing phase and some screenshots of the previz immersive tool"
             />
           </ProjectSectionContent>
 
@@ -219,7 +222,7 @@ export const SmartSparrow = () => {
                   ? imageLongTailDark
                   : imageLongTail
               }
-              alt={`A set of themed components for the aero design system`}
+              alt={`Long Tail diagram revisited by me`}
               sizes="100vw"
             />
  <br /><br />
@@ -274,7 +277,7 @@ A PhD, in most cases, is an individual experience and if you need a hand you wil
                   ? imageBookCover
                   : imageBookCover
               }
-              alt={`A set of themed components for the aero design system`}
+              alt={`Cover of th hard book and illustration representing the discovery journey`}
               sizes="100vw"
             />
     
@@ -299,7 +302,7 @@ Just as I am fascinated by the semiotics of cinematic language, I wondered if th
       width={640} // Adjusted width
       height={400} // Adjusted height (fixed the typo)
       placeholder={imageBookLaunch02}
-      alt="A set of themed components for the aero design system"
+      alt="Press Conference at BASE"
       sizes="50vw"
       style={{ display: 'block', maxWidth: '100%', height: 'auto' }} // Ensures image responsiveness
     />
@@ -312,7 +315,7 @@ This work was notably recognized by the World VR Forum, which helped turn it int
       width={640} // Adjusted width
       height={400} // Adjusted height (fixed the typo)
       placeholder={imageBookLaunch01}
-      alt="A set of themed components for the aero design system"
+      alt="Press Conference at BASE"
       sizes="50vw"
       style={{ display: 'block', maxWidth: '100%', height: 'auto' }} // Ensures image responsiveness
     />

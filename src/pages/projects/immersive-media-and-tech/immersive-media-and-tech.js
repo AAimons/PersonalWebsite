@@ -25,6 +25,7 @@ import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
 import imageCartoon from 'assets/pippo.jpeg';
 
 import UrquiolaIntro from 'assets/Urquiola-intro.jpg';
+import UrquiolaPatricia from 'assets/Not_an_object_Urquiola_1.jpg';
 
 
 
@@ -191,16 +192,15 @@ export const SmartSparrow = () => {
         <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </ProjectSectionText>
+            Encountering Patricia Urquiola was both serendipitous and fortunate. At a time of great excitement in the VR field, she chose to engage in this pioneering exploration of how objects in the VR realm could transcend their traditional roles of form and function. 
+            <br /><br />
+
+            “We have approached this Virtual Reality project with curiosity about another type of reality, in which objects, architectures and landscapes develop freely in a time-space without our material logics. In this dimension, objects have complex emotions and reactions, based on non-biological intelligence. An immersion in a parallel context, in which sensations of pleasure could change towards an ‘Uncanny Valley’, or ‘disturbing zone’.... We are at the beginnings of these explorations”.
             
-          </ProjectTextRow>
-
-
-          <ProjectSectionContent>
-
-
-          <br /><br />
+            
+        <br /><br />
+            From a technical point of view, the great challenge has been that of creating a neural network able to learn from human movements and therefore decide how to react on the basis of the user’s behaviour. This is how the reactions of objects have been made the most natural and variable possible.
+            <br /><br />
 <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
       <video
         className={styles.video}
@@ -212,18 +212,44 @@ export const SmartSparrow = () => {
       </video>
     </div>
 <br /><br />
+            </ProjectSectionText>
+            
+          </ProjectTextRow>
 
-</ProjectSectionContent>
+
 
 
           <ProjectTextRow>
             <ProjectSectionHeading>My Role</ProjectSectionHeading>
             <ProjectSectionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Collaborating closely with a genius like Patricia Urquiola was no simple feat. From the initial meeting to the final stages of production, she continuously generated a vast number of ideas, truly a "volcano" of creativity. The challenge lay in filtering and prioritizing these inputs. After that, it was my responsibility to work with our software engineers to assess the feasibility of each feature Patricia requested and ultimately serve as a mediator, returning to Patricia to explain why certain features could not be implemented due to constraints related to timing and resources.
             </ProjectSectionText>
           </ProjectTextRow>
 
-          
+
+          <br /><br />
+
+          <ProjectTextRow>
+
+          <Image
+      src={UrquiolaPatricia}
+      width={640} // Adjusted width
+      height={400} // Adjusted height (fixed the typo)
+      placeholder={UrquiolaPatricia}
+      alt="Patricia Urquiola"
+      sizes="50vw"
+      style={{ display: 'block', maxWidth: '100%', height: 'auto' }} // Ensures image responsiveness
+    />
+          </ProjectTextRow>
+
+          <br /><br />
+
+          <ProjectTextRow>
+            <ProjectSectionHeading>Reception</ProjectSectionHeading>
+            <ProjectSectionText>
+            During Milano Design Week, the multitude of events makes capturing attention and directing visitors to your exhibit a significant challenge. However, thanks to the immense effort from all project partners, our experience was fully booked from early morning until midnight each day. We received an overwhelmingly positive response from the general public, as well as from prominent artists, designers, creatives, and musicians who experienced "Don't Treat Me Like an Object."
+            </ProjectSectionText>
+          </ProjectTextRow>
 
 
 {/* Project 2 --- Header + image + description */}
