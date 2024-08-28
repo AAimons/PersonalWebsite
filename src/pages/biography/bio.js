@@ -47,7 +47,7 @@ export const biography = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                  I work as a Research and Development Engineer at <Link href="https://www.target3d.co.uk/">Target3D</Link> in London. My role involves prototyping and developing custom tracking solutions using cutting-edge media technologies in areas like Motion and Volumetric capture, virtual production, VR & AR, robotics, biomechanics, animation, VFX, gaming, training, and simulation.
+                  I work as a Research and Development Engineer at <Link href="https://www.target3d.co.uk/">Target3D</Link> in London. My role involves prototyping and developing custom tracking solutions using emerging technologies in areas like Motion and Volumetric Capture, Virtual Production, VR & AR, Robotics, Biomechanics, Animation, VFX, Gaming, Training, and Simulation.
             
        
 
@@ -160,7 +160,7 @@ export const biography = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Interpersonal</TableHeadCell>
-                    <TableCell>Teamwork, Networking, Empathy</TableCell>
+                    <TableCell>Teamwork, Ownership, Networking, Empathy</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Communication</TableHeadCell>
@@ -210,7 +210,7 @@ export const biography = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Research</TableHeadCell>
-                    <TableCell>Mixed Methods (<i>Interviews, Workshops, Surveys, Personas, Usability Testing, A/B Testing, Prototyping</i>), <br /> <br /> Technical Writing, Scientific Publishing, Dissemination</TableCell>
+                    <TableCell>Mixed Methods (<i>Interviews, Workshops, Surveys, Personas, Wizard of Oz, Usability Testing, A/B Testing, Prototyping</i>), <br /> <br /> Technical Writing, Scientific Publishing, Dissemination</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Traditional & Spatial Video</TableHeadCell>
