@@ -128,6 +128,14 @@ const roles3 = [
   'Producer',
 ];
 
+const title4 = 'Angels Costumes - Volumetric Capture';
+const description4 = 'Innovation and Conservation of Period Costumes by the Famous Theatre and Cinema Firm, Angels';
+const roles4 = [
+ 
+  'Volumetric Capture Techincal Director',
+  
+];
+
 
 
 {/* Start of the code*/}
@@ -421,6 +429,53 @@ In the months leading up to the event, I collaborated closely with the productio
           description={description3}
           url="https://"
           roles={roles3}
+        />
+
+          <ProjectSectionContent>
+          <Image
+              
+              srcSet={
+                isDark
+                  ? `${ARFiltersDark} 1280w, ${ARFiltersDark} 2560w`
+                  : `${ARFiltersDark} 1280w, ${ARFiltersDark} 2560w`
+              }
+              width={1280}
+              hright={800}
+              placeholder={
+                isDark
+                  ? ARFiltersDark
+                  : ARFiltersWhite
+              }
+              alt={`A set of themed components for the aero design system`}
+              sizes="100vw"
+            />
+          </ProjectSectionContent>
+
+
+          <br /><br />
+
+
+
+        <ProjectTextRow>
+            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionText>
+              I had to deal with the approval process on Meta platforms such as Instragram and dealed with compliancy.
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+
+
+
+
+{/* Project 4 --- Header + image + description */}
+
+
+
+<ProjectHeader
+          title={title4}
+          description={description4}
+          url="https://"
+          roles={roles4}
         />
 
           <ProjectSectionContent>

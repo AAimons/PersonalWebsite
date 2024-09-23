@@ -235,7 +235,7 @@ Embarking on a PhD can be very tricky. Sooner or later you are going to encounte
 I started during the outbreak of the COVID-19 pandemic and this historic event profundly changed my research, my approach to it and, moreover, the overall life experience.
 <br /><br /> I think that what you develop as a PhD is the art of adapting to ever changing scenarios. If you want to reach the end of the journey and deliver, you have to define a goal based on many forces that are stretching you around. The goal cannot be clear at first and if it doesn’t appear obvious at a certain point, it’s your responsability to make sense out of it. What do I want to research? What my sponsor wants me to research? What my supervisor wants me to research? How can I enrich the scinetific literature?  What can I actually research?
 I could mention even more forces but you got the idea. 
-<br /><br /> It’s easy to be at the mercy of these powers, like being stranded in the ocean. Therefore I came up with a Realistic Intersaction plan that could satisfy these different, sometimes divergent, interests. It’s a matter of acting to pull off something that may add value to the table. Something that could be doable with the time, resources and skills at my disposal.
+<br /><br /> It’s easy to be at the mercy of these powers, like being stranded in the ocean. Therefore I came up with a plan that could satisfy these different, sometimes divergent, interests. Something that could be doable with the time, resources and skills at my disposal and, at the same time, something that could add value to the table.
 A PhD, in most cases, is an individual experience and if you need a hand you will find it at the end of your arm. 
           
 
@@ -505,11 +505,27 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
 </ProjectSectionContent>
 
 
-          <ProjectTextRow>
-            <ProjectSectionHeading>Mocap VR Integration</ProjectSectionHeading>
+         
+<ProjectTextRow>
+            <ProjectSectionHeading>VR Mocap Integration</ProjectSectionHeading>
             <ProjectSectionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            What do you do when you are waiting for a proper alluminium GoPro Rig you purchased is being delivered? You don’t waste time and get the best out of what you got. How? Grab a pot, a bunch of GoPros some sticky gum and see if you can create a 360° video with such rudimental setup.
+            The result? It worked! Sort of, the concept was there but with some issues of course. Still, success. 
             </ProjectSectionText>
+          </ProjectTextRow>
+
+          <br /><br />
+          <ProjectTextRow>
+
+          <Image
+      src={PadellaRig}
+      width={640} // Adjusted width
+      height={400} // Adjusted height (fixed the typo)
+      placeholder={PadellaRig}
+      alt="Padella Rig"
+      sizes="50vw"
+      style={{ display: 'block', maxWidth: '100%', height: 'auto' }} // Ensures image responsiveness
+    />
           </ProjectTextRow>
 
 
