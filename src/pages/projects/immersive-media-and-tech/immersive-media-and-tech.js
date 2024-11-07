@@ -256,7 +256,7 @@ Moreover, I focused on effective strategies for distributing our content, ensuri
               a technology that is capable to not only capture the subject thre-dimensionally, but to also capture the fourth-dimension: time. <br /><br />
               In other words, thanks to 48 cameras placed all around the subject, it is possible to capture volumetrically subjects and their movements which eneded up being crucial when representing virtually the cloth/dresses simulation and physics.
               
-              To achive the best output when capturing Angels' costumes, as Technical Director I was responsable of operating the Volumetric Capture system and...
+              To achive the best output when capturing Angels’ costumes, as Technical Director I was responsable of operating the Volumetric Capture system and...
               <br /><br />
               I developed a workflow that could work within Target3D existing infrastrucutre (hardware and software). After several tests, I also idntified and documented (technical writing) the pre-production, capturing, post-production and data mangement best practices. 
             </ProjectSectionText>
