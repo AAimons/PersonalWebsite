@@ -49,6 +49,19 @@ import InnovationRoomThree from 'assets/InnovationRoom-3.jpg';
 import ARFiltersDark from 'assets/ARFilters-intro-dark.jpg';
 import ARFiltersWhite from 'assets/ARFilters-intro-white.jpg';
 
+import Volcap1 from 'assets/VolcapRedDress.png';
+
+import AngelsOne from 'assets/Angels_1.jpg';
+import AngelsTwo from 'assets/Angels_2.jpg';
+import AngelsThree from 'assets/Angels_3.jpg';
+import AngelsFour from 'assets/Angels_4.jpg';
+import AngelsFive from 'assets/Angels_5.jpg';
+import AngelsSix from 'assets/Angels_6.jpg';
+import AngelsSeven from 'assets/Angels_7.jpg';
+
+
+
+
 
 
 import React from 'react';
@@ -128,11 +141,14 @@ const roles3 = [
   'Producer',
 ];
 
-const title4 = 'Angels Costumes - Volumetric Capture';
-const description4 = 'Innovation and Conservation of Period Costumes by the Famous Theatre and Cinema Firm, Angels';
+const title4 = 'Digital Humans: Capturing Performance and Presence';
+const description4 = 'Consultancy, R&D, and Real-Time Integration for Immersive Human Digitalization';
 const roles4 = [
  
-  'Volumetric Capture Techincal Director',
+  'Techincal Director',
+  'End-to-end Development',
+  'R&D Consultant',
+  
   
 ];
 
@@ -166,6 +182,122 @@ export const SmartSparrow = () => {
 
 
 
+{/* Project 4 --- Header + image + description */}
+
+
+
+<ProjectHeader
+          title={title4}
+          description={description4}
+          url="https://"
+          roles={roles4}
+        />
+
+          <ProjectSectionContent>
+          <Image
+              
+              srcSet={
+                isDark
+                  ? `${Volcap1} 1280w, ${Volcap1} 2560w`
+                  : `${Volcap1} 1280w, ${Volcap1} 2560w`
+              }
+              width={1280}
+              hright={800}
+              placeholder={
+                isDark
+                  ? Volcap1
+                  : Volcap1
+              }
+              alt={`A set of themed components for the aero design system`}
+              sizes="100vw"
+            />
+          </ProjectSectionContent>
+
+
+          <br /><br />
+
+
+
+          <ProjectTextRow>
+            <ProjectSectionHeading>Purpose and Technologies</ProjectSectionHeading>
+            <ProjectSectionText>
+            In the realm of computer graphics, capturing human representation is essential to translating performances into the digital domain. Techniques like Volumetric Capture and Motion Capture enable us to authentically recreate human movements and expressions, enriching the virtual experience with genuine emotional depth and realism.              <br /><br />
+
+              <br /><br />
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+          <br /><br />
+
+          <ProjectTextRow>
+            <ProjectSectionHeading>My Role</ProjectSectionHeading>
+            <ProjectSectionText>
+            I led the end-to-end development of our Volumetric and Motion Capture projects, beginning with advising and collaborating with clients to achieve optimal results and preparing compelling pitches to secure grants and funding. My responsibilities extended to managing technical operations during performance capture on shoot days. I utilized established commercial tools such as OptiTrack, Motive, Captury, Theia, and Notiom, along with various R&D solutions that often presented limited documentation and numerous bugs that I successfully troubleshot for precise motion tracking.
+            <br /><br />
+
+In post-production, I employed software like Blender and 4dfx to process and refine our captures. Throughout the workflow, I ensured seamless integration with real-time game engines like Unity and Unreal Engine, enabling us to bring our digital humans to life within engaging environments. I also created pre-visualizations to provide clients with a clear understanding of how the final product would appear on shoot days, and I developed standalone VR applications.
+<br /><br />
+
+Moreover, I focused on effective strategies for distributing our content, ensuring the final output could be experienced in the best possible manner. This involved developing specific workflows that leveraged the capabilities of 8th Wall WebXR, as well as experimenting with formats like Sony Spatial Reality Display and Apple Vision Pro. This role allowed me to merge my technical expertise with my passion for storytelling, crafting immersive experiences that resonate deeply with audiences.
+              <br /><br />
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+          <br /><br />
+
+
+
+        <ProjectTextRow>
+            <ProjectSectionHeading>Angels Costumes</ProjectSectionHeading>
+            <ProjectSectionText>
+              Challenge: Innovation and Conservation of Period Costumes by the Famous Theatre and Cinema firm, Angels. In partnership with <Link href="https://www.gsmd.ac.uk/">Guildhall School of Music and Drama</Link>.
+              <br /><br />
+
+              a technology that is capable to not only capture the subject thre-dimensionally, but to also capture the fourth-dimension: time. <br /><br />
+              In other words, thanks to 48 cameras placed all around the subject, it is possible to capture volumetrically subjects and their movements which eneded up being crucial when representing virtually the cloth/dresses simulation and physics.
+              
+              To achive the best output when capturing Angels' costumes, as Technical Director I was responsable of operating the Volumetric Capture system and...
+              <br /><br />
+              I developed a workflow that could work within Target3D existing infrastrucutre (hardware and software). After several tests, I also idntified and documented (technical writing) the pre-production, capturing, post-production and data mangement best practices. 
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+
+
+
+          <ProjectSection> {/* Wrapper component */}
+      <ProjectSectionContent> {/* Content wrapper */}
+        <Carousel
+          images={[ // Images array
+            {
+              src: AngelsOne, // Source of the image
+            },
+            {
+              src: AngelsTwo, // Source of the image
+            },
+            {
+              src: AngelsThree,
+            },
+            {
+              src: AngelsFour,
+            },
+            {
+              src: AngelsFive,
+            },
+            {
+              src: AngelsSix,
+            },
+            {
+              src: AngelsSeven,
+            
+            },
+            
+          ]}
+          width={1920} // Width of the carousel
+          height={1080} // Height of the carousel
+        />
+      </ProjectSectionContent>
+    </ProjectSection>
 
 
 {/* Project 1 --- Header + image + description */}
@@ -198,7 +330,7 @@ export const SmartSparrow = () => {
 
         <ProjectSection>
         <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading>The challenge</ProjectSectionHeading>
             <ProjectSectionText>
             Encountering Patricia Urquiola was both serendipitous and fortunate. At a time of great excitement in the VR field, she chose to engage in this pioneering exploration of how objects in the VR realm could transcend their traditional roles of form and function. 
             <br /><br />
@@ -230,7 +362,7 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>My Role</ProjectSectionHeading>
             <ProjectSectionText>
-            Collaborating closely with a genius like Patricia Urquiola was no simple feat. From the initial meeting to the final stages of production, she continuously generated a vast number of ideas, truly a ‘volcano’ of creativity. The challenge lay in filtering and prioritizing these inputs. After that, it was my responsibility to work with our software engineers to assess the feasibility of each feature Patricia requested and ultimately serve as a mediator, returning to Patricia to explain why certain features could not be implemented due to constraints related to the technology, time, or resources.
+            Collaborating closely with someone of Patricia Urquiola’s caliber was no simple feat. From the initial meeting to the final stages of production, she continuously generated a vast number of ideas, truly a ‘volcano’ of creativity. The challenge lay in filtering and prioritizing these inputs. After that, it was my responsibility to work with our software engineers to assess the feasibility of each feature Patricia requested and ultimately serve as a mediator, returning to Patricia to explain why certain features could not be implemented due to constraints related to the technology, time, or resources.
             </ProjectSectionText>
           </ProjectTextRow>
 
@@ -460,6 +592,7 @@ In the months leading up to the event, I collaborated closely with the productio
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
               I had to deal with the approval process on Meta platforms such as Instragram and dealed with compliancy.
+              lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
             </ProjectSectionText>
           </ProjectTextRow>
 
@@ -467,48 +600,14 @@ In the months leading up to the event, I collaborated closely with the productio
 
 
 
-{/* Project 4 --- Header + image + description */}
+{/* Project xxxxxxx --- Header + image + description */}
 
 
 
-<ProjectHeader
-          title={title4}
-          description={description4}
-          url="https://"
-          roles={roles4}
-        />
-
-          <ProjectSectionContent>
-          <Image
-              
-              srcSet={
-                isDark
-                  ? `${ARFiltersDark} 1280w, ${ARFiltersDark} 2560w`
-                  : `${ARFiltersDark} 1280w, ${ARFiltersDark} 2560w`
-              }
-              width={1280}
-              hright={800}
-              placeholder={
-                isDark
-                  ? ARFiltersDark
-                  : ARFiltersWhite
-              }
-              alt={`A set of themed components for the aero design system`}
-              sizes="100vw"
-            />
-          </ProjectSectionContent>
-
-
-          <br /><br />
 
 
 
-        <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
-            <ProjectSectionText>
-              I had to deal with the approval process on Meta platforms such as Instragram and dealed with compliancy.
-            </ProjectSectionText>
-          </ProjectTextRow>
+
 
 
 
