@@ -171,6 +171,88 @@ export const SmartSparrow = () => {
 
   return (
     <Fragment>
+<div
+  style={{
+    position: 'fixed',
+    bottom: 0, // Aligns the navigation bar to the bottom of the page
+    left: '50%', // Centers the strip horizontally
+    transform: 'translateX(-50%)', // Ensures exact centering
+    backgroundColor: '#808080', // Default grey background
+    zIndex: 1000,
+    padding: '10px 20px', // Extra padding for margin
+    borderRadius: '5px', // Optional: Adds rounded corners for style
+    transition: 'background-color 0.3s ease', // Smooth transition for the background color change
+  }}
+>
+  <nav style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+    <a
+      href="#section-digital-humans"
+      style={{
+        textDecoration: 'none',
+        color: '#fff', // White text color by default
+        transition: 'color 0.3s ease', // Smooth transition for text color change
+      }}
+      onMouseEnter={(e) => e.target.style.color = '#01E0F9'} // Changes link color on hover (Digital Humans)
+      onMouseLeave={(e) => e.target.style.color = '#fff'} // Reverts link color back to white
+    >
+      Digital Humans
+    </a>
+    <a
+      href="#section-angels-costumes"
+      style={{
+        textDecoration: 'none',
+        color: '#fff', // White text color by default
+        transition: 'color 0.3s ease', // Smooth transition for text color change
+      }}
+      onMouseEnter={(e) => e.target.style.color = '#01E0F9'} // Changes link color on hover (Angels Costumes)
+      onMouseLeave={(e) => e.target.style.color = '#fff'} // Reverts link color back to white
+    >
+      Angels Costumes
+    </a>
+    <a
+      href="#section-urquiola"
+      style={{
+        textDecoration: 'none',
+        color: '#fff', // White text color by default
+        transition: 'color 0.3s ease', // Smooth transition for text color change
+      }}
+      onMouseEnter={(e) => e.target.style.color = '#01E0F9'} // Changes link color on hover (Urquiola)
+      onMouseLeave={(e) => e.target.style.color = '#fff'} // Reverts link color back to white
+    >
+      Urquiola
+    </a>
+
+    <a
+      href="#section-panerai"
+      style={{
+        textDecoration: 'none',
+        color: '#fff', // White text color by default
+        transition: 'color 0.3s ease', // Smooth transition for text color change
+      }}
+      onMouseEnter={(e) => e.target.style.color = '#01E0F9'} // Changes link color on hover (Panerai)
+      onMouseLeave={(e) => e.target.style.color = '#fff'} // Reverts link color back to white
+    >
+      Panerai
+    </a>
+
+
+    <a
+      href="#section-arfilters"
+      style={{
+        textDecoration: 'none',
+        color: '#fff', // White text color by default
+        transition: 'color 0.3s ease', // Smooth transition for text color change
+      }}
+      onMouseEnter={(e) => e.target.style.color = '#01E0F9'} // Changes link color on hover (arfilters)
+      onMouseLeave={(e) => e.target.style.color = '#fff'} // Reverts link color back to white
+    >
+      AR Filters
+    </a>
+
+  </nav>
+</div>
+
+
       <ProjectContainer className="spr">
         <Meta title={title1} prefix="Projects" description={description1} />
         <ProjectBackground
@@ -184,9 +266,11 @@ export const SmartSparrow = () => {
 
 {/* Project 4 --- Header + image + description */}
 
+          <br /><br id="section-digital-humans" />
 
 
 <ProjectHeader
+          id="section-digital-humans"
           title={title4}
           description={description4}
           url="https://"
@@ -219,6 +303,8 @@ export const SmartSparrow = () => {
 
           <ProjectSection>
 
+
+
           <ProjectTextRow>
             <ProjectSectionHeading>Purpose and Technologies</ProjectSectionHeading>
             <ProjectSectionText>
@@ -248,6 +334,7 @@ Moreover, I focused on effective strategies for distributing our content, ensuri
 
           <br /><br />
 
+          <br /><br id="section-angels-costumes" />
 
 
         <ProjectTextRow>
@@ -306,7 +393,11 @@ Moreover, I focused on effective strategies for distributing our content, ensuri
 
 {/* Project 1 --- Header + image + description */}
 
+
+<br /><br id="section-urquiola" />
+
         <ProjectHeader
+          id="section-urquiola"
           title={title1}
           description={description1}
           roles={roles1}
@@ -398,6 +489,8 @@ Moreover, I focused on effective strategies for distributing our content, ensuri
 
 
 {/* Project 2 --- Header + image + description */}
+
+<br /><br id="section-panerai" />
 
 
           <ProjectHeader
@@ -559,6 +652,7 @@ In the months leading up to the event, I collaborated closely with the productio
 
 {/* Project 3 --- Header + image + description */}
 
+<br /><br id="section-arfilters" />
 
 
           <ProjectHeader
