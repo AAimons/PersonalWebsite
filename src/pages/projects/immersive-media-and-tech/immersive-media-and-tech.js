@@ -170,6 +170,7 @@ export const SmartSparrow = () => {
   };
 
   // State and reference for overflow detection
+  const [isOverflowing, setIsOverflowing] = useState(false);
   const navRef = useRef(null);
 
   
@@ -178,90 +179,90 @@ export const SmartSparrow = () => {
     <Fragment>
       {/* Navigation bar with left and right arrows */}
       <div
-        ref={navRef}
-        style={{
-          position: 'fixed',
-          bottom: 0, // Aligns to the bottom of the page
-          left: 0, // Aligns to the left of the page
-          backgroundColor: '#808080',
-          zIndex: 1000,
-          padding: '10px 20px',
-          borderRadius: '5px',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '10px',
-          overflowX: 'auto', // Enable scrolling when content overflows
-          whiteSpace: 'nowrap', // Prevent wrapping of links
-          width: '100%', // Set width to 100% for the full viewport width
-          paddingLeft: '20px', // Ensure the first element is visible and not cut off
-        }}
-      >
-        
+  ref={navRef}
+  style={{
+    position: 'fixed',
+    bottom: 0, // Aligns to the bottom of the page
+    left: 0, // Aligns to the left of the page
+    backgroundColor: '#808080',
+    zIndex: 1000,
+    padding: '10px 20px',
+    borderRadius: '5px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+    overflowX: 'auto', // Enable scrolling when content overflows
+    whiteSpace: 'nowrap', // Prevent wrapping of links
+    width: '100%', // Set width to 100% for the full viewport width
+    paddingLeft: '20px', // Ensure the first element is visible and not cut off
+  }}
+>
+ 
 
-        {/* Navigation Links */}
-        <a
-          href="#section-digital-humans"
-          style={{
-            textDecoration: 'none',
-            color: '#fff',
-            transition: 'color 0.3s ease',
-          }}
-          onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
-          onMouseLeave={(e) => e.target.style.color = '#fff'}
-        >
-          Digital Humans
-        </a>
-        <a
-          href="#section-angels-costumes"
-          style={{
-            textDecoration: 'none',
-            color: '#fff',
-            transition: 'color 0.3s ease',
-          }}
-          onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
-          onMouseLeave={(e) => e.target.style.color = '#fff'}
-        >
-          Angels Costumes
-        </a>
-        <a
-          href="#section-urquiola"
-          style={{
-            textDecoration: 'none',
-            color: '#fff',
-            transition: 'color 0.3s ease',
-          }}
-          onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
-          onMouseLeave={(e) => e.target.style.color = '#fff'}
-        >
-          Urquiola
-        </a>
-        <a
-          href="#section-panerai"
-          style={{
-            textDecoration: 'none',
-            color: '#fff',
-            transition: 'color 0.3s ease',
-          }}
-          onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
-          onMouseLeave={(e) => e.target.style.color = '#fff'}
-        >
-          Panerai
-        </a>
-        <a
-          href="#section-arfilters"
-          style={{
-            textDecoration: 'none',
-            color: '#fff',
-            transition: 'color 0.3s ease',
-          }}
-          onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
-          onMouseLeave={(e) => e.target.style.color = '#fff'}
-        >
-          AR Filters
-        </a>
+  {/* Navigation Links */}
+  <a
+    href="#section-digital-humans"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    Digital Humans
+  </a>
+  <a
+    href="#section-angels-costumes"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    Angels Costumes
+  </a>
+  <a
+    href="#section-urquiola"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    Urquiola
+  </a>
+  <a
+    href="#section-panerai"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    Panerai
+  </a>
+  <a
+    href="#section-arfilters"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    AR Filters
+  </a>
 
-        
-      </div>
+</div>
+
 
       <ProjectContainer className="spr">
         <Meta title={title1} prefix="Projects" description={description1} />
