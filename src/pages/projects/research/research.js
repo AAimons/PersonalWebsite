@@ -7,7 +7,8 @@ import backgroundSpr from 'assets/spr-background-IMT.jpg';
 import Rbackground from 'assets/R-background.jpg';
 import RbackgroundLarge from 'assets/R-background-large.jpg';
 
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+
 
 import SpeakerOne from 'assets/Speaking-1.jpg';
 import SpeakerTwo from 'assets/Speaking-2.jpg';
@@ -150,8 +151,80 @@ export const SmartSparrow = () => {
     dispatch({ type: 'setTheme', value: themes[index] });
   };
 
+
+
+  // State and reference for overflow detection Navigation menu bottom
+  const [isOverflowing, setIsOverflowing] = useState(false);
+  const navRef = useRef(null);
+
   return (
     <Fragment>
+
+{/* Navigation bar with left and right arrows */}
+<div
+  ref={navRef}
+  style={{
+    position: 'fixed',
+    bottom: 0, // Aligns to the bottom of the page
+    left: 0, // Aligns to the left of the page
+    backgroundColor: '#808080',
+    zIndex: 1000,
+    padding: '10px 20px',
+    borderRadius: '5px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+    overflowX: 'auto', // Enable scrolling when content overflows
+    whiteSpace: 'nowrap', // Prevent wrapping of links
+    width: '100%', // Set width to 100% for the full viewport width
+    paddingLeft: '20px', // Ensure the first element is visible and not cut off
+  }}
+>
+ 
+
+  {/* Navigation Links */}
+  <a
+    href="#section-PhD"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    PhD |
+  </a>
+  <a
+    href="#section-VR-Book"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    VR Book |
+  </a>
+  <a
+    href="#section-Strange-Contraptions"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    Strange Contraptions |
+  </a>
+  
+
+</div>
+
+
+
       <ProjectContainer className="spr">
         <Meta title={title1} prefix="Projects" description={description1} />
         <ProjectBackground
@@ -160,6 +233,9 @@ export const SmartSparrow = () => {
           srcSet={`${Rbackground.src} 1080w, ${RbackgroundLarge.src} 2160w`}
           placeholder={Rbackground}
         />
+
+<br /><br id="section-PhD" />
+
 
 {/* Project 1 --- Header + image + description */}
 
@@ -172,7 +248,6 @@ export const SmartSparrow = () => {
         />
 
           <ProjectSectionContent>
-            
             <ProjectImage
               raised
               key={themeId}
@@ -190,12 +265,10 @@ export const SmartSparrow = () => {
               alt="A collage of the usability testing phase and some screenshots of the previz immersive tool"
             />
           </ProjectSectionContent>
-
-
-        
-
-        <ProjectSection>
-        <ProjectTextRow>
+          <ProjectSection>
+          
+          
+          <ProjectTextRow>
             <ProjectSectionHeading>Knowledge Gap & Market Opportunity</ProjectSectionHeading>
             <ProjectSectionText>
             
@@ -244,6 +317,8 @@ A PhD, in most cases, is an individual experience and if you need a hand you wil
 
 
 {/* Project 2 --- Header + image + description */}
+
+<br /><br id="section-VR-Book" />
 
 
           <ProjectHeader
@@ -412,6 +487,7 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
 
 {/* Project 3 --- Header + image + description */}
 
+<br /><br id="section-Strange-Contraptions" />
 
 
           <ProjectHeader
@@ -483,8 +559,13 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
           <ProjectTextRow>
             <ProjectSectionHeading>Tilt Brush</ProjectSectionHeading>
             <ProjectSectionText>
-            We were in touch with a well known painter intrigued about VR painting that started playing around with Tilt Brush (one of the best and most revolutionary immersive experiences if you ask me)
-            </ProjectSectionText>
+            In 2018, we received an intriguing inquiry to support a renowned Italian painter, already adept with technology, in creating a VR painting using Tilt Brush—one of the most revolutionary immersive art tools available at the time. The concept was to merge the VR painting process with the real world, producing a unique mixed reality video to be streamed in Piazza Duomo.
+
+At the time, no out-of-the-box solutions existed to achieve this type of hybrid output. This challenge prompted us to develop a custom workflow to realize the vision. The resulting prototype, showcased in the video hre below (featuring my creation of virtual mushrooms), demonstrated the exciting potential of blending real and virtual artistic spaces.
+
+Unfortunately, the project did not receive final approval. Nonetheless, it proved to be a fun, creative experiment, highlighting the innovative possibilities of immersive art and mixed reality.           
+
+</ProjectSectionText>
           </ProjectTextRow>
 
           <br /><br />
@@ -514,19 +595,7 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
             </ProjectSectionText>
           </ProjectTextRow>
 
-          <br /><br />
-          <ProjectTextRow>
-
-          <Image
-      src={PadellaRig}
-      width={640} // Adjusted width
-      height={400} // Adjusted height (fixed the typo)
-      placeholder={PadellaRig}
-      alt="Padella Rig"
-      sizes="50vw"
-      style={{ display: 'block', maxWidth: '100%', height: 'auto' }} // Ensures image responsiveness
-    />
-          </ProjectTextRow>
+        
 
 
 

@@ -210,7 +210,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    Digital Humans
+    Digital Humans |
   </a>
   <a
     href="#section-angels-costumes"
@@ -222,7 +222,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    Angels Costumes
+    Angels Costumes |
   </a>
   <a
     href="#section-urquiola"
@@ -234,7 +234,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    Urquiola
+    Urquiola |
   </a>
   <a
     href="#section-panerai"
@@ -246,7 +246,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    Panerai
+    Panerai |
   </a>
   <a
     href="#section-arfilters"
@@ -258,7 +258,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    AR Filters
+    AR Filters |
   </a>
 
 </div>
