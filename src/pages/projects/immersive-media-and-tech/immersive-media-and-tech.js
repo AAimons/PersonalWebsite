@@ -170,51 +170,35 @@ export const SmartSparrow = () => {
   };
 
   // State and reference for overflow detection
-  const [isOverflowing, setIsOverflowing] = useState(false);
   const navRef = useRef(null);
 
-  // Effect to handle resizing and check for overflow
-  useEffect(() => {
-    const handleResize = () => {
-      if (navRef.current) {
-        setIsOverflowing(navRef.current.scrollWidth > window.innerWidth);  // Check if nav overflows
-      }
-    };
-
-    // Initial check
-    handleResize();
-
-    // Add resize event listener
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup listener on unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  
 
   return (
     <Fragment>
-      {/* Navigation bar with overflow handling */}
+      {/* Navigation bar with left and right arrows */}
       <div
         ref={navRef}
         style={{
           position: 'fixed',
-          bottom: 0,  // Aligns to the bottom of the page
-          left: '50%',  // Centers horizontally
-          transform: 'translateX(-50%)',
+          bottom: 0, // Aligns to the bottom of the page
+          left: 0, // Aligns to the left of the page
           backgroundColor: '#808080',
           zIndex: 1000,
           padding: '10px 20px',
           borderRadius: '5px',
-          transition: 'background-color 0.3s ease',
           display: 'flex',
-          justifyContent: 'center',
-          gap: '20px',
-          overflowX: isOverflowing ? 'auto' : 'hidden',  // Enable horizontal scroll if overflowing
-          whiteSpace: 'nowrap',  // Prevents items from wrapping to the next line
+          alignItems: 'center',
+          gap: '10px',
+          overflowX: 'auto', // Enable scrolling when content overflows
+          whiteSpace: 'nowrap', // Prevent wrapping of links
+          width: '100%', // Set width to 100% for the full viewport width
+          paddingLeft: '20px', // Ensure the first element is visible and not cut off
         }}
       >
+        
+
+        {/* Navigation Links */}
         <a
           href="#section-digital-humans"
           style={{
@@ -222,8 +206,8 @@ export const SmartSparrow = () => {
             color: '#fff',
             transition: 'color 0.3s ease',
           }}
-          onMouseEnter={(e) => e.target.style.color = '#01E0F9'} // Hover color change
-          onMouseLeave={(e) => e.target.style.color = '#fff'} // Revert color
+          onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+          onMouseLeave={(e) => e.target.style.color = '#fff'}
         >
           Digital Humans
         </a>
@@ -275,8 +259,9 @@ export const SmartSparrow = () => {
         >
           AR Filters
         </a>
-      </div>
 
+        
+      </div>
 
       <ProjectContainer className="spr">
         <Meta title={title1} prefix="Projects" description={description1} />
