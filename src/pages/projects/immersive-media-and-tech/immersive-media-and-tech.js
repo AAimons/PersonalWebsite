@@ -217,6 +217,7 @@ export const SmartSparrow = () => {
           <br /><br />
 
 
+          <ProjectSection>
 
           <ProjectTextRow>
             <ProjectSectionHeading>Purpose and Technologies</ProjectSectionHeading>
@@ -226,6 +227,8 @@ export const SmartSparrow = () => {
               <br /><br />
             </ProjectSectionText>
           </ProjectTextRow>
+         
+
 
           <br /><br />
 
@@ -297,6 +300,7 @@ Moreover, I focused on effective strategies for distributing our content, ensuri
           height={1080} // Height of the carousel
         />
       </ProjectSectionContent>
+      </ProjectSection>
     </ProjectSection>
 
 
@@ -329,6 +333,7 @@ Moreover, I focused on effective strategies for distributing our content, ensuri
 
 
         <ProjectSection>
+          
         <ProjectTextRow>
             <ProjectSectionHeading>The challenge</ProjectSectionHeading>
             <ProjectSectionText>
