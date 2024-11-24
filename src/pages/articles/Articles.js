@@ -48,11 +48,15 @@ const ArticlesPost = ({
       data-featured={!!featured}
       style={index !== undefined ? cssProps({ delay: index * 100 + 200 }) : undefined}
     >
+        {/*
       {featured && (
         <Text className={styles.postLabel} size="s">
           Featured
         </Text>
       )}
+        */}
+
+  
       {featured && !!banner && (
         <div className={styles.postImage}>
           <Image
@@ -86,21 +90,30 @@ const ArticlesPost = ({
               <Button secondary iconHoverShift icon="chevronRight" as="div">
                 Read Story
               </Button>
+
+              {/*
               <Text className={styles.timecode} size="s">
                 {timecode}
               </Text>
+              */}
+
             </div>
           </div>
         </a>
       </RouterLink>
-      {featured && (
-        <Text aria-hidden className={styles.postTag} size="s">
-          477
-        </Text>
-      )}
+
+      {/*
+  {featured && (
+    <Text aria-hidden className={styles.postTag} size="s">
+      477
+    </Text>
+  )}
+*/}
+
     </article>
   );
 };
+
 
 const SkeletonPost = ({ index }) => {
   return (
@@ -141,10 +154,15 @@ const SkeletonPost = ({ index }) => {
   );
 };
 
+
+
 export const Articles = ({ posts, featured }) => {
   const { width } = useWindowSize();
-  const singleColumnWidth = 1190;
+  const singleColumnWidth = 100;
   const isSingleColumn = width <= singleColumnWidth;
+
+
+
 
   const postsHeader = (
     <header className={styles.header}>
