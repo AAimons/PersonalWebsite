@@ -34,7 +34,7 @@ import PaneraiBalls from 'assets/Panerai-balls.jpg';
 import PaneraiEnd from 'assets/Panerai-end.jpg';
 import PaneraiSpace from 'assets/Panerai-space.jpg';
 
-import React from 'react';
+import React, { useState, useEffect, useRef, Fragment } from 'react';
 
 import videoSprMotionLarge from 'assets/spr-motion-large.mp4';
 import videoSprMotionPlaceholder from 'assets/spr-motion-placeholder.jpg';
@@ -77,7 +77,7 @@ import {
   ProjectTextRow,
 } from 'layouts/Project';
 import dynamic from 'next/dynamic';
-import { Fragment, useMemo } from 'react';
+import { useMemo } from 'react';
 import { media } from 'utils/style';
 import { Carousel } from 'components/Carousel';
 import styles from './SmartSparrow.module.css';
@@ -130,8 +130,80 @@ export const SmartSparrow = () => {
     dispatch({ type: 'setTheme', value: themes[index] });
   };
 
+  // State and reference for overflow detection
+  const [isOverflowing, setIsOverflowing] = useState(false);
+  const navRef = useRef(null);
+
+  
+
   return (
     <Fragment>
+{/* Navigation bar with left and right arrows */}
+<div
+  ref={navRef}
+  style={{
+    position: 'fixed',
+    bottom: 0, // Aligns to the bottom of the page
+    left: 0, // Aligns to the left of the page
+    backgroundColor: '#808080',
+    zIndex: 1000,
+    padding: '10px 20px',
+    borderRadius: '5px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+    overflowX: 'auto', // Enable scrolling when content overflows
+    whiteSpace: 'nowrap', // Prevent wrapping of links
+    width: '100%', // Set width to 100% for the full viewport width
+    paddingLeft: '20px', // Ensure the first element is visible and not cut off
+  }}
+>
+ 
+
+  {/* Navigation Links */}
+  <a
+    href="#section-super-foodies"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    01.Super Foodies |
+  </a>
+  
+  <a
+    href="#section-pdc"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    02.Feature Film |
+  </a>
+  <a
+    href="#section-fifty-plus"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    03.Fifty Plus |
+  </a>
+  
+
+</div>
+
+
+
       <ProjectContainer className="spr">
         <Meta title={title1} prefix="Projects" description={description1} />
         <ProjectBackground
@@ -145,6 +217,7 @@ export const SmartSparrow = () => {
 
 {/* Project 1 --- Header + image + description */}
 
+<br /><br id="section-super-foodies" />
 
 
         <ProjectHeader
@@ -204,16 +277,22 @@ export const SmartSparrow = () => {
 
 I played a pivotal role as a new business developer, initiating and cultivating opportunities to establish this partnership. Thanks to my existing network and track record of previous minor projects with the client, I introduced Proxima Milano to Esselunga. My strategic support was instrumental in building trust and laying the groundwork for successful project delivery. As the relationship evolved, I transitioned into a key account management role, focused on maintaining client satisfaction and ensuring ongoing project success.
 
-<div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
-  <iframe
-    src="https://drive.google.com/file/d/1x8mCHFBXFzCukyCf1P0ZlS7PIN1iuu-z/view?usp=drive_link"
-    title="Super Foodies - Making Of"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-    style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
-  />
-</div>
+<br />
+<br />
+
+              <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
+      <video
+        src="/static/SF_makingof.mp4"
+        className={styles.video}
+        autoPlay
+        loop
+        muted
+        style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+      >
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <br />
 
 
 <br />
@@ -254,6 +333,9 @@ It was a lengthy endeavor during which I navigated the complex process of securi
 
 
 {/* Project 2 --- Header + image + description */}
+
+<br /><br id="section-pdc" />
+
 
 
           <ProjectHeader
@@ -336,6 +418,7 @@ It was a lengthy endeavor during which I navigated the complex process of securi
 
 {/* Project 3 --- Header + image + description */}
 
+<br /><br id="section-fifty-plus" />
 
 
           <ProjectHeader

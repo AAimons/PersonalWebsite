@@ -193,7 +193,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    PhD |
+    01.PhD |
   </a>
   <a
     href="#section-VR-Book"
@@ -205,7 +205,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    VR Book |
+    02.VR Book |
   </a>
   <a
     href="#section-Strange-Contraptions"
@@ -217,7 +217,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    Strange Contraptions |
+    03. Experiments |
   </a>
   
 

@@ -18,6 +18,24 @@ import {
 import { Fragment } from 'react';
 import styles from './Uses.module.css';
 
+import { Image } from 'components/Image';
+
+
+import imageAimoTennisSuit from 'assets/AimoTennisSuit.jpg';
+
+export const SmartSparrow = () => {
+  const { themeId } = useTheme();
+  const { dispatch } = useAppContext();
+
+  const isDark = themeId === 'dark';
+  const themes = ['dark', 'light'];
+
+  const handleThemeChange = index => {
+    dispatch({ type: 'setTheme', value: themes[index] });
+  };
+
+}
+
 
 
 export const biography = () => {
@@ -40,6 +58,7 @@ export const biography = () => {
         />
 
 
+<ProjectSection padding="none" className={styles.section}>
 
           <ProjectSectionContent>
             <ProjectTextRow width="m">
@@ -84,6 +103,8 @@ export const biography = () => {
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
+          </ProjectSection>
+
 
 
 
@@ -156,11 +177,11 @@ export const biography = () => {
                 <TableBody>
                   <TableRow>
                     <TableHeadCell>Problem Solving</TableHeadCell>
-                    <TableCell>Critical Thinking, Creativity, Thoughtfulness, Troubleshooting, Resourcefulness</TableCell>
+                    <TableCell>Critical Thinking, Creativity, Thoughtfulness, Troubleshooting</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Interpersonal</TableHeadCell>
-                    <TableCell>Teamwork, Ownership, Networking, Empathy</TableCell>
+                    <TableCell>Ownership, Networking, Negotiation</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Communication</TableHeadCell>
@@ -168,7 +189,7 @@ export const biography = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Ganbaru <Link href="https://en.wikipedia.org/wiki/Ganbaru">頑張る</Link>    </TableHeadCell>
-                    <TableCell>Adaptability, Patience, Persistency, Discipline, Growth Mentality</TableCell>
+                    <TableCell>Adaptability, Persistency, Discipline</TableCell>
                   </TableRow>
                  
                 </TableBody>
@@ -229,7 +250,7 @@ export const biography = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Currently Improving</TableHeadCell>
-                    <TableCell> <Link href="https://github.com/AAimons/VR_Puzzle_Game_POC">Unity</Link> , Unreal Engine, <Link href="https://www.8thwall.com/studiot3d/4dviewst3d">8th Wall</Link>, Python, <Link href="https://github.com/AAimons/Vertical-Video-Slider-Comparison-HTML">HTML</Link>, <Link href="https://github.com/AAimons">GitHub Development</Link></TableCell>
+                    <TableCell> <Link href="https://github.com/AAimons/VR_Puzzle_Game_POC">Unity</Link> , Unreal Engine, <Link href="https://www.8thwall.com/studiot3d/4dviewst3d">WebXR</Link>, Python, <Link href="https://github.com/AAimons/Vertical-Video-Slider-Comparison-HTML">HTML</Link>, <Link href="https://github.com/AAimons">GitHub Development</Link></TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -255,6 +276,18 @@ export const biography = () => {
                   </ListItem>
                   
                 </List>
+
+                <br />
+
+                <Image
+  className="responsive-image"
+  srcSet={`${imageAimoTennisSuit} 1280w`}
+  width="100%"
+  height="auto"
+  placeholder={imageAimoTennisSuit}
+  alt="A set of themed components for the aero design system"
+  sizes="100vw"
+/>
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>

@@ -210,20 +210,9 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    Digital Humans |
+    01.Digital Humans |
   </a>
-  <a
-    href="#section-angels-costumes"
-    style={{
-      textDecoration: 'none',
-      color: '#fff',
-      transition: 'color 0.3s ease',
-    }}
-    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
-    onMouseLeave={(e) => e.target.style.color = '#fff'}
-  >
-    Angels Costumes |
-  </a>
+  
   <a
     href="#section-urquiola"
     style={{
@@ -234,7 +223,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    Urquiola |
+    02.Urquiola |
   </a>
   <a
     href="#section-panerai"
@@ -246,7 +235,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    Panerai |
+    03.Panerai |
   </a>
   <a
     href="#section-arfilters"
@@ -258,7 +247,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    AR Filters |
+    04.AR Filters |
   </a>
 
 </div>
@@ -307,11 +296,6 @@ export const SmartSparrow = () => {
               sizes="100vw"
             />
           </ProjectSectionContent>
-
-
-          <br /><br />
-
-
           <ProjectSection>
 
 
@@ -335,7 +319,7 @@ export const SmartSparrow = () => {
             I led the end-to-end development of our Volumetric and Motion Capture projects, beginning with advising and collaborating with clients to achieve optimal results and preparing compelling pitches to secure grants and funding. My responsibilities extended to managing technical operations during performance capture on shoot days. I utilized established commercial tools such as OptiTrack, Motive, Captury, Theia, and Notiom, along with various R&D solutions that often presented limited documentation and numerous bugs that I successfully troubleshot for precise motion tracking.
             <br /><br />
 
-In post-production, I employed software like Blender and 4dfx to process and refine our captures. Throughout the workflow, I ensured seamless integration with real-time game engines like Unity and Unreal Engine, enabling us to bring our digital humans to life within engaging environments. I also created pre-visualizations to provide clients with a clear understanding of how the final product would appear on shoot days, and I developed standalone VR applications.
+In post-production, I employed software like Blender and 4dfx to process and refine our captures. Throughout the workflow, I ensured seamless integration with real-time game engines like Unity and Unreal Engine, enabling us to bring our digital humans to life within engaging environments. This custom workflow has been documented (technical writing) to share knowledge within the company. I also created pre-visualizations to provide clients with a clear understanding of how the final product would appear on shoot days, and I developed standalone VR applications. 
 <br /><br />
 
 Moreover, I focused on effective strategies for distributing our content, ensuring the final output could be experienced in the best possible manner. This involved developing specific workflows that leveraged the capabilities of 8th Wall WebXR, as well as experimenting with formats like Sony Spatial Reality Display and Apple Vision Pro. This role allowed me to merge my technical expertise with my passion for storytelling, crafting immersive experiences that resonate deeply with audiences.
@@ -345,21 +329,37 @@ Moreover, I focused on effective strategies for distributing our content, ensuri
 
           <br /><br />
 
-          <br /><br id="section-angels-costumes" />
-
-
         <ProjectTextRow>
-            <ProjectSectionHeading>Angels Costumes</ProjectSectionHeading>
+            <ProjectSectionHeading>Projects</ProjectSectionHeading>
             <ProjectSectionText>
-              Challenge: Innovation and Conservation of Period Costumes by the Famous Theatre and Cinema firm, Angels. In partnership with <Link href="https://www.gsmd.ac.uk/">Guildhall School of Music and Drama</Link>.
-              <br /><br />
-
-              a technology that is capable to not only capture the subject thre-dimensionally, but to also capture the fourth-dimension: time. <br /><br />
-              In other words, thanks to 48 cameras placed all around the subject, it is possible to capture volumetrically subjects and their movements which eneded up being crucial when representing virtually the cloth/dresses simulation and physics.
+            <strong>Angels Costumes</strong> 
+            <br />
+            This project explored how volumetric capture technology could modernize costume design by creating a high-fidelity digital costume library. By integrating digital tools with traditional workflows, it enabled designers to experiment with virtual costumes, fostering creativity, sustainability, and remote collaboration while maintaining the tactile artistry of the craft. This initiative not only streamlines costume design processes but also contributes to the preservation of cultural heritage and advances research in digital humanities. 
+            <br /> 
+            Thanks to Volumetric Capture it was possible to capture in four-dimensions (3D + Time) subjects and their movements which eneded up being crucial when representing virtually the cloth/dresses simulation and physics. 
+            <br /> To exprience such captures in an immersive way, we also developed VR application for the VR headset Oculus Quest. In this phase, the challenge was to identify the optimal balance of quality that could be achieved on such a device. Optimization of the settings of the captures (textures, vertices, formats,fps, compressions, lenght) was key.
+            <br /> This exploration was possible thanks to the partnership with <Link href="https://www.gsmd.ac.uk/">Guildhall School of Music and Drama</Link> and with the multi-award winner firm <Link href="https://www.angels.co.uk/">Angels Costume</Link>.
+            <br /> 
+            
               
-              To achive the best output when capturing Angels’ costumes, as Technical Director I was responsable of operating the Volumetric Capture system and...
-              <br /><br />
-              I developed a workflow that could work within Target3D existing infrastrucutre (hardware and software). After several tests, I also idntified and documented (technical writing) the pre-production, capturing, post-production and data mangement best practices. 
+            <br /><br />
+
+
+            <strong>Esport: Rocket League</strong> <br />
+            Falcon Group US approached us with a request to capture volumetrically ‘Shogun’, one of the most well-known Rocket League commentators (or ‘casters’ in esports slang). The vision was to integrate Shogun into the virtual environment of the game, allowing viewers to experience the game while having him commentate as the gameplay unfolded.
+
+            <br /><br />
+
+
+            <strong>Rap Game UK: Fortnite</strong> <br />
+            Hazimation collaborated with the BBC and Freemantle to bring their globally renowned TV format, Rap Game UK, into Fortnite. Leveraging advancements in UEFN (Unreal Editor for Fortnite), creators like Hazimation can now develop custom mini-games and cinematics within the platform.
+The concept involved capturing the performances of four contestants and the MC. After conducting technical evaluations and testing, I proposed using a markerless motion capture system (Captury) to capture the performers' skeletal movements, which would later be retargeted to Fortnite characters. Additionally, we utilized head-mounted cameras (HMCs) to record facial performances, enabling us to capture detailed expressions. These expressions were then retargeted to the characters using iClone, ensuring a seamless integration of both body and facial animation into the Fortnite environment.
+
+
+
+
+
+
             </ProjectSectionText>
           </ProjectTextRow>
 
