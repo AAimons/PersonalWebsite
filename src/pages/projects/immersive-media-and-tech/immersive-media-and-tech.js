@@ -353,7 +353,7 @@ Moreover, I focused on effective strategies for distributing our content, ensuri
 
             <strong>Rap Game UK: Fortnite</strong> <br />
             Hazimation collaborated with the BBC and Freemantle to bring their globally renowned TV format, Rap Game UK, into Fortnite. Leveraging advancements in UEFN (Unreal Editor for Fortnite), creators like Hazimation can now develop custom mini-games and cinematics within the platform.
-The concept involved capturing the performances of four contestants and the MC. After conducting technical evaluations and testing, I proposed using a markerless motion capture system (Captury) to capture the performers' skeletal movements, which would later be retargeted to Fortnite characters. Additionally, we utilized head-mounted cameras (HMCs) to record facial performances, enabling us to capture detailed expressions. These expressions were then retargeted to the characters using iClone, ensuring a seamless integration of both body and facial animation into the Fortnite environment.
+The concept involved capturing the performances of four contestants and the MC. After conducting technical evaluations and testing, I proposed using a markerless motion capture system (Captury) to capture the performers’ skeletal movements, which would later be retargeted to Fortnite characters. Additionally, we utilized head-mounted cameras (HMCs) to record facial performances, enabling us to capture detailed expressions. These expressions were then retargeted to the characters using iClone, ensuring a seamless integration of both body and facial animation into the Fortnite environment.
 
 
 
