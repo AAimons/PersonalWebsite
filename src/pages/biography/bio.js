@@ -23,18 +23,6 @@ import { Image } from 'components/Image';
 
 import imageAimoTennisSuit from 'assets/AimoTennisSuit.jpg';
 
-export const SmartSparrow = () => {
-  const { themeId } = useTheme();
-  const { dispatch } = useAppContext();
-
-  const isDark = themeId === 'dark';
-  const themes = ['dark', 'light'];
-
-  const handleThemeChange = index => {
-    dispatch({ type: 'setTheme', value: themes[index] });
-  };
-
-}
 
 
 
@@ -103,7 +91,7 @@ export const biography = () => {
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
-          </ProjectSection>
+                  </ProjectSection>
 
 
 
