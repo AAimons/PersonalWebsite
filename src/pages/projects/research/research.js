@@ -465,9 +465,7 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
             {
               src: SpeakerSeven,
             },
-            {
-              src: SpeakerSeven,
-            },
+            
             
            
           ]}
@@ -590,8 +588,7 @@ Unfortunately, the project did not receive final approval. Nonetheless, it prove
 <ProjectTextRow>
             <ProjectSectionHeading>VR Mocap Integration</ProjectSectionHeading>
             <ProjectSectionText>
-            What do you do when you are waiting for a proper alluminium GoPro Rig you purchased is being delivered? You don’t waste time and get the best out of what you got. How? Grab a pot, a bunch of GoPros some sticky gum and see if you can create a 360° video with such rudimental setup.
-            The result? It worked! Sort of, the concept was there but with some issues of course. Still, success. 
+            Lorem ipsum dolor
             </ProjectSectionText>
           </ProjectTextRow>
 
