@@ -96,7 +96,7 @@ const ArticlesPost = ({
                 {timecode}
               </Text>
               */}
-
+              
             </div>
           </div>
         </a>
@@ -113,7 +113,6 @@ const ArticlesPost = ({
     </article>
   );
 };
-
 
 const SkeletonPost = ({ index }) => {
   return (
@@ -158,7 +157,7 @@ const SkeletonPost = ({ index }) => {
 
 export const Articles = ({ posts, featured }) => {
   const { width } = useWindowSize();
-  const singleColumnWidth = 100;
+  const singleColumnWidth = 1190;
   const isSingleColumn = width <= singleColumnWidth;
 
 
