@@ -22,7 +22,7 @@ const ProfileText = ({ visible, titleId }) => (
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
         
-      My name is Aimone Bodini, and I am... 
+      My name is Aimone, and I am... 
     
     </Text>
     

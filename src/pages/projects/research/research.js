@@ -7,6 +7,8 @@ import backgroundSpr from 'assets/spr-background-IMT.jpg';
 import Rbackground from 'assets/R-background.jpg';
 import RbackgroundLarge from 'assets/R-background-large.jpg';
 
+
+
 import React, { useState, useEffect, useRef } from 'react';
 
 
@@ -105,10 +107,18 @@ import { Carousel } from 'components/Carousel';
 import { media } from 'utils/style';
 import styles from './SmartSparrow.module.css';
 
-
-const title1 = 'Co-Desiging the Filmmaking process of the future';
-const description1 = 'During my PhD research, I investigated the impact of emerging technologies in the audiovisual sector. I collaborated with industry professionals to design solutions and developed prototypes based on these ingishts. The output generated have been evaluated as beneficial by the stakeholders and ready to be further developed into a commercial product.';
+const title1 = 'Gaussian Splatting';
+const description1 = 'Gaussian Splatting is a groundbreaking technique for capturing and rendering 3D scenes. After seeing some early results with static Gaussian Splatting (3D), I decided to embark on a journey to push the technique further by leveraging access to a 48-camera volumetric capture setup (using the 4D View HoloSys system, typically used for mesh-based volumetric capture) located just next door.';
 const roles1 = [
+  'Research',
+  'Prototyping',
+  'Technical Director',
+  
+];
+
+const title2 = 'Co-Desiging the Filmmaking process of the future';
+const description2 = 'During my PhD research, I investigated the impact of emerging technologies in the audiovisual sector. I collaborated with industry professionals to design solutions and developed prototypes based on these ingishts. The output generated have been evaluated as beneficial by the stakeholders and ready to be further developed into a commercial product.';
+const roles2 = [
   'Co-design',
   'Prototyping',
   'Mixed Methods',
@@ -116,18 +126,18 @@ const roles1 = [
   'Self-discipline',
 ];
 
-const title2 = 'Narrative Language of Virtual Reality';
-const description2 = 'A book investigating XR Design principles for Storytelling';
-const roles2 = [
+const title3 = 'Narrative Language of Virtual Reality';
+const description3 = 'A book investigating XR Design principles for Storytelling';
+const roles3 = [
   'Author',
   'UX Design',
   'Public Speaking',
   
 ];
 
-const title3 = 'Practice-Led & Practice-Based Research // Miscellaneous';
-const description3 = 'Various genuine experiments';
-const roles3 = [
+const title4 = 'Practice-Led & Practice-Based Research // Miscellaneous';
+const description4 = 'Various genuine experiments';
+const roles4 = [
   'Strange Contraptions',
   '? ¿',
   'Explosions 💥',
@@ -184,6 +194,18 @@ export const SmartSparrow = () => {
 
   {/* Navigation Links */}
   <a
+    href="#section-GS"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    01.GaussianSplats |
+  </a>
+  <a
     href="#section-PhD"
     style={{
       textDecoration: 'none',
@@ -193,7 +215,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    01.PhD |
+    02.PhD |
   </a>
   <a
     href="#section-VR-Book"
@@ -205,7 +227,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    02.VR Book |
+    03.VR Book |
   </a>
   <a
     href="#section-Strange-Contraptions"
@@ -217,34 +239,123 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    03. Experiments |
+    04. Experiments |
   </a>
   
 
 </div>
-
-
-
-      <ProjectContainer className="spr">
+ 
+<ProjectContainer className="spr">
         <Meta title={title1} prefix="Projects" description={description1} />
         <ProjectBackground
           opacity={isDark ? 0.5 : 0.8}
-          src={Rbackground}
+          src={RbackgroundLarge}
           srcSet={`${Rbackground.src} 1080w, ${RbackgroundLarge.src} 2160w`}
           placeholder={Rbackground}
         />
 
-<br /><br id="section-PhD" />
+   
+
+        
+        
+<br /><br id="section-GS" />
+
+
 
 
 {/* Project 1 --- Header + image + description */}
 
-        <ProjectHeader
+<ProjectHeader
           title={title1}
           description={description1}
+          url="https://www.studiot3d.com/innovation/gaussian-splatting-workflow"
+          linkLabel="In-depth Workflow Guide"
+          roles={roles1}
+        />
+
+          <ProjectSectionContent>
+            <ProjectImage
+              raised
+              key={themeId}
+              srcSet={
+                isDark
+                  ? [CoverPhDDark, CoverPhDWhite]
+                  : [CoverPhDWhite, CoverPhDWhite]
+              }
+              placeholder={
+                isDark
+                  ? CoverPhDDark
+                  : CoverPhDDark
+              }
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
+              alt="A collage of the usability testing phase and some screenshots of the previz immersive tool"
+            />
+          </ProjectSectionContent>
+    
+          
+          
+          <ProjectTextRow>
+            <ProjectSectionHeading>The Journey</ProjectSectionHeading>
+            <ProjectSectionText>
+            
+            
+            Through a combination of technical tweaks, creativity, and problem-solving, I successfully reconstructed 4D Gaussian Splats — something quite rare at the time due to both the expertise and the substantial resources required (such as a 48-camera rig).
+
+            <br /> 
+This approach enabled the vivid recreation of performances and materials that would have been difficult or impossible to capture using traditional volumetric methods. 
+<br /> I also authored an <Link href="https://www.studiot3d.com/innovation/gaussian-splatting-workflow">article</Link> for the Target3D blog detailing this work, which gained significant traction on social media after I shared some of the early experiments.
+            
+            <br /> 
+            <br />
+
+
+            <Image padding="top"
+              
+              srcSet={
+                isDark
+                  ? `${imageLongTail} 1280w`
+                  : `${imageLongTail} 1280w`
+              }
+              width={1280}
+              height={800}
+              placeholder={
+                isDark
+                  ? imageLongTailDark
+                  : imageLongTail
+              }
+              alt={`Long Tail diagram revisited by me`}
+              sizes="100vw"
+            />
+ <br /><br />
+
+<ProjectSectionHeading>Realistic Intersection</ProjectSectionHeading>
+I want to spend more words on the PhD journey rather then the research by copyng and pasting what is already available online.
+ <br /><br />This PhD was funded by <Link href="https://bura.brunel.ac.uk/handle/2438/27288">StoryFutures</Link> and therefore the output is <Link href="https://bura.brunel.ac.uk/handle/2438/27288">Open Access</Link>. If you are curious, go for it. 
+ <br /><br />
+Embarking on a PhD can be very tricky. Sooner or later you are going to encounter a number of obstacles and limitations that cannot be overcame (resources, time, politics, limited skills, personal circumstances).
+I started during the outbreak of the COVID-19 pandemic and this historic event profundly changed my research, my approach to it and, moreover, the overall life experience.
+<br /><br /> I think that what you develop as a PhD is the art of adapting to ever changing scenarios. If you want to reach the end of the journey and deliver, you have to define a goal based on many forces that are stretching you around. The goal cannot be clear at first and if it doesn’t appear obvious at a certain point, it’s your responsability to make sense out of it. What do I want to research? What my sponsor wants me to research? What my supervisor wants me to research? How can I enrich the scinetific literature?  What can I actually research?
+I could mention even more forces but you got the idea. 
+<br /><br /> It’s easy to be at the mercy of these powers, like being stranded in the ocean. Therefore I came up with a plan that could satisfy these different, sometimes divergent, interests. Something that could be doable with the time, resources and skills at my disposal and, at the same time, something that could add value to the table.
+A PhD, in most cases, is an individual experience and if you need a hand you will find it at the end of your arm. 
+          
+
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+
+
+
+{/* Project 2 --- Header + image + description */}
+
+<br /><br id="section-PhD" />
+
+        <ProjectHeader
+          title={title2}
+          description={description2}
           url="https://scholar.google.com/citations?hl=en&user=o949NnIAAAAJ"
           linkLabel="Scientific Publications"
-          roles={roles1}
+          roles={roles2}
         />
 
           <ProjectSectionContent>
@@ -322,11 +433,11 @@ A PhD, in most cases, is an individual experience and if you need a hand you wil
 
 
           <ProjectHeader
-          title={title2}
-          description={description2}
+          title={title3}
+          description={description3}
           url="/static/VR_Book_BodiniAimone.pdf"
           linkLabel="Download Book"
-          roles={roles2}
+          roles={roles3}
         />
 
 
@@ -489,9 +600,9 @@ In 2016, I gave a talk at Voxxed Days Belgrade (the first of many in the followi
 
 
           <ProjectHeader
-          title={title3}
-          description={description3}
-          roles={roles3}
+          title={title4}
+          description={description4}
+          roles={roles4}
 
         />
 
