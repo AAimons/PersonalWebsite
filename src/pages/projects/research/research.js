@@ -24,6 +24,7 @@ import SpeakerNine from 'assets/Speaking-9.jpg';
 
 import THECover from 'assets/THE-cover.jpg';
 import PadellaRig from 'assets/PadellaRig.jpg';
+import GS_cover from 'assets/GS_Cover.jpg';
 
 
 
@@ -279,17 +280,19 @@ export const SmartSparrow = () => {
               key={themeId}
               srcSet={
                 isDark
-                  ? [CoverPhDDark, CoverPhDWhite]
-                  : [CoverPhDWhite, CoverPhDWhite]
+                  ? [GS_cover, GS_cover]
+                  : [GS_cover, GS_cover]
               }
               placeholder={
                 isDark
-                  ? CoverPhDDark
-                  : CoverPhDDark
+                  ? GS_cover
+                  : GS_cover
               }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="A collage of the usability testing phase and some screenshots of the previz immersive tool"
+              alt="Extract of the Gaussian Splat generated in PostShot and using the Holosys system"
             />
+
+<br />
           </ProjectSectionContent>
     
           
@@ -299,7 +302,7 @@ export const SmartSparrow = () => {
             <ProjectSectionText>
             
             
-            Through a combination of technical tweaks, creativity, and problem-solving, I successfully reconstructed 4D Gaussian Splats — something quite rare at the time due to both the expertise and the substantial resources required (such as a 48-camera rig).
+            Through a combination of technical tweaks, creativity, and problem-solving, I successfully reconstructed 4D Gaussian Splats, something quite rare at the time due to both the expertise and the substantial resources required (such as a 48-camera rig).
 
             <br /> 
 This approach enabled the vivid recreation of performances and materials that would have been difficult or impossible to capture using traditional volumetric methods. 
@@ -308,37 +311,22 @@ This approach enabled the vivid recreation of performances and materials that wo
             <br /> 
             <br />
 
+            <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0' }}>
+      <video
+        src="/static/4DGS_Kenji_video.mp4"
+        className={styles.video}
+        autoPlay
+        loop
+        muted
+        style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+      >
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-            <Image padding="top"
-              
-              srcSet={
-                isDark
-                  ? `${imageLongTail} 1280w`
-                  : `${imageLongTail} 1280w`
-              }
-              width={1280}
-              height={800}
-              placeholder={
-                isDark
-                  ? imageLongTailDark
-                  : imageLongTail
-              }
-              alt={`Long Tail diagram revisited by me`}
-              sizes="100vw"
-            />
- <br /><br />
+            <br />
 
-<ProjectSectionHeading>Realistic Intersection</ProjectSectionHeading>
-I want to spend more words on the PhD journey rather then the research by copyng and pasting what is already available online.
- <br /><br />This PhD was funded by <Link href="https://bura.brunel.ac.uk/handle/2438/27288">StoryFutures</Link> and therefore the output is <Link href="https://bura.brunel.ac.uk/handle/2438/27288">Open Access</Link>. If you are curious, go for it. 
- <br /><br />
-Embarking on a PhD can be very tricky. Sooner or later you are going to encounter a number of obstacles and limitations that cannot be overcame (resources, time, politics, limited skills, personal circumstances).
-I started during the outbreak of the COVID-19 pandemic and this historic event profundly changed my research, my approach to it and, moreover, the overall life experience.
-<br /><br /> I think that what you develop as a PhD is the art of adapting to ever changing scenarios. If you want to reach the end of the journey and deliver, you have to define a goal based on many forces that are stretching you around. The goal cannot be clear at first and if it doesn’t appear obvious at a certain point, it’s your responsability to make sense out of it. What do I want to research? What my sponsor wants me to research? What my supervisor wants me to research? How can I enrich the scinetific literature?  What can I actually research?
-I could mention even more forces but you got the idea. 
-<br /><br /> It’s easy to be at the mercy of these powers, like being stranded in the ocean. Therefore I came up with a plan that could satisfy these different, sometimes divergent, interests. Something that could be doable with the time, resources and skills at my disposal and, at the same time, something that could add value to the table.
-A PhD, in most cases, is an individual experience and if you need a hand you will find it at the end of your arm. 
-          
+
 
             </ProjectSectionText>
           </ProjectTextRow>
