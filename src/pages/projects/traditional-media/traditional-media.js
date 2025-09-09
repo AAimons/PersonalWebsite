@@ -6,6 +6,7 @@ import imageSprBackgroundVolcanism from 'assets/spr-background-volcanism.jpg';
 import backgroundSpr from 'assets/spr-background-IMT.jpg';
 import backgroundTMLarge from 'assets/TM-background-large.jpg'; 
 import backgroundTM from 'assets/TM-background.jpg'; 
+import imageSpandauHeader from 'assets/image2.jpg';
 
 import imageSprComponentsDarkLarge from 'assets/spr-components-dark-large.png';
 import imageSprComponentsDarkPlaceholder from 'assets/spr-components-dark-placeholder.png';
@@ -82,8 +83,13 @@ import { media } from 'utils/style';
 import { Carousel } from 'components/Carousel';
 import styles from './SmartSparrow.module.css';
 
-
-
+const title4 = 'AI Deepfake Holograms';
+const description4 = 'A multimedia exhibit at the Design Museum in London to celebrate the Blitz Club, featuring holographic performances of an iconic pop band of the \'80s.';
+const roles4 = [
+  'AI Faceswap R&D',
+  'Technical Artist',
+  'Pipeline Development',
+];
 
 const title1 = 'Super Foodies';
 const description1 = 'Ideating a new IP for the retail giant Esselunga';
@@ -112,6 +118,8 @@ const roles3 = [
   
   
 ];
+
+
 
 
 
@@ -159,7 +167,18 @@ export const SmartSparrow = () => {
   }}
 >
  
-
+ <a
+    href="#section-ai-deepfake"
+    style={{
+      textDecoration: 'none',
+      color: '#fff',
+      transition: 'color 0.3s ease',
+    }}
+    onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
+    onMouseLeave={(e) => e.target.style.color = '#fff'}
+  >
+    01.AI Deepfake |
+  </a>
   {/* Navigation Links */}
   <a
     href="#section-super-foodies"
@@ -171,7 +190,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    01.Super Foodies |
+    02.Super Foodies |
   </a>
   
   <a
@@ -184,7 +203,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    02.Feature Film |
+    03.Feature Film |
   </a>
   <a
     href="#section-fifty-plus"
@@ -196,7 +215,7 @@ export const SmartSparrow = () => {
     onMouseEnter={(e) => e.target.style.color = '#01E0F9'}
     onMouseLeave={(e) => e.target.style.color = '#fff'}
   >
-    03.Fifty Plus |
+    04.Fifty Plus |
   </a>
   
 
@@ -213,7 +232,49 @@ export const SmartSparrow = () => {
           placeholder={backgroundTM}
         />
 
+{/* Project 4 --- AI Deepfake */}
 
+<br /><br id="section-ai-deepfake" />
+
+
+<ProjectHeader
+          id="section-ai-deepfake"
+          title={title4}
+          description={description4}
+          roles={roles4}
+        />
+
+          <ProjectSectionContent>
+          <Image
+              srcSet={`${imageSpandauHeader} 1280w, ${imageSpandauHeader} 2560w`}
+              width={1280}
+              height={800}
+              placeholder={imageSpandauHeader}
+              alt="Header image for the AI Deepfake project"
+              sizes="100vw"
+            />
+          </ProjectSectionContent>
+
+        <ProjectTextRow>
+            <ProjectSectionHeading>My Role</ProjectSectionHeading>
+            <ProjectSectionText>
+            The holograms consisted of a projection on a semi-transparent screen called Hologauze, designed to create the illusion of the performers being present in front of visitors in life-size scale. There was no archive footage that could be projected and give such illusion, therefore the footage required to be produced ad-hoc. The approach we identified was the one of casting actors in their early 20s who resembled the members’ body shapes and face geometry of the iconic pop band of the \'80s (TB). After that I proceeded swapping their faces using Machine Learning tools so they would appear as Tony, Martin, Gary, John, and Steve.
+            </ProjectSectionText>
+        </ProjectTextRow>
+
+        <ProjectTextRow>
+            <ProjectSectionHeading>Initial Research & Development</ProjectSectionHeading>
+            <ProjectSectionText>
+            I had to identify a solution that was single-handedly manageable, sustainable, and compatible with the limited time and resources at my disposal. My journey started from something easy to pick up and play with. I explored all-in-one solutions like Runway and Viggle but quickly ran into limitations. Then I came across ComfyUI, an open-source, node-based AI tool that was being built and maintained by a community of developers releasing more and more features to generate or alter images and videos. Within Comfy UI I identified a custom node that could serve my purpose: ReActor. This process, however, became an unexpected opportunity. I found myself operating much more than usual in the terminal and handling system integration tasks: Python installations, PyTorch versions, CUDA drivers, environment paths, library conflicts. It gave me headaches at times, but when things finally worked, the sense of accomplishment was certainly rewarding.
+            </ProjectSectionText>
+        </ProjectTextRow>
+
+        <ProjectTextRow>
+            <ProjectSectionHeading>Lessons Learned</ProjectSectionHeading>
+            <ProjectSectionText>
+            AI faceswapping and deepfake creation exist on a spectrum; not all face alterations are “deepfakes”. Pre-shoot experimentation and rehearsal footage are critical to optimize the final recording. Actor face geometry heavily influences success; closer resemblance to the original improves realism. Working directly with terminal and system integration can be challenging but ultimately rewarding. Open-source tools allow rapid iteration and experimentation, crucial in early-stage R&D. Using open-source AI tools in commercial projects is a grey area: Each node, model, and dataset comes with different licenses and restrictions. It’s easy to overlook these dependencies, which can lead to legal complications if not carefully vetted. This project was a deep dive into AI filmmaking and and opportunity to experiment hands-on how all these new GenAi tools are shaping how we create images&videos, and the implications deriving from this new making process exploring open-source tools, dataset creation, and technical pipelines for a multimedia exhibit.
+            </ProjectSectionText>
+        </ProjectTextRow>
 
 {/* Project 1 --- Header + image + description */}
 
@@ -244,7 +305,6 @@ export const SmartSparrow = () => {
               alt="A screenshot of the current ui of the app"
             />
           </ProjectSectionContent>
-
 
 
 
@@ -467,6 +527,3 @@ It was a lengthy endeavor during which I navigated the complex process of securi
     </Fragment>
   );
 };
-
-
-
