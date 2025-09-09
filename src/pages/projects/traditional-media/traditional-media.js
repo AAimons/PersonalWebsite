@@ -84,7 +84,7 @@ import { Carousel } from 'components/Carousel';
 import styles from './SmartSparrow.module.css';
 
 const title4 = 'AI Deepfake Holograms';
-const description4 = 'A multimedia exhibit at the Design Museum in London to celebrate the Blitz Club, featuring holographic performances of an iconic pop band of the \'80s.';
+const description4 = 'A multimedia exhibit at the Design Museum in London to celebrate the Blitz Club, featuring holographic performances of an iconic pop band of the 80s.';
 const roles4 = [
   'AI Faceswap R&D',
   'Technical Artist',
@@ -118,8 +118,6 @@ const roles3 = [
   
   
 ];
-
-
 
 
 
@@ -258,7 +256,7 @@ export const SmartSparrow = () => {
         <ProjectTextRow>
             <ProjectSectionHeading>My Role</ProjectSectionHeading>
             <ProjectSectionText>
-            The holograms consisted of a projection on a semi-transparent screen called Hologauze, designed to create the illusion of the performers being present in front of visitors in life-size scale. There was no archive footage that could be projected and give such illusion, therefore the footage required to be produced ad-hoc. The approach we identified was the one of casting actors in their early 20s who resembled the members’ body shapes and face geometry of the iconic pop band of the \'80s (TB). After that I proceeded swapping their faces using Machine Learning tools so they would appear as Tony, Martin, Gary, John, and Steve.
+            The holograms consisted of a projection on a semi-transparent screen called Hologauze, designed to create the illusion of the performers being present in front of visitors in life-size scale. There was no archive footage that could be projected and give such illusion, therefore the footage required to be produced ad-hoc. The approach we identified was the one of casting actors in their early 20s who resembled the members’ body shapes and face geometry of the iconic pop band of the 80s (TB). After that I proceeded swapping their faces using Machine Learning tools so they would appear as Tony, Martin, Gary, John, and Steve.
             </ProjectSectionText>
         </ProjectTextRow>
 
@@ -374,7 +372,7 @@ It was a lengthy endeavor during which I navigated the complex process of securi
     </div>
     <br />
 
-    Once the prjects was complete, I earned a large commission I promptly reinvested into my personal and professional development, fulfilling a small dream of mine and flying to <Link href="/articles/CaliDreaming">California</Link> for a new adventure.
+    Once the projects was complete, I earned a large commission I promptly reinvested into my personal and professional development, fulfilling a small dream of mine and flying to <Link href="/articles/CaliDreaming">California</Link> for a new adventure.
             
             </ProjectSectionText>
           </ProjectTextRow>
@@ -509,7 +507,7 @@ It was a lengthy endeavor during which I navigated the complex process of securi
         <ProjectTextRow>
             <ProjectSectionHeading>Summary</ProjectSectionHeading>
             <ProjectSectionText>
-            During the early phase of my career, I took on nearly every role. Sometimes it was due to curiosity, other times because of my personality, and occasionally out of necessity. Handling projects from various perspectives greatly helped me empathize with others and better understand their needs, allowing me to support them more effectively in their roles. I’d recommend that everyone occasionally swap roles within their companies and organizations as a valuable exercise.
+            During the early phase of my career, I took on nearly every role. Sometimes it was due to curiosity, other times because of my personality, and occasionally out of necessity. Handling projects from various perspectives greatly helped me empathize with others and better understand their needs, allowing me to support them more effectively in their roles. I&apos;d recommend that everyone occasionally swap roles within their companies and organizations as a valuable exercise.
             <br /><br /> Sometimes LOW budget, some other time NO budget, in some cases OUR budget. 
             <br /><br /> What mattered was completing the projects we cared about. 
             <br /><br /> All-nighters and constant obstacles paid back by creating memorable experiences, built trust and credibility within the team, and fueled a relentless pursuit of growth to keep making better an better AV products.
