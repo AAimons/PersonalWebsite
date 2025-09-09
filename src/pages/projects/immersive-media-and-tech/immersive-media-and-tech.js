@@ -50,6 +50,8 @@ import ARFiltersDark from 'assets/ARFilters-intro-dark.jpg';
 import ARFiltersWhite from 'assets/ARFilters-intro-white.jpg';
 
 import Volcap1 from 'assets/VolcapRedDress.png';
+import RapGame from 'assets/RapGame_BBC.jpeg';
+
 
 import AngelsOne from 'assets/Angels_1.jpg';
 import AngelsTwo from 'assets/Angels_2.jpg';
@@ -296,7 +298,7 @@ export const SmartSparrow = () => {
               sizes="100vw"
             />
           </ProjectSectionContent>
-          <ProjectSection>
+          
 
 
 
@@ -340,35 +342,8 @@ Moreover, I focused on effective strategies for distributing our content, ensuri
             <br /> To experience such captures in an immersive way, we also developed VR application for the VR headset Oculus Quest. In this phase, the challenge was to identify the optimal balance of quality that could be achieved on such a device. Optimization of the settings of the captures (textures, vertices, formats,fps, compressions, lenght) was key.
             <br /> This exploration was possible thanks to the partnership with <Link href="https://www.gsmd.ac.uk/">Guildhall School of Music and Drama</Link> and with the multi-award winner firm <Link href="https://www.angels.co.uk/">Angels Costume</Link>.
             <br /> 
-            
-              
-            <br /><br />
-
-
-            <strong>Esport: Rocket League</strong> <br />
-            Falcon Group US approached us with a request to capture volumetrically ‘Shogun’, one of the most well-known Rocket League commentators (or ‘casters’ in esports slang). The vision was to integrate Shogun into the virtual environment of the game, allowing viewers to experience the game while having him commentate as the gameplay unfolded.
-
-            <br /><br />
-
-
-            <strong>Rap Game UK: Fortnite</strong> <br />
-            Hazimation collaborated with the BBC and Freemantle to bring their globally renowned TV format, Rap Game UK, into Fortnite. Leveraging advancements in UEFN (Unreal Editor for Fortnite), creators like Hazimation can now develop custom mini-games and cinematics within the platform.
-The concept involved capturing the performances of four contestants and the MC. After conducting technical evaluations and testing, I proposed using a markerless motion capture system (Captury) to capture the performers’ skeletal movements, which would later be retargeted to Fortnite characters. Additionally, we utilized head-mounted cameras (HMCs) to record facial performances, enabling us to capture detailed expressions. These expressions were then retargeted to the characters using iClone, ensuring a seamless integration of both body and facial animation into the Fortnite environment. <br /> The result got us a Webby Award nomination. \\    <Link href="https://www.youtube.com/watch?v=I47Pcp8liEA">Making of video</Link>
-
-
-
-
-
-
-            </ProjectSectionText>
-          </ProjectTextRow>
-
-
-
-
-          <ProjectSection> {/* Wrapper component */}
-      <ProjectSectionContent> {/* Content wrapper */}
-        <Carousel
+            <br /> 
+            <Carousel
           images={[ // Images array
             {
               src: AngelsOne, // Source of the image
@@ -397,9 +372,49 @@ The concept involved capturing the performances of four contestants and the MC. 
           width={1920} // Width of the carousel
           height={1080} // Height of the carousel
         />
-      </ProjectSectionContent>
-      </ProjectSection>
-    </ProjectSection>
+              
+            <br /><br />
+
+
+            <strong>Esport: Rocket League</strong> <br />
+            Falcon Group US approached us with a request to capture volumetrically ‘Shogun’, one of the most well-known Rocket League commentators (or ‘casters’ in esports slang). The vision was to integrate Shogun into the virtual environment of the game, allowing viewers to experience the game while having him commentate as the gameplay unfolded.
+
+            <br /><br />
+
+
+            <strong>Rap Game UK: Fortnite</strong> <br />
+            <br /><br />
+            <Image
+      src={RapGame}
+      width={640} // Adjusted width
+      height={400} // Adjusted height (fixed the typo)
+      placeholder={RapGame}
+      alt="RapGame"
+      sizes="50vw"
+      style={{ display: 'block', maxWidth: '100%', height: 'auto' }} // Ensures image responsiveness
+    />
+   <br /><br />
+            Hazimation collaborated with the BBC and Freemantle to bring their globally renowned TV format, Rap Game UK, into Fortnite. Leveraging advancements in UEFN (Unreal Editor for Fortnite), creators like Hazimation can now develop custom mini-games and cinematics within the platform.
+
+The concept involved capturing the performances of four contestants and the MC. After conducting technical evaluations and testing, I proposed using a markerless motion capture system (Captury) to capture the performers’ skeletal movements, which would later be retargeted to Fortnite characters. Additionally, we utilized head-mounted cameras (HMCs) to record facial performances, enabling us to capture detailed expressions. These expressions were then retargeted to the characters using iClone, ensuring a seamless integration of both body and facial animation into the Fortnite environment. <br /> The result got us a Webby Award nomination and a Broadcast Digital Award nomination. \\    <Link href="https://www.youtube.com/watch?v=I47Pcp8liEA">Making of video</Link>
+
+
+
+
+
+
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+
+
+{/*
+  <ProjectSection> 
+    <ProjectSectionContent> 
+    </ProjectSectionContent>
+  </ProjectSection>
+*/}
+
 
 
 {/* Project 1 --- Header + image + description */}
@@ -723,12 +738,11 @@ In the months leading up to the event, I collaborated closely with the productio
 
 
 
+
+
           </ProjectSection>
       </ProjectContainer>
       <Footer />
     </Fragment>
   );
 };
-
-
-
