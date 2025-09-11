@@ -1,5 +1,6 @@
 ---
 title: AI Deepfake
+date: 2025-09-11
 ---
 
 ## Holograms at the Design Museum
@@ -65,7 +66,7 @@ Within Comfy UI I identified a custom node that could serve my purpose: ReActor
 
 ReActor was using a library called Insightface capable of both detecting the face in the image and then faceswap that image (thanks to the pretrained model inswapper_128).
 
-It was a matter of inputting both the source (actor) and target image (SP member) and ReActor would have faceswapped the SP member face into the body of the actor.
+It was a matter of inputting both the source (actor) and target image (band member) and ReActor would have faceswapped the band member face into the body of the actor.
 
 To fine-tune the face swap, it was necessary to use an additional node responsible for masking. This step allowed for a smoother blend between the two images and reduced the visible seam around the swapped face.
 

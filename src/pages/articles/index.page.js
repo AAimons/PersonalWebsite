@@ -32,7 +32,11 @@ export function getStaticProps() {
     .sort((a, b) => {
       return new Date(a.date).getTime() - new Date(b.date).getTime();
     })
-    .reverse();
+    .reverse()
+    .map(post => ({
+      ...post,
+      date: new Date(post.date).toISOString().split('T')[0],
+    }));
 
   return {
     props: { posts: sortedPosts, featured: featured || null },

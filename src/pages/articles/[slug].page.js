@@ -43,6 +43,11 @@ export const getStaticProps = async ({ params }) => {
     },
   });
 
+  // Ensure date is a string for JSON serialization
+  if (frontmatter.date instanceof Date) {
+    frontmatter.date = frontmatter.date.toISOString().split('T')[0];
+  }
+
   /* const { time } = readingTime(matter.content);
   const timecode = formatTimecode(time); */
 

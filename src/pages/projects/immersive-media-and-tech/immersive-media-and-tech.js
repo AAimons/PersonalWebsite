@@ -275,13 +275,13 @@ export const SmartSparrow = () => {
           id="section-digital-humans"
           title={title4}
           description={description4}
-          url="https://"
           roles={roles4}
         />
 
           <ProjectSectionContent>
           <Image
-              
+              reveal
+              delay={300} // Adding a delay for the animation
               srcSet={
                 isDark
                   ? `${Volcap1} 1280w, ${Volcap1} 2560w`
@@ -527,7 +527,8 @@ The concept involved capturing the performances of four contestants and the MC. 
 
           <ProjectSectionContent>
           <Image
-              
+              reveal
+              delay={300}
               srcSet={
                 isDark
                   ? `${PaneraiIntro} 1280w, ${PaneraiIntro} 2560w`
@@ -690,7 +691,8 @@ In the months leading up to the event, I collaborated closely with the productio
 
           <ProjectSectionContent>
           <Image
-              
+              reveal
+              delay={300}
               srcSet={
                 isDark
                   ? `${ARFiltersDark} 1280w, ${ARFiltersDark} 2560w`
