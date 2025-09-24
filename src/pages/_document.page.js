@@ -19,7 +19,8 @@ export default function Document() {
         <link rel="preload" href={GothamBook} as="font" crossOrigin="true" />
         <style dangerouslySetInnerHTML={{ __html: fontStyles }} />
         <style dangerouslySetInnerHTML={{ __html: tokenStyles }} />
-        <script defer src="https://umami-livid-iota.vercel.app/script.js" data-website-id="efaded38-1f72-41d2-ab77-f6da8d98be93"></script>
+
+        <script defer src="https://umami-livid-iota.vercel.app/script.js" data-website-id="efaded38-1f72-41d2-ab77-f6da8d98be93" data-do-not-track="true"></script>
       </Head>
       <body data-theme="dark" tabIndex={-1}>
         <script
