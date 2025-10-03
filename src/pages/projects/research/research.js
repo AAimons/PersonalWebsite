@@ -306,7 +306,7 @@ export const SmartSparrow = () => {
 
             <br /> 
 This approach enabled the vivid recreation of performances and materials that would have been difficult or impossible to capture using traditional volumetric methods. 
-<br /> I also authored an <Link href="https://www.studiot3d.com/innovation/gaussian-splatting-workflow">article</Link> for the Target3D blog detailing this work, which gained significant traction on social media after I shared some of the early experiments.
+<br /> I also authored an <Link href="https://www.studiot3d.com/innovation/gaussian-splatting-workflow">article</Link> for the Target3D blog detailing this work (also available <Link href="/articles/4DGaussianSplatting/">here</Link>), which gained significant traction on social media after I shared some of the early experiments.
             
             <br /> 
             <br />
