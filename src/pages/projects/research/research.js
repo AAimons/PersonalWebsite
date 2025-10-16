@@ -56,6 +56,7 @@ import imageBookLaunch02 from 'assets/BookLaunch_02_light.jpg';
 import imageCoverPhD from 'assets/CoverPhD.jpg';
 import CoverPhDWhite from 'assets/CoverPhD_White.jpg';
 import CoverPhDDark from 'assets/CoverPhD_Dark.jpg';
+import HalinaRiceBTS01 from 'assets/HalinaRice_BTS_01.jpg';
 
 
 import imageLongTail from 'assets/LongTail.jpg';
@@ -328,6 +329,32 @@ This approach enabled the vivid recreation of performances and materials that wo
 
 
 
+            </ProjectSectionText>
+          </ProjectTextRow>
+
+          <ProjectTextRow>
+            <ProjectSectionHeading>From Research to Real-World Impact</ProjectSectionHeading>
+            <ProjectSectionText>
+            Building on this R&D foundation, I had the opportunity to translate the 4D Gaussian Splatting workflow into a commercial project: the music video and live visuals for <b>Halina Rice</b>’s “<b>Endless</b>”, part of her new audiovisual album <b>UNREALITY</b>.
+            <br /><br />
+            For this collaboration, we reimagined the 4D Gaussian Splatting setup as an artistic tool rather than just a research experiment. We played extensively with lighting to capture the dark, industrial Berlin aesthetic Halina envisioned, and after several tests, we managed to turn our dancer into a living, fluid volume of light and motion. The virtual environment was recreated in Unreal Engine by our visual artist Freny Antony, who also developed the VFX elements and dynamic camera movements that shaped the final piece.
+            <br /><br />
+            The result became the visual centrepiece of Halina’s 2024–25 world tour, featured at Amsterdam Dance Event, HERE at Outernet (London), and <Link href="https://tokyo.mutek.org/en">MUTEK Japan</Link>, marking one of the first times this technology was used in a live performance context.
+            <br /><br />
+            - <Link href="https://www.youtube.com/watch?v=gwUAP7LZco8">Watch the “Endless” video</Link>
+            <br />
+            - <Link href="https://dmy.co/new-music/halina-rice-pushes-the-boundaries-of-sound-and-vision-on-new-album-unreality">Read the media coverage</Link>
+            <br />
+            - <Link href="https://www.halinarice.com/">halinarice.com</Link>
+            <br /><br />
+            Working on this project felt like closing a loop, turning months of R&D into something tangible, emotional, and public. I was lucky to collaborate with someone like Halina, whose openness to explore uncharted territory, exchange ideas freely, and experiment without hesitation made the whole process feel vivid.
+            <br /><br />
+            <Image
+              src={HalinaRiceBTS01}
+              placeholder={HalinaRiceBTS01}
+              alt="Behind the scenes of the Halina Rice's 'Endless' music video shoot"
+              sizes="100vw"
+            />
             </ProjectSectionText>
           </ProjectTextRow>
 
